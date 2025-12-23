@@ -1,0 +1,13 @@
+/time set night
+/time set day
+/time set night
+/reg maks555
+/ah search Талисман
+/ping
+/piona
+/ah search Алмаз
+/ah search Талисман
+/skin zele
+/hub
+/skin liq
+/hub

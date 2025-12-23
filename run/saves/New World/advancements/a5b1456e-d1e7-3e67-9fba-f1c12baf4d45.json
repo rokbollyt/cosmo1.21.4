@@ -1,0 +1,22 @@
+{
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2025-12-23 14:54:29 +0500"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:forest": "2025-12-23 14:56:21 +0500",
+      "minecraft:jungle": "2025-12-23 14:54:30 +0500"
+    },
+    "done": false
+  },
+  "minecraft:adventure/root": {
+    "criteria": {
+      "killed_something": "2025-12-23 14:56:55 +0500"
+    },
+    "done": true
+  },
+  "DataVersion": 4189
+}

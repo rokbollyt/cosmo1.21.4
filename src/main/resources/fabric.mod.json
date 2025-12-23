@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "melody",
+  "version": "${version}",
+  "name": "Melody",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "environment": "client",
+  "entrypoints": {
+    "main": [
+      "ru.mytheria.Mytheria"
+    ]
+  },
+  "mixins": [
+    "mytheria.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}

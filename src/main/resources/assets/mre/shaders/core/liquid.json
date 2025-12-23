@@ -1,0 +1,17 @@
+{
+  "vertex": "mre:core/liquid",
+  "fragment": "mre:core/liquid",
+  "samplers": [
+    { "name": "Sampler0" }
+  ],
+  "uniforms": [
+    { "name": "ModelViewMat", "type": "matrix4x4", "count": 16, "values": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ] },
+    { "name": "ProjMat", "type": "matrix4x4", "count": 16, "values": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ] },
+    { "name": "Size", "type": "float", "count": 2, "values": [ 1.0, 1.0 ] },
+    { "name": "Radius", "type": "float", "count": 4, "values": [ 0.0, 0.0, 0.0, 0.0 ] },
+    { "name": "Smoothness", "type": "float", "count": 1, "values": [ 0.1 ] },
+    { "name": "GlassDirection", "type": "float", "count": 1, "values": [ 8.0 ] },
+    { "name": "GlassQuality", "type": "float", "count": 1, "values": [ 16.0 ] },
+    { "name": "GlassSize", "type": "float", "count": 1, "values": [ 4.0 ] }
+  ]
+}

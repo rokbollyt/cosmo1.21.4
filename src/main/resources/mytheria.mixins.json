@@ -1,0 +1,24 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "ru.mytheria.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "KeyBoardMixin",
+    "ChatScreenMixin",
+    "InGameHudMixin",
+    "BossBarHudMixin",
+    "WorldRendererMixin",
+    "ClientPlayerEntityMixin",
+    "IClientPlayerInteractionManager",
+    "accessor.BossBarHudAccessor",
+    "accessor.ClientPlayerEntityAccessor",
+    "accessor.LivingEntityInvoker"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}

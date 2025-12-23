@@ -1,0 +1,76 @@
+{
+  "mappings": {
+    "ru/mytheria/mixin/BossBarHudMixin": {
+      "render": "Lnet/minecraft/class_337;method_1796(Lnet/minecraft/class_332;)V"
+    },
+    "ru/mytheria/mixin/ChatScreenMixin": {
+      "keyPressed": "Lnet/minecraft/class_408;method_25404(III)Z",
+      "mouseClicked": "Lnet/minecraft/class_408;method_25402(DDI)Z",
+      "render": "Lnet/minecraft/class_408;method_25394(Lnet/minecraft/class_332;IIF)V"
+    },
+    "ru/mytheria/mixin/ClientPlayerEntityMixin": {
+      "tick": "Lnet/minecraft/class_746;method_5773()V"
+    },
+    "ru/mytheria/mixin/IClientPlayerInteractionManager": {
+      "syncSelectedSlot": "method_2911()V"
+    },
+    "ru/mytheria/mixin/InGameHudMixin": {
+      "render": "Lnet/minecraft/class_329;method_1753(Lnet/minecraft/class_332;Lnet/minecraft/class_9779;)V"
+    },
+    "ru/mytheria/mixin/KeyBoardMixin": {
+      "Lnet/minecraft/client/option/InactivityFpsLimiter;onInput()V": "Lnet/minecraft/class_9919;method_61939()V",
+      "onKey": "Lnet/minecraft/class_309;method_1466(JIIII)V"
+    },
+    "ru/mytheria/mixin/WorldRendererMixin": {
+      "render": "Lnet/minecraft/class_761;method_22710(Lnet/minecraft/class_9922;Lnet/minecraft/class_9779;ZLnet/minecraft/class_4184;Lnet/minecraft/class_757;Lorg/joml/Matrix4f;Lorg/joml/Matrix4f;)V"
+    },
+    "ru/mytheria/mixin/accessor/BossBarHudAccessor": {
+      "bossBars": "field_2060:Ljava/util/Map;"
+    },
+    "ru/mytheria/mixin/accessor/ClientPlayerEntityAccessor": {
+      "lastPitch": "field_3925:F",
+      "lastYaw": "field_3941:F"
+    },
+    "ru/mytheria/mixin/accessor/LivingEntityInvoker": {
+      "getEffectiveGravity": "method_61426()D"
+    }
+  },
+  "data": {
+    "named:intermediary": {
+      "ru/mytheria/mixin/BossBarHudMixin": {
+        "render": "Lnet/minecraft/class_337;method_1796(Lnet/minecraft/class_332;)V"
+      },
+      "ru/mytheria/mixin/ChatScreenMixin": {
+        "keyPressed": "Lnet/minecraft/class_408;method_25404(III)Z",
+        "mouseClicked": "Lnet/minecraft/class_408;method_25402(DDI)Z",
+        "render": "Lnet/minecraft/class_408;method_25394(Lnet/minecraft/class_332;IIF)V"
+      },
+      "ru/mytheria/mixin/ClientPlayerEntityMixin": {
+        "tick": "Lnet/minecraft/class_746;method_5773()V"
+      },
+      "ru/mytheria/mixin/IClientPlayerInteractionManager": {
+        "syncSelectedSlot": "method_2911()V"
+      },
+      "ru/mytheria/mixin/InGameHudMixin": {
+        "render": "Lnet/minecraft/class_329;method_1753(Lnet/minecraft/class_332;Lnet/minecraft/class_9779;)V"
+      },
+      "ru/mytheria/mixin/KeyBoardMixin": {
+        "Lnet/minecraft/client/option/InactivityFpsLimiter;onInput()V": "Lnet/minecraft/class_9919;method_61939()V",
+        "onKey": "Lnet/minecraft/class_309;method_1466(JIIII)V"
+      },
+      "ru/mytheria/mixin/WorldRendererMixin": {
+        "render": "Lnet/minecraft/class_761;method_22710(Lnet/minecraft/class_9922;Lnet/minecraft/class_9779;ZLnet/minecraft/class_4184;Lnet/minecraft/class_757;Lorg/joml/Matrix4f;Lorg/joml/Matrix4f;)V"
+      },
+      "ru/mytheria/mixin/accessor/BossBarHudAccessor": {
+        "bossBars": "field_2060:Ljava/util/Map;"
+      },
+      "ru/mytheria/mixin/accessor/ClientPlayerEntityAccessor": {
+        "lastPitch": "field_3925:F",
+        "lastYaw": "field_3941:F"
+      },
+      "ru/mytheria/mixin/accessor/LivingEntityInvoker": {
+        "getEffectiveGravity": "method_61426()D"
+      }
+    }
+  }
+}

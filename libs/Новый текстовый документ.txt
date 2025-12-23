@@ -1,0 +1,249 @@
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by FernFlower decompiler)
+//
+
+package by.bonenaut7.mediatransport4j.api;
+
+import by.bonenaut7.mediatransport4j.impl.windows.WindowsMediaTransport;
+import com.badlogic.gdx.utils.SharedLibraryLoader;
+import java.util.List;
+
+public final class MediaTransport {
+    private static final SharedLibraryLoader LIBRARY_LOADER = new SharedLibraryLoader();
+    private static MediaTransport instance;
+    private final MediaTransportInterface transportInterface;
+
+    private MediaTransport() {
+        if (SharedLibraryLoader.isWindows) {
+            LIBRARY_LOADER.load("mediatransport4j");
+            this.transportInterface = new WindowsMediaTransport();
+        } else {
+            this.transportInterface = null;
+        }
+
+    }
+
+    public static final boolean init() {
+        if (instance == null) {
+            instance = new MediaTransport();
+            return instance.transportInterface != null;
+        } else {
+            return false;
+        }
+    }
+
+    public static final List<MediaSession> getMediaSessions() {
+        return instance.transportInterface.parseSessions();
+    }
+}
+
+
+
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by FernFlower decompiler)
+//
+
+package by.bonenaut7.mediatransport4j.api;
+
+import java.nio.ByteBuffer;
+
+public interface MediaSession {
+    String getSourceApp();
+
+    boolean switchToNext();
+
+    boolean switchToPrevious();
+
+    String getArtist();
+
+    String getTitle();
+
+    boolean hasThumbnail();
+
+    ByteBuffer getThumbnail();
+
+    long getDuration();
+
+    long getPosition();
+
+    boolean isPlaying();
+
+    boolean play();
+
+    boolean pause();
+
+    boolean togglePlay();
+
+    boolean stop();
+}
+
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by FernFlower decompiler)
+//
+
+package by.bonenaut7.mediatransport4j.impl.windows;
+
+import by.bonenaut7.mediatransport4j.api.MediaSession;
+import by.bonenaut7.mediatransport4j.api.MediaTransportInterface;
+import java.util.List;
+
+public final class WindowsMediaTransport implements MediaTransportInterface {
+    public WindowsMediaTransport() {
+    }
+
+    public List<MediaSession> parseSessions() {
+        return nParseSessions();
+    }
+
+    private static native List<MediaSession> nParseSessions();
+}
+
+
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by FernFlower decompiler)
+//
+
+package by.bonenaut7.mediatransport4j.impl.windows;
+
+import by.bonenaut7.mediatransport4j.impl.AbstractMediaSession;
+import java.nio.ByteBuffer;
+
+public final class WindowsMediaSession extends AbstractMediaSession {
+    private int sessionIndex = -1;
+
+    private WindowsMediaSession(int sessionIndex, String sourceApp, String artist, String title, ByteBuffer thumbnail, long duration, long position, boolean isPlaying) {
+        this.sessionIndex = sessionIndex;
+        this.sourceApp = sourceApp;
+        this.artist = artist;
+        this.title = title;
+        this.thumbnail = thumbnail;
+        this.duration = duration;
+        this.position = position;
+        this.isPlaying = isPlaying;
+    }
+
+    public boolean switchToNext() {
+        return nSwitchToNext(this.sessionIndex);
+    }
+
+    public boolean switchToPrevious() {
+        return nSwitchToPrevious(this.sessionIndex);
+    }
+
+    public boolean play() {
+        return nPlay(this.sessionIndex);
+    }
+
+    public boolean pause() {
+        return nPause(this.sessionIndex);
+    }
+
+    public boolean togglePlay() {
+        return nTogglePlay(this.sessionIndex);
+    }
+
+    public boolean stop() {
+        return nStop(this.sessionIndex);
+    }
+
+    private static native boolean nSwitchToNext(int var0);
+
+    private static native boolean nSwitchToPrevious(int var0);
+
+    private static native boolean nPlay(int var0);
+
+    private static native boolean nPause(int var0);
+
+    private static native boolean nTogglePlay(int var0);
+
+    private static native boolean nStop(int var0);
+}
+
+
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by FernFlower decompiler)
+//
+
+package by.bonenaut7.mediatransport4j.impl.windows;
+
+import by.bonenaut7.mediatransport4j.impl.AbstractMediaSession;
+import java.nio.ByteBuffer;
+
+public final class WindowsMediaSession extends AbstractMediaSession {
+    private int sessionIndex = -1;
+
+    private WindowsMediaSession(int sessionIndex, String sourceApp, String artist, String title, ByteBuffer thumbnail, long duration, long position, boolean isPlaying) {
+        this.sessionIndex = sessionIndex;
+        this.sourceApp = sourceApp;
+        this.artist = artist;
+        this.title = title;
+        this.thumbnail = thumbnail;
+        this.duration = duration;
+        this.position = position;
+        this.isPlaying = isPlaying;
+    }
+
+    public boolean switchToNext() {
+        return nSwitchToNext(this.sessionIndex);
+    }
+
+    public boolean switchToPrevious() {
+        return nSwitchToPrevious(this.sessionIndex);
+    }
+
+    public boolean play() {
+        return nPlay(this.sessionIndex);
+    }
+
+    public boolean pause() {
+        return nPause(this.sessionIndex);
+    }
+
+    public boolean togglePlay() {
+        return nTogglePlay(this.sessionIndex);
+    }
+
+    public boolean stop() {
+        return nStop(this.sessionIndex);
+    }
+
+    private static native boolean nSwitchToNext(int var0);
+
+    private static native boolean nSwitchToPrevious(int var0);
+
+    private static native boolean nPlay(int var0);
+
+    private static native boolean nPause(int var0);
+
+    private static native boolean nTogglePlay(int var0);
+
+    private static native boolean nStop(int var0);
+}
+
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by FernFlower decompiler)
+//
+
+package by.bonenaut7.mediatransport4j.impl.windows;
+
+import by.bonenaut7.mediatransport4j.api.MediaSession;
+import by.bonenaut7.mediatransport4j.api.MediaTransportInterface;
+import java.util.List;
+
+public final class WindowsMediaTransport implements MediaTransportInterface {
+    public WindowsMediaTransport() {
+    }
+
+    public List<MediaSession> parseSessions() {
+        return nParseSessions();
+    }
+
+    private static native List<MediaSession> nParseSessions();
+}
+
