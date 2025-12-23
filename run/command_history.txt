@@ -32,3 +32,5 @@
 /ah search Огниво
 /ah sell 25000
 /ping
+/login maks555
+/hub

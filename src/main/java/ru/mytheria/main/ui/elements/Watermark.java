@@ -47,7 +47,7 @@ public class Watermark extends Draggable implements IRender {
     private static final long DISPLAY_MS = 2000L;
     private static final Color COLOR_GREEN = new Color(0xFF46FF00, true);
     private static final Color COLOR_RED   = new Color(0xFFFF4242, true);
-    private static final Color COLOR_DEF  = new Color(0xFFA442FF, true);
+    private static final Color COLOR_DEF  = new Color(0xFF067A0F, true);
 
     private static volatile String currentLabel = ClientProvider.getClientName();
     private static volatile Color currentStatusColor = COLOR_DEF;

@@ -8,10 +8,12 @@ import ru.mytheria.api.events.impl.KeyEvent;
 import ru.mytheria.api.events.impl.ModuleEvent;
 import ru.mytheria.api.module.Module;
 import ru.mytheria.main.module.combat.AttackAura;
+import ru.mytheria.main.module.misc.AntiUnhook;
 import ru.mytheria.main.module.movement.FixMovement;
 import ru.mytheria.main.module.movement.Sprint;
 import ru.mytheria.main.module.render.FullBright;
 import ru.mytheria.main.module.render.Interface;
+import ru.mytheria.main.module.render.TargetESP;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -34,7 +36,8 @@ public final class ModuleManager implements QuickImport {
                         new FullBright(),
                         new Sprint(),
                         new FixMovement(),
-                        new AttackAura()
+                        new AttackAura(),
+                        new AntiUnhook()
                 )
         );
 
