@@ -1,5 +1,7 @@
 [
-  {},
+  {
+    "Friends": []
+  },
   {
     "Module-Name": "Interface",
     "Module-Enabled": false,
@@ -19,6 +21,13 @@
         "Mode-Setting-Value": "Тёмная"
       }
     ]
+  },
+  {
+    "Module-Name": "Unhook",
+    "Module-Enabled": false,
+    "Module-Key": -1,
+    "Module-Toggle-Action": 0,
+    "Module-Settings": []
   },
   {
     "Module-Name": "FullBright",
@@ -43,13 +52,6 @@
   },
   {
     "Module-Name": "Aura",
-    "Module-Enabled": false,
-    "Module-Key": -1,
-    "Module-Toggle-Action": 0,
-    "Module-Settings": []
-  },
-  {
-    "Module-Name": "AntiUnhook",
     "Module-Enabled": false,
     "Module-Key": -1,
     "Module-Toggle-Action": 0,

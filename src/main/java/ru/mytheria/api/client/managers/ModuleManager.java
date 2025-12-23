@@ -8,12 +8,11 @@ import ru.mytheria.api.events.impl.KeyEvent;
 import ru.mytheria.api.events.impl.ModuleEvent;
 import ru.mytheria.api.module.Module;
 import ru.mytheria.main.module.combat.AttackAura;
-import ru.mytheria.main.module.misc.AntiUnhook;
+import ru.mytheria.main.module.misc.Unhook;
 import ru.mytheria.main.module.movement.FixMovement;
 import ru.mytheria.main.module.movement.Sprint;
 import ru.mytheria.main.module.render.FullBright;
 import ru.mytheria.main.module.render.Interface;
-import ru.mytheria.main.module.render.TargetESP;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -33,11 +32,11 @@ public final class ModuleManager implements QuickImport {
         moduleLayers.addAll(
                 List.of(
                 new Interface(),
+                        new Unhook(),
                         new FullBright(),
                         new Sprint(),
                         new FixMovement(),
-                        new AttackAura(),
-                        new AntiUnhook()
+                        new AttackAura()
                 )
         );
 
@@ -63,19 +62,16 @@ public final class ModuleManager implements QuickImport {
 
     @EventHandler
     private void keyEventListener(KeyEvent keyEvent) {
-        System.out.println("[DEBUG] Key pressed: " + keyEvent.getKey() + ", action=" + keyEvent.getAction());
+        if (Unhook.ACTIVE) return;
 
         moduleLayers.forEach(e -> {
-            System.out.println("[DEBUG] " + e.getModuleName().getString() + " bkey=" + e.getKey() + ", matches=" + (keyEvent.getKey() == e.getKey()));
-
-            if (keyEvent.getKey() == e.getKey() && keyEvent.getAction() == 1 && mc.currentScreen == null) {
-                System.out.println("[DEBUG] TOGGLING MODULE: " + e.getModuleName().getString());
+            if (keyEvent.getKey() == e.getKey()
+                    && keyEvent.getAction() == 1
+                    && mc.currentScreen == null) {
                 e.toggleEnabled();
             }
         });
     }
-
-
 
     @EventHandler
     private void toggleEventListener( ModuleEvent.ToggleEvent toggleEvent) {

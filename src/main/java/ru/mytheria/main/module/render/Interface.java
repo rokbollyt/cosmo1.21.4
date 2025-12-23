@@ -1,13 +1,12 @@
 package ru.mytheria.main.module.render;
 
-
 import lombok.Getter;
 import net.minecraft.text.Text;
 import ru.mytheria.api.module.Category;
 import ru.mytheria.api.module.Module;
-import ru.mytheria.api.module.settings.impl.BooleanSetting;
 import ru.mytheria.api.module.settings.impl.ModeListSetting;
 import ru.mytheria.api.module.settings.impl.ModeSetting;
+import ru.mytheria.main.module.misc.Unhook;
 
 @Getter
 public class Interface extends Module {
@@ -23,9 +22,14 @@ public class Interface extends Module {
             .set("Тёмная", "Светлая")
             .setDefault("Тёмная");
 
-
     public Interface() {
         super(Text.of("Interface"), null, Category.RENDER);
         addSettings(visible, mode, theme);
+    }
+
+    @Override
+    public void activate() {
+        if (Unhook.ACTIVE) return; // ⬅ UI не включается
+        super.activate();
     }
 }

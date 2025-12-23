@@ -8,6 +8,9 @@
       "mouseClicked": "Lnet/minecraft/class_408;method_25402(DDI)Z",
       "render": "Lnet/minecraft/class_408;method_25394(Lnet/minecraft/class_332;IIF)V"
     },
+    "ru/mytheria/mixin/ChatSendMixin": {
+      "sendChatMessage": "Lnet/minecraft/class_634;method_45729(Ljava/lang/String;)V"
+    },
     "ru/mytheria/mixin/ClientPlayerEntityMixin": {
       "tick": "Lnet/minecraft/class_746;method_5773()V"
     },
@@ -44,6 +47,9 @@
         "keyPressed": "Lnet/minecraft/class_408;method_25404(III)Z",
         "mouseClicked": "Lnet/minecraft/class_408;method_25402(DDI)Z",
         "render": "Lnet/minecraft/class_408;method_25394(Lnet/minecraft/class_332;IIF)V"
+      },
+      "ru/mytheria/mixin/ChatSendMixin": {
+        "sendChatMessage": "Lnet/minecraft/class_634;method_45729(Ljava/lang/String;)V"
       },
       "ru/mytheria/mixin/ClientPlayerEntityMixin": {
         "tick": "Lnet/minecraft/class_746;method_5773()V"

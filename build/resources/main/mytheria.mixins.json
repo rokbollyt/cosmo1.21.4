@@ -13,7 +13,8 @@
     "IClientPlayerInteractionManager",
     "accessor.BossBarHudAccessor",
     "accessor.ClientPlayerEntityAccessor",
-    "accessor.LivingEntityInvoker"
+    "accessor.LivingEntityInvoker",
+    "ChatSendMixin"
   ],
   "injectors": {
     "defaultRequire": 1

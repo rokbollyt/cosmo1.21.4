@@ -1,5 +1,7 @@
 package ru.mytheria.api.client.configuration;
 
+import java.io.File;
+import java.util.ArrayList;
 import java.util.List;
 
 public class ConfigurationService implements ConfigurationApi {
@@ -23,6 +25,21 @@ public class ConfigurationService implements ConfigurationApi {
 
     @Override
     public List<String> asList() {
-        return configurationController.asList();
+        File dir = new File(mc.runDirectory, "mytheria/configs");
+
+        if (!dir.exists() || !dir.isDirectory())
+            return List.of();
+
+        File[] files = dir.listFiles((d, name) -> name.endsWith(".json"));
+        if (files == null)
+            return List.of();
+
+        List<String> result = new ArrayList<>();
+        for (File file : files) {
+            result.add(file.getName().replace(".json", ""));
+        }
+
+        return result;
     }
+
 }

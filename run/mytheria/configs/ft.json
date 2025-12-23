@@ -1,5 +1,7 @@
 [
-  {},
+  {
+    "Friends": []
+  },
   {
     "Module-Name": "Interface",
     "Module-Enabled": true,
@@ -33,21 +35,21 @@
   },
   {
     "Module-Name": "Sprint",
-    "Module-Enabled": true,
+    "Module-Enabled": false,
     "Module-Key": -1,
     "Module-Toggle-Action": 0,
     "Module-Settings": []
   },
   {
     "Module-Name": "FixMovement",
-    "Module-Enabled": true,
+    "Module-Enabled": false,
     "Module-Key": -1,
     "Module-Toggle-Action": 0,
     "Module-Settings": []
   },
   {
     "Module-Name": "Aura",
-    "Module-Enabled": true,
+    "Module-Enabled": false,
     "Module-Key": 90,
     "Module-Toggle-Action": 0,
     "Module-Settings": []

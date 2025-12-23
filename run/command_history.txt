@@ -34,3 +34,10 @@
 /ping
 /login maks555
 /hub
+/ah search Бирка
+/ah sell 50000
+/ah search Вспышка
+/ah sell 19999
+/ah search Алмазы
+/ah search Алмаз
+/ah sell 459999

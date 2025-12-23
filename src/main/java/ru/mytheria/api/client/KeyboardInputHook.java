@@ -37,7 +37,6 @@ public final class KeyboardInputHook {
                                     0
                             ));
                 }
-
                 keyState.put(key, pressed);
             }
         });
