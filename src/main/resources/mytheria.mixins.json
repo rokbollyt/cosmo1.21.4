@@ -14,7 +14,9 @@
     "accessor.BossBarHudAccessor",
     "accessor.ClientPlayerEntityAccessor",
     "accessor.LivingEntityInvoker",
-    "ChatSendMixin"
+    "ChatSendMixin",
+    "MixinClientPlayNetworkHandler",
+    "MixinKeyboard"
   ],
   "injectors": {
     "defaultRequire": 1

@@ -24,6 +24,12 @@
       "Lnet/minecraft/client/option/InactivityFpsLimiter;onInput()V": "Lnet/minecraft/class_9919;method_61939()V",
       "onKey": "Lnet/minecraft/class_309;method_1466(JIIII)V"
     },
+    "ru/mytheria/mixin/MixinClientPlayNetworkHandler": {
+      "sendChatMessage": "Lnet/minecraft/class_634;method_45729(Ljava/lang/String;)V"
+    },
+    "ru/mytheria/mixin/MixinKeyboard": {
+      "onKey": "Lnet/minecraft/class_309;method_1466(JIIII)V"
+    },
     "ru/mytheria/mixin/WorldRendererMixin": {
       "render": "Lnet/minecraft/class_761;method_22710(Lnet/minecraft/class_9922;Lnet/minecraft/class_9779;ZLnet/minecraft/class_4184;Lnet/minecraft/class_757;Lorg/joml/Matrix4f;Lorg/joml/Matrix4f;)V"
     },
@@ -62,6 +68,12 @@
       },
       "ru/mytheria/mixin/KeyBoardMixin": {
         "Lnet/minecraft/client/option/InactivityFpsLimiter;onInput()V": "Lnet/minecraft/class_9919;method_61939()V",
+        "onKey": "Lnet/minecraft/class_309;method_1466(JIIII)V"
+      },
+      "ru/mytheria/mixin/MixinClientPlayNetworkHandler": {
+        "sendChatMessage": "Lnet/minecraft/class_634;method_45729(Ljava/lang/String;)V"
+      },
+      "ru/mytheria/mixin/MixinKeyboard": {
         "onKey": "Lnet/minecraft/class_309;method_1466(JIIII)V"
       },
       "ru/mytheria/mixin/WorldRendererMixin": {

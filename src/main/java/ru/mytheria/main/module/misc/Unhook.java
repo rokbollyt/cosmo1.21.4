@@ -1,5 +1,6 @@
 package ru.mytheria.main.module.misc;
 
+import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.text.Text;
 import ru.mytheria.Mytheria;
 import ru.mytheria.api.module.Category;
@@ -11,24 +12,24 @@ public class Unhook extends Module {
 
     public Unhook() {
         super(Text.of("Unhook"), Category.MISC);
-        setKey(-1); // только GUI
+        setKey(-1); // только через GUI
     }
 
     @Override
     public void activate() {
         ACTIVE = true;
 
-        // выключаем ВСЕ модули кроме Unhook
+        // 1. Выключаем ВСЕ модули кроме себя
         Mytheria.getInstance().getModuleManager().forEach(module -> {
             if (module != this && module.getEnabled()) {
                 module.setEnabled(false);
             }
         });
 
-        // отписываем менеджер от событий (бинды, тики, эвенты)
-        Mytheria.getInstance()
-                .getEventProvider()
-                .unsubscribe(Mytheria.getInstance().getModuleManager());
+        // 2. ПРИНУДИТЕЛЬНО закрываем любой GUI
+        if (mc.currentScreen != null) {
+            mc.setScreen(null);
+        }
 
         super.activate();
     }
@@ -36,12 +37,6 @@ public class Unhook extends Module {
     @Override
     public void deactivate() {
         ACTIVE = false;
-
-        // возвращаем менеджер
-        Mytheria.getInstance()
-                .getEventProvider()
-                .subscribe(Mytheria.getInstance().getModuleManager());
-
         super.deactivate();
     }
 }

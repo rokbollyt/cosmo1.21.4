@@ -29,7 +29,8 @@ public class Interface extends Module {
 
     @Override
     public void activate() {
-        if (Unhook.ACTIVE) return; // ⬅ UI не включается
+        if (Unhook.ACTIVE) return;
         super.activate();
     }
+
 }

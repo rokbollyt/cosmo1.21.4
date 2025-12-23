@@ -1,8 +1,8 @@
-[20:09:47] [main/INFO] (FabricLoader/GameProvider) Loading Minecraft 1.21.4 with Fabric Loader 0.16.10
-[20:09:47] [main/WARN] (FabricLoader/Resolution) Warnings were found!
+[20:19:55] [main/INFO] (FabricLoader/GameProvider) Loading Minecraft 1.21.4 with Fabric Loader 0.16.10
+[20:19:56] [main/WARN] (FabricLoader/Resolution) Warnings were found!
  - Mod 'In-Game Account Switcher' (ias) 9.0.4 recommends any version of modmenu, which is missing!
 	 - You should install any version of modmenu for the optimal experience.
-[20:09:47] [main/INFO] (FabricLoader) Loading 56 mods:
+[20:19:56] [main/INFO] (FabricLoader) Loading 56 mods:
 	- fabric-api 0.119.3+1.21.4
 	- fabric-api-base 0.4.54+b47eab6b04
 	- fabric-api-lookup-api-v1 1.6.86+b1caf1e904
@@ -59,245 +59,79 @@
 	- melody 1.0
 	- minecraft 1.21.4
 	- mixinextras 0.4.1
-[20:09:55] [main/INFO] (FabricLoader/Mixin) SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/C:/Users/RokBolL/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.15.4+mixin.0.8.7/6a12aacc794f1078458433116e9ed42c1cc98096/sponge-mixin-0.15.4+mixin.0.8.7.jar Service=Knot/Fabric Env=CLIENT
-[20:09:55] [main/INFO] (FabricLoader/Mixin) Loaded Fabric development mappings for mixin remapper!
-[20:09:55] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_21
-[20:10:04] [main/INFO] (FabricLoader/MixinExtras|Service) Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.4.1).
-[20:10:06] [Datafixer Bootstrap/INFO] (Minecraft) 243 Datafixer optimizations took 1047 milliseconds
-[20:10:18] [Render thread/INFO] (Minecraft) Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
-[20:10:18] [Render thread/INFO] (Minecraft) Setting user: Player308
-[20:10:19] [Render thread/INFO] (IAS/IASMinecraft) IAS: Booting up... (version: 9.0.4, loader: Fabric, loader version: 0.16.10, game version: 1.21.4)
-[20:10:19] [Render thread/INFO] (IAS) IAS: Initializing IAS...
-[20:10:19] [Render thread/INFO] (IAS) IAS: IAS has been loaded.
-[20:10:19] [Render thread/INFO] (Indigo) [Indigo] Registering Indigo renderer!
-[20:10:20] [Render thread/INFO] (Minecraft) Backend library: LWJGL version 3.3.3-snapshot
-[20:10:22] [Render thread/INFO] (Minecraft) Reloading ResourceManager: vanilla, fabric, fabric-api, fabric-api-base, fabric-api-lookup-api-v1, fabric-biome-api-v1, fabric-block-api-v1, fabric-block-view-api-v2, fabric-blockrenderlayer-v1, fabric-client-gametest-api-v1, fabric-client-tags-api-v1, fabric-command-api-v1, fabric-command-api-v2, fabric-commands-v0, fabric-content-registries-v0, fabric-convention-tags-v1, fabric-convention-tags-v2, fabric-crash-report-info-v1, fabric-data-attachment-api-v1, fabric-data-generation-api-v1, fabric-dimensions-v1, fabric-entity-events-v1, fabric-events-interaction-v0, fabric-game-rule-api-v1, fabric-gametest-api-v1, fabric-item-api-v1, fabric-item-group-api-v1, fabric-key-binding-api-v1, fabric-keybindings-v0, fabric-lifecycle-events-v1, fabric-loot-api-v2, fabric-loot-api-v3, fabric-message-api-v1, fabric-model-loading-api-v1, fabric-networking-api-v1, fabric-object-builder-api-v1, fabric-particles-v1, fabric-recipe-api-v1, fabric-registry-sync-v0, fabric-renderer-api-v1, fabric-renderer-indigo, fabric-rendering-data-attachment-v1, fabric-rendering-fluids-v1, fabric-rendering-v1, fabric-resource-conditions-api-v1, fabric-resource-loader-v0, fabric-screen-api-v1, fabric-screen-handler-api-v1, fabric-sound-api-v1, fabric-tag-api-v1, fabric-transfer-api-v1, fabric-transitive-access-wideners-v1, fabricloader, ias, melody
-[20:10:23] [Worker-Main-1/INFO] (Minecraft) Found unifont_all_no_pua-16.0.01.hex, loading
-[20:10:23] [Worker-Main-1/INFO] (Minecraft) Found unifont_jp_patch-16.0.01.hex, loading
-[20:10:26] [Render thread/INFO] (Minecraft) OpenAL initialized on device OpenAL Soft on Динамики (2- USB Audio Device)
-[20:10:26] [Render thread/INFO] (Minecraft) Sound engine started
-[20:10:26] [Render thread/INFO] (Minecraft) Created: 1024x512x4 minecraft:textures/atlas/blocks.png-atlas
-[20:10:26] [Render thread/INFO] (Minecraft) Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
-[20:10:26] [Render thread/INFO] (Minecraft) Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
-[20:10:26] [Render thread/INFO] (Minecraft) Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
-[20:10:26] [Render thread/INFO] (Minecraft) Created: 2048x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
-[20:10:26] [Render thread/INFO] (Minecraft) Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
-[20:10:26] [Render thread/INFO] (Minecraft) Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
-[20:10:26] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
-[20:10:26] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
-[20:10:26] [Render thread/INFO] (Minecraft) Created: 64x64x0 minecraft:textures/atlas/map_decorations.png-atlas
-[20:10:26] [Render thread/INFO] (Minecraft) Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
-[20:10:26] [Render thread/INFO] (Minecraft) Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
-[20:10:26] [Render thread/INFO] (Minecraft) Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
-[20:10:26] [Render thread/INFO] (Minecraft) Created: 1024x512x0 minecraft:textures/atlas/gui.png-atlas
-[20:10:32] [Render thread/INFO] (IAS/IASMinecraft) IAS: Received login request: LoginData{name='svinkacosmo', uuid=02dc41d3-b64c-3e33-a18e-f2bf1226f0a9, token=[TOKEN], online=false}
-[20:10:32] [IAS/INFO] (IAS/IASMinecraft) IAS: Creating user...
-[20:10:32] [Render thread/INFO] (IAS/IASMinecraft) IAS: Flushing user...
-[20:10:32] [Render thread/INFO] (IAS/IASMinecraft) IAS: Flushed user.
-[20:10:33] [Render thread/INFO] (Minecraft) Connecting to mc.funtime.su, 25565
-[20:10:36] [Render thread/INFO] (Minecraft) [System] [CHAT] [✾] Успешная авторизация! Приятной игры!
-[20:10:36] [Render thread/INFO] (Minecraft) [System] [CHAT] ╔════ ★ FunTime.su ★ ════╗
-[20:10:36] [Render thread/INFO] (Minecraft) [System] [CHAT] ║
-[20:10:36] [Render thread/INFO] (Minecraft) [System] [CHAT] ║  Добро пожаловать на FunTime
-[20:10:36] [Render thread/INFO] (Minecraft) [System] [CHAT] ║  Наши социальные сети – /links
-[20:10:36] [Render thread/INFO] (Minecraft) [System] [CHAT] ║  Приятной игры и новых побед!
-[20:10:36] [Render thread/INFO] (Minecraft) [System] [CHAT] ║
-[20:10:36] [Render thread/INFO] (Minecraft) [System] [CHAT] ╚═══════════════════╝
-[20:10:37] [Render thread/INFO] (Minecraft) Loaded 0 advancements
-[20:10:37] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 72885792-2071-38ff-9220-5bb0b3f70399 ([UPDATE_GAME_MODE])
-[20:10:37] [Render thread/INFO] (Minecraft) Loaded 2 advancements
-[20:10:37] [Render thread/INFO] (Minecraft) [STDOUT]: АЛО ПРОСЫПАЙСЯ ИНИТ true
-[20:10:39] [Render thread/INFO] (Minecraft) [System] [CHAT] ** ! Внимание !\n** Чтобы ваш Аккаунт был в БЕЗОПАСНОСТИ!\n** Привяжите его к ВК: /vk \n** Или к Телеграм: /tg \n \n** ! Внимание !\n** Чтобы ваш Аккаунт был в БЕЗОПАСНОСТИ!\n** Привяжите его к ВК: /vk \n** Или к Телеграм: /tg 
-[20:10:39] [Render thread/INFO] (Minecraft) [STDOUT]: [Localization] Начинаем загрузку всех переводов...
-[20:10:39] [Render thread/INFO] (Minecraft) [STDOUT]: [Localization] Загружаем язык: en_us
-[20:10:39] [Render thread/INFO] (Minecraft) [STDOUT]: [Localization] Загружаем язык: ru_ru
-[20:10:39] [Render thread/INFO] (Minecraft) [STDOUT]: [Localization] Все переводы загружены.
-[20:10:41] [Render thread/INFO] (Minecraft) [STDOUT]: [DEBUG] Module Interface activated!
-[20:10:43] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player c0218699-692f-393f-bf0d-b8229a758976 ([UPDATE_GAME_MODE])
-[20:10:46] [Render thread/INFO] (Minecraft) [STDOUT]: [DEBUG] Module Sprint activated!
-[20:10:46] [Render thread/INFO] (Minecraft) [STDOUT]: [DEBUG] Module FixMovement activated!
-[20:10:46] [Render thread/INFO] (Minecraft) [STDOUT]: [DEBUG] Module Aura activated!
-[20:10:51] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 5b6ab088-8be4-37c8-aeb3-e9795672213f ([UPDATE_GAME_MODE])
-[20:10:51] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 4a804fac-e10d-3402-89aa-4b20cfbc22f1 ([UPDATE_GAME_MODE])
-[20:10:51] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 4dd3cf3a-d348-359a-8291-ff8d1b20613a ([UPDATE_GAME_MODE])
-[20:10:51] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 03d2193d-af4f-371f-90e8-0106b8494bec ([UPDATE_GAME_MODE])
-[20:10:52] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player d921dcc9-4fed-3075-98dd-592e65e8b456 ([UPDATE_GAME_MODE])
-[20:10:53] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player c719d7b1-7e70-36f0-a62e-c84dc5a3e219 ([UPDATE_GAME_MODE])
-[20:10:58] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 9d80a2fe-2669-39de-ba7e-709c4943723c ([UPDATE_GAME_MODE])
-[20:10:58] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player a699580a-6cb4-3526-bf24-f7fb24b49891 ([UPDATE_GAME_MODE])
-[20:11:00] [Render thread/INFO] (Minecraft) [STDOUT]: [DEBUG] Module Aura deactivated!
-[20:11:00] [Render thread/INFO] (Minecraft) [System] [CHAT]  
-[20:11:00] [Render thread/INFO] (Minecraft) [System] [CHAT]  ⚡ Наш Телеграм t.me/funtime
-[20:11:00] [Render thread/INFO] (Minecraft) [System] [CHAT]  
-[20:11:01] [Render thread/INFO] (Minecraft) [STDOUT]: [DEBUG] Module Aura activated!
-[20:11:02] [Render thread/INFO] (Minecraft) [STDOUT]: [DEBUG] Module Aura deactivated!
-[20:11:06] [Render thread/INFO] (Minecraft) [STDOUT]: [DEBUG] Module Interface deactivated!
-[20:11:06] [Render thread/INFO] (Minecraft) [STDOUT]: [DEBUG] Module Sprint deactivated!
-[20:11:06] [Render thread/INFO] (Minecraft) [STDOUT]: [DEBUG] Module FixMovement deactivated!
-[20:11:06] [Render thread/INFO] (Minecraft) [STDOUT]: [DEBUG] Module Unhook activated!
-[20:11:12] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 7440227e-7f45-319d-91a7-a3f47e97e0ad ([UPDATE_GAME_MODE])
-[20:11:17] [Render thread/INFO] (Minecraft) [System] [CHAT] .cfg save/load/delete/list <name>
-[20:11:19] [Render thread/INFO] (Minecraft) [System] [CHAT] .cfg save/load/delete/list <name>
-[20:11:20] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player ac26bd95-79b4-35b7-b1cb-9a06fc4ace5b ([UPDATE_GAME_MODE])
-[20:11:23] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player c0218699-692f-393f-bf0d-b8229a758976 ([UPDATE_GAME_MODE])
-[20:11:30] [Render thread/INFO] (Minecraft) [System] [CHAT]  
-[20:11:30] [Render thread/INFO] (Minecraft) [System] [CHAT]  ⚡ Вы играете на FunTime! play.funtime.su
-[20:11:30] [Render thread/INFO] (Minecraft) [System] [CHAT]  
-[20:11:32] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 6c4f0f98-e3e7-3517-baef-22106bc3f275 ([UPDATE_GAME_MODE])
-[20:11:40] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player d2604393-48d3-3dae-aa82-e8f47e88cd8b ([UPDATE_GAME_MODE])
-[20:11:40] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 53079dc4-2951-3a20-a3ec-86f3985cbbbf ([UPDATE_GAME_MODE])
-[20:11:40] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 88109e3e-66c6-316c-b979-01558235e222 ([UPDATE_GAME_MODE])
-[20:11:40] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 12031e55-0783-36d1-b574-59e3013bdb43 ([UPDATE_GAME_MODE])
-[20:11:40] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 1d844b00-1bb8-3cef-b042-bb1115b47655 ([UPDATE_GAME_MODE])
-[20:11:40] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 045c5298-39f1-30b7-8e99-a4f60c911b9b ([UPDATE_GAME_MODE])
-[20:11:40] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player ad9aa1d0-4cf4-350e-bfde-5f418c85aa39 ([UPDATE_GAME_MODE])
-[20:11:40] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 747d0d7e-0381-3aea-88f9-86f50d644871 ([UPDATE_GAME_MODE])
-[20:11:41] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 60482f79-850d-3979-83d9-fce8b12c7552 ([UPDATE_GAME_MODE])
-[20:11:41] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player ff1ba1ba-87bb-326d-9d0c-62ce5e7b4864 ([UPDATE_GAME_MODE])
-[20:11:41] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 794ce940-1183-3fdc-ab58-0ec2fc82f2c2 ([UPDATE_GAME_MODE])
-[20:11:41] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player e38e479d-3e48-300e-a4f6-5cd1fd4ef826 ([UPDATE_GAME_MODE])
-[20:11:41] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 77fb5f1f-1439-32b2-9d51-b0551fa614fd ([UPDATE_GAME_MODE])
-[20:11:41] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 222fe033-3c6c-3cfc-93f2-3f6361d7ec0f ([UPDATE_GAME_MODE])
-[20:11:41] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 5ea9215b-c04b-3f5f-82f5-3b8238c9b971 ([UPDATE_GAME_MODE])
-[20:11:44] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 998e9f2b-d399-3ad2-ace3-5252111d5bb5 ([UPDATE_GAME_MODE])
-[20:11:45] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player fc0847bd-237e-3c84-896a-e4ebbb6ded75 ([UPDATE_GAME_MODE])
-[20:11:45] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 71c84388-e190-3712-934d-db96dc1f4fbc ([UPDATE_GAME_MODE])
-[20:11:45] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 352f96f0-5d95-3c07-8b6e-5986b13812b3 ([UPDATE_GAME_MODE])
-[20:11:46] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 57eb727c-1c12-3692-9e74-d230e7035167 ([UPDATE_GAME_MODE])
-[20:11:46] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 639cb022-3199-32cb-8984-0ca879480b2c ([UPDATE_GAME_MODE])
-[20:11:46] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 3c5c114d-4f2f-35ae-a60c-30f74e9dbcd2 ([UPDATE_GAME_MODE])
-[20:11:46] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 672d8508-080d-3890-a5b7-1e4dd89aa082 ([UPDATE_GAME_MODE])
-[20:11:46] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 20d28250-521c-3401-a2a3-9a01c1747610 ([UPDATE_GAME_MODE])
-[20:11:46] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 9219d77d-11c7-37ce-abdf-ff97465365bb ([UPDATE_GAME_MODE])
-[20:11:46] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player de1622e7-22dd-3800-b030-418c4a4255e9 ([UPDATE_GAME_MODE])
-[20:11:46] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player ff61f57f-a22b-391a-b251-c62a453e3141 ([UPDATE_GAME_MODE])
-[20:11:47] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 53ed49e2-3553-3788-ab24-8c85089b0085 ([UPDATE_GAME_MODE])
-[20:11:49] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 4631b28f-168e-3ab9-ac0e-09893035c543 ([UPDATE_GAME_MODE])
-[20:11:49] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player a0d740b4-12e6-3a10-b092-faea75cee125 ([UPDATE_GAME_MODE])
-[20:11:49] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player fb8af670-da1a-36e5-a25a-bd195730517e ([UPDATE_GAME_MODE])
-[20:11:49] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 7a73eb40-1d85-3fbc-9604-a36c31580faa ([UPDATE_GAME_MODE])
-[20:11:49] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player f806551e-d486-3b31-87b4-6cdfb3572c0d ([UPDATE_GAME_MODE])
-[20:11:49] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 279ec62e-6d9a-36df-920b-28e288a01390 ([UPDATE_GAME_MODE])
-[20:11:49] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player f2ec61dd-b502-32eb-9779-69956eb07348 ([UPDATE_GAME_MODE])
-[20:11:49] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player ae09fc94-c99a-3963-9fb0-a25fa2b1a6cc ([UPDATE_GAME_MODE])
-[20:11:49] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 48b77f50-286c-303d-9597-507380c7ead7 ([UPDATE_GAME_MODE])
-[20:11:49] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 2ee9b469-245c-3967-9bb2-c738ee05c0e6 ([UPDATE_GAME_MODE])
-[20:11:50] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 621fbe0c-a819-301f-98c4-33f2b0e69c60 ([UPDATE_GAME_MODE])
-[20:11:50] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 9c825cc3-dd36-3b8a-b0fa-6ed9a5bfa448 ([UPDATE_GAME_MODE])
-[20:11:50] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player ec4da877-dafc-33a1-bb6d-6b57f7697af5 ([UPDATE_GAME_MODE])
-[20:11:54] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 464d5765-c933-320c-8c3e-07bf1b4d6284 ([UPDATE_GAME_MODE])
-[20:11:56] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player ce861e01-41ce-35eb-a752-bd9f78f8408e ([UPDATE_GAME_MODE])
-[20:11:56] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player c805acae-3dc0-35eb-93f7-72bc023551e9 ([UPDATE_GAME_MODE])
-[20:11:56] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player cd4707ea-9183-3c78-968f-010ef00a8a75 ([UPDATE_GAME_MODE])
-[20:11:56] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 04bc42b1-7632-3413-98bb-e035d749c27d ([UPDATE_GAME_MODE])
-[20:11:58] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player b0c37565-43fb-30b0-9338-ce5f7e1da6b7 ([UPDATE_GAME_MODE])
-[20:11:59] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 56bc70fa-4a47-31d1-bb4c-3e95a2c7b297 ([UPDATE_GAME_MODE])
-[20:11:59] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 83c580c0-2501-3ebb-b58a-b57ffc0b3eed ([UPDATE_GAME_MODE])
-[20:12:00] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 27ee756a-3917-3d80-b828-56e912aa54f0 ([UPDATE_GAME_MODE])
-[20:12:00] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 2cdecb38-c6fb-3248-b8c7-0bcb0bec35af ([UPDATE_GAME_MODE])
-[20:12:00] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 9b1525e6-f4d7-3417-9f33-9c5e0f3a4ca0 ([UPDATE_GAME_MODE])
-[20:12:00] [Render thread/INFO] (Minecraft) [System] [CHAT]  
-[20:12:00] [Render thread/INFO] (Minecraft) [System] [CHAT]  ⚡ Наш Сайт FunTime.su
-[20:12:00] [Render thread/INFO] (Minecraft) [System] [CHAT]  
-[20:12:00] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 4aab36ab-9071-3b80-a929-8999fdc9753f ([UPDATE_GAME_MODE])
-[20:12:00] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player ce861e01-41ce-35eb-a752-bd9f78f8408e ([UPDATE_GAME_MODE])
-[20:12:00] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 3ed2f286-21b3-3765-8775-1a287a9155de ([UPDATE_GAME_MODE])
-[20:12:00] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 4575fa28-0b7a-344f-be16-2157149c1462 ([UPDATE_GAME_MODE])
-[20:12:00] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player a61c8d94-680b-33b7-ab45-4855525a4fe3 ([UPDATE_GAME_MODE])
-[20:12:00] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player a37f6cb5-9437-335d-b366-678afec36488 ([UPDATE_GAME_MODE])
-[20:12:04] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player c0218699-692f-393f-bf0d-b8229a758976 ([UPDATE_GAME_MODE])
-[20:12:07] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player e57d72cc-1c56-3b44-8576-146067101ed2 ([UPDATE_GAME_MODE])
-[20:12:08] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 0520589e-018f-3529-873c-9bf56cdf3547 ([UPDATE_GAME_MODE])
-[20:12:09] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 4d3f1abc-20f6-3979-bd04-1152f13e999a ([UPDATE_GAME_MODE])
-[20:12:09] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 4cce96cb-1b97-3ff8-9759-c1e5cc2f8f89 ([UPDATE_GAME_MODE])
-[20:12:09] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 4b203100-2ec7-32cd-bc63-dfb207630a89 ([UPDATE_GAME_MODE])
-[20:12:09] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player bc38cc20-118c-324f-ac35-4e8fad55a213 ([UPDATE_GAME_MODE])
-[20:12:15] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 504965c3-907b-3323-b2b4-bcabdce9df2d ([UPDATE_GAME_MODE])
-[20:12:15] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 1ae96270-86d9-3be7-b399-195968be9e12 ([UPDATE_GAME_MODE])
-[20:12:15] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 096c0b2d-95ba-36a5-be79-62e8ab821364 ([UPDATE_GAME_MODE])
-[20:12:16] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 0085af37-d018-34ff-954b-a7069e9a309a ([UPDATE_GAME_MODE])
-[20:12:16] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 260764d0-04f2-37c1-bec2-4641001570e1 ([UPDATE_GAME_MODE])
-[20:12:16] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player c747436c-16d5-3fe0-b50a-986fb18a8537 ([UPDATE_GAME_MODE])
-[20:12:16] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player baa7dcec-076d-385e-8b3d-de1dd10f1167 ([UPDATE_GAME_MODE])
-[20:12:17] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player d5878ccb-f8f8-3a38-b422-bf862e40ad61 ([UPDATE_GAME_MODE])
-[20:12:17] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player e1e97346-4812-3a3c-b644-2cc1cc0707fd ([UPDATE_GAME_MODE])
-[20:12:17] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player dbf6a3b2-50ee-37a2-a446-90c6cfa4b40a ([UPDATE_GAME_MODE])
-[20:12:17] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 44861907-0100-3954-aa5d-55376647f064 ([UPDATE_GAME_MODE])
-[20:12:19] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 5a6cf50a-29dd-366d-8b5f-b9a2ed4e7d39 ([UPDATE_GAME_MODE])
-[20:12:19] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 4d9bc683-c044-3a81-bb62-40145ff1a46c ([UPDATE_GAME_MODE])
-[20:12:19] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player d3dc7d19-66f5-3634-a242-b937873f355c ([UPDATE_GAME_MODE])
-[20:12:19] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 1c51c8f8-2bf8-32d8-8f38-2ce90fec65aa ([UPDATE_GAME_MODE])
-[20:12:19] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 096c0b2d-95ba-36a5-be79-62e8ab821364 ([UPDATE_GAME_MODE])
-[20:12:19] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 6a7a0049-2831-3909-9aa9-f4a5a60ed9b8 ([UPDATE_GAME_MODE])
-[20:12:19] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 074b6a13-c208-329a-9521-bae47724768f ([UPDATE_GAME_MODE])
-[20:12:20] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player a924db42-6315-3ea4-ba7e-b6834328f592 ([UPDATE_GAME_MODE])
-[20:12:20] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player dbdaab36-b8ec-3b5b-a7b8-166d58cd706f ([UPDATE_GAME_MODE])
-[20:12:20] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 3007968e-ae4d-38e6-988e-111920f296f2 ([UPDATE_GAME_MODE])
-[20:12:20] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player b87aff62-c50a-32da-a311-19ac77445ad2 ([UPDATE_GAME_MODE])
-[20:12:20] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 14ef03e2-7a57-3a55-9a43-ef4fa49a14f2 ([UPDATE_GAME_MODE])
-[20:12:20] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 8e619e50-0a5c-39ef-803a-5ed39a2b0afc ([UPDATE_GAME_MODE])
-[20:12:20] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player dd63f4af-0e94-3a34-b310-db548ca305b8 ([UPDATE_GAME_MODE])
-[20:12:20] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 48698e39-9ae4-3482-8abf-0e4e64d9ae60 ([UPDATE_GAME_MODE])
-[20:12:20] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player a8863a7d-d47b-3812-9e74-f4373d65a152 ([UPDATE_GAME_MODE])
-[20:12:20] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player e3dbc102-b894-38fd-807f-f2a1334bf61d ([UPDATE_GAME_MODE])
-[20:12:20] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 5b8a80ca-4630-3d0f-a2a7-7074e87703da ([UPDATE_GAME_MODE])
-[20:12:20] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 18f1a166-3f78-37e3-a8c2-29d553c3da8f ([UPDATE_GAME_MODE])
-[20:12:20] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player c700efdf-2e0d-309d-8a75-f20fd804a814 ([UPDATE_GAME_MODE])
-[20:12:20] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 246b07db-bda7-3a19-8ed1-97ba8c570025 ([UPDATE_GAME_MODE])
-[20:12:20] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 9368ac1c-8dfa-3dc3-bb62-1b8a2170da98 ([UPDATE_GAME_MODE])
-[20:12:20] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player fa52b539-06e9-3fed-988d-9c3a03be40d9 ([UPDATE_GAME_MODE])
-[20:12:21] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player b72e939c-0b08-303e-a48b-3c98ce26c1d6 ([UPDATE_GAME_MODE])
-[20:12:27] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 9bc15671-4dd3-3373-95a6-b23f4a7b2e33 ([UPDATE_GAME_MODE])
-[20:12:28] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 9597e93d-fac8-3733-b187-23e70e16c2e9 ([UPDATE_GAME_MODE])
-[20:12:28] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player adb08d52-cc22-36e4-af98-8bec480c5fe8 ([UPDATE_GAME_MODE])
-[20:12:28] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player ee88c0e7-51de-3a53-b07c-b480e9a54ec8 ([UPDATE_GAME_MODE])
-[20:12:28] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 2e5ae1bf-f851-38e2-8f5e-d92182ffd8cf ([UPDATE_GAME_MODE])
-[20:12:28] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 510ba503-6eed-3bde-aba2-f8b122d83bce ([UPDATE_GAME_MODE])
-[20:12:28] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 8666c4dc-bf95-35fa-85fc-e398c6d996cb ([UPDATE_GAME_MODE])
-[20:12:28] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player ee277289-0a41-3a62-88c8-878ea6480e0b ([UPDATE_GAME_MODE])
-[20:12:28] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player f6946f59-bd94-31cd-a609-19a9782508c9 ([UPDATE_GAME_MODE])
-[20:12:29] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 547435e0-7404-3bc6-aabb-624dc45343cd ([UPDATE_GAME_MODE])
-[20:12:29] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 06e4d0ee-bc8a-31a4-8d0e-03dbde4f9ec1 ([UPDATE_GAME_MODE])
-[20:12:29] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 00cea2be-4513-3f98-8db9-87d5521efefb ([UPDATE_GAME_MODE])
-[20:12:29] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player feab9dd5-092e-3e4d-b814-19c3534e0e64 ([UPDATE_GAME_MODE])
-[20:12:29] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 883a617d-83c0-3702-b731-b9c30b368da4 ([UPDATE_GAME_MODE])
-[20:12:29] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player e7e116bb-57a1-3440-b3a5-7fa2a5657ded ([UPDATE_GAME_MODE])
-[20:12:29] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 959fa6a6-2778-3139-9468-f158229d8f0b ([UPDATE_GAME_MODE])
-[20:12:29] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 240dd40d-759a-390f-a96d-0293c095c670 ([UPDATE_GAME_MODE])
-[20:12:29] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 49ecfc53-e549-357e-a64e-ebe0df2e5323 ([UPDATE_GAME_MODE])
-[20:12:29] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player e10f50d3-c13e-3042-9465-dbf72aa5a1ac ([UPDATE_GAME_MODE])
-[20:12:30] [Render thread/INFO] (Minecraft) [System] [CHAT]  
-[20:12:30] [Render thread/INFO] (Minecraft) [System] [CHAT]  ⚡ Наш Дискорд dd.FunTime.su
-[20:12:30] [Render thread/INFO] (Minecraft) [System] [CHAT]  
-[20:12:36] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 5349a3fc-26c2-37a1-a303-11e99096ce00 ([UPDATE_GAME_MODE])
-[20:12:36] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player e27bb3af-4b6d-3535-ae84-c96799191491 ([UPDATE_GAME_MODE])
-[20:12:36] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player e81c0cb9-99bb-33e2-9769-db411c05e29d ([UPDATE_GAME_MODE])
-[20:12:36] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 1f21ddec-9eba-3bce-92eb-34621daa259a ([UPDATE_GAME_MODE])
-[20:12:37] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player f6ae269f-cbbd-3f35-b758-4255dbc3a649 ([UPDATE_GAME_MODE])
-[20:12:37] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player fe1c57c7-8f0f-3dbf-8a2e-8c2821487776 ([UPDATE_GAME_MODE])
-[20:12:37] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 0c940184-2289-3389-a273-fa23c92dc747 ([UPDATE_GAME_MODE])
-[20:12:37] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 579a0776-5a3e-3183-ae95-d87fa8e99113 ([UPDATE_GAME_MODE])
-[20:12:37] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player bf66001e-da25-34fd-8a7a-cb9dfb54a03c ([UPDATE_GAME_MODE])
-[20:12:37] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player b09d6993-a9e5-3486-9618-73ef2db0dab8 ([UPDATE_GAME_MODE])
-[20:12:37] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 804161a2-488d-39c6-900f-63ef068a4db6 ([UPDATE_GAME_MODE])
-[20:12:37] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player cc97ddf6-a9b0-3e88-a628-f25fac4f289b ([UPDATE_GAME_MODE])
-[20:12:41] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player b720a8bd-22cf-321c-8ba0-a6e55195a28a ([UPDATE_GAME_MODE])
-[20:12:43] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 44e163ef-f7e7-3142-b901-55f2f8f318f3 ([UPDATE_GAME_MODE])
-[20:12:49] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player d80ab466-8fa6-3797-be54-53341d897ac6 ([UPDATE_GAME_MODE])
-[20:12:50] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 4c881ba4-535f-329d-bb8d-9f5814bd5f31 ([UPDATE_GAME_MODE])
-[20:12:50] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 494a56d8-5dcf-3c4b-b9f6-39d2e16c4432 ([UPDATE_GAME_MODE])
-[20:12:54] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 3af95561-9a10-385e-8350-80d0eae023a9 ([UPDATE_GAME_MODE])
-[20:12:56] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 71683216-72d8-3f0b-ac7d-c5a54df281a6 ([UPDATE_GAME_MODE])
-[20:12:56] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 7a589458-31c7-30b0-afac-e9498971fa0e ([UPDATE_GAME_MODE])
-[20:12:56] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 8a2f314d-7ba2-3509-a551-95af879a33f2 ([UPDATE_GAME_MODE])
-[20:12:56] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player c65a9536-de3a-368a-832e-e4933a88373d ([UPDATE_GAME_MODE])
-[20:12:56] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 56231684-8d1f-3bc9-b21e-aca1a95cf538 ([UPDATE_GAME_MODE])
-[20:12:56] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player d3d0a8ee-8210-3e00-9279-761f9b90f7fa ([UPDATE_GAME_MODE])
-[20:12:56] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 3a50ee82-4e76-3ac4-9c4e-4c95bef43a69 ([UPDATE_GAME_MODE])
-[20:12:56] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 10b926e7-9f7f-346a-9768-f4c4b64e5c7e ([UPDATE_GAME_MODE])
-[20:12:57] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player d5a62b88-e4f7-38aa-a290-fe29a36940d4 ([UPDATE_GAME_MODE])
-[20:12:57] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 80e311bd-c0ad-3273-b9d5-279b1b2f1f5a ([UPDATE_GAME_MODE])
-[20:12:57] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player f49b355b-d6ba-33a5-94d0-c098770b90e4 ([UPDATE_GAME_MODE])
-[20:13:00] [Render thread/INFO] (Minecraft) [System] [CHAT]  
-[20:13:00] [Render thread/INFO] (Minecraft) [System] [CHAT]  ⚡ Наша группа ВК vk.com/funtime
-[20:13:00] [Render thread/INFO] (Minecraft) [System] [CHAT]  
+[20:20:01] [main/INFO] (FabricLoader/Mixin) SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/C:/Users/RokBolL/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.15.4+mixin.0.8.7/6a12aacc794f1078458433116e9ed42c1cc98096/sponge-mixin-0.15.4+mixin.0.8.7.jar Service=Knot/Fabric Env=CLIENT
+[20:20:01] [main/INFO] (FabricLoader/Mixin) Loaded Fabric development mappings for mixin remapper!
+[20:20:01] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_21
+[20:20:03] [main/INFO] (FabricLoader/MixinExtras|Service) Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.4.1).
+[20:20:05] [Datafixer Bootstrap/INFO] (Minecraft) 243 Datafixer optimizations took 990 milliseconds
+[20:20:14] [Render thread/INFO] (Minecraft) Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[20:20:14] [Render thread/INFO] (Minecraft) Setting user: Player979
+[20:20:15] [Render thread/INFO] (Indigo) [Indigo] Registering Indigo renderer!
+[20:20:15] [Render thread/INFO] (IAS/IASMinecraft) IAS: Booting up... (version: 9.0.4, loader: Fabric, loader version: 0.16.10, game version: 1.21.4)
+[20:20:15] [Render thread/INFO] (IAS) IAS: Initializing IAS...
+[20:20:15] [Render thread/INFO] (IAS) IAS: IAS has been loaded.
+[20:20:16] [Render thread/INFO] (Minecraft) Backend library: LWJGL version 3.3.3-snapshot
+[20:20:17] [Render thread/INFO] (Minecraft) Reloading ResourceManager: vanilla, fabric, fabric-api, fabric-api-base, fabric-api-lookup-api-v1, fabric-biome-api-v1, fabric-block-api-v1, fabric-block-view-api-v2, fabric-blockrenderlayer-v1, fabric-client-gametest-api-v1, fabric-client-tags-api-v1, fabric-command-api-v1, fabric-command-api-v2, fabric-commands-v0, fabric-content-registries-v0, fabric-convention-tags-v1, fabric-convention-tags-v2, fabric-crash-report-info-v1, fabric-data-attachment-api-v1, fabric-data-generation-api-v1, fabric-dimensions-v1, fabric-entity-events-v1, fabric-events-interaction-v0, fabric-game-rule-api-v1, fabric-gametest-api-v1, fabric-item-api-v1, fabric-item-group-api-v1, fabric-key-binding-api-v1, fabric-keybindings-v0, fabric-lifecycle-events-v1, fabric-loot-api-v2, fabric-loot-api-v3, fabric-message-api-v1, fabric-model-loading-api-v1, fabric-networking-api-v1, fabric-object-builder-api-v1, fabric-particles-v1, fabric-recipe-api-v1, fabric-registry-sync-v0, fabric-renderer-api-v1, fabric-renderer-indigo, fabric-rendering-data-attachment-v1, fabric-rendering-fluids-v1, fabric-rendering-v1, fabric-resource-conditions-api-v1, fabric-resource-loader-v0, fabric-screen-api-v1, fabric-screen-handler-api-v1, fabric-sound-api-v1, fabric-tag-api-v1, fabric-transfer-api-v1, fabric-transitive-access-wideners-v1, fabricloader, ias, melody
+[20:20:18] [Worker-Main-3/INFO] (Minecraft) Found unifont_all_no_pua-16.0.01.hex, loading
+[20:20:18] [Worker-Main-3/INFO] (Minecraft) Found unifont_jp_patch-16.0.01.hex, loading
+[20:20:20] [Render thread/INFO] (Minecraft) OpenAL initialized on device OpenAL Soft on Динамики (2- USB Audio Device)
+[20:20:20] [Render thread/INFO] (Minecraft) Sound engine started
+[20:20:20] [Render thread/INFO] (Minecraft) Created: 1024x512x4 minecraft:textures/atlas/blocks.png-atlas
+[20:20:20] [Render thread/INFO] (Minecraft) Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
+[20:20:20] [Render thread/INFO] (Minecraft) Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[20:20:20] [Render thread/INFO] (Minecraft) Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[20:20:20] [Render thread/INFO] (Minecraft) Created: 2048x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
+[20:20:20] [Render thread/INFO] (Minecraft) Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
+[20:20:20] [Render thread/INFO] (Minecraft) Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[20:20:20] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[20:20:20] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[20:20:20] [Render thread/INFO] (Minecraft) Created: 64x64x0 minecraft:textures/atlas/map_decorations.png-atlas
+[20:20:20] [Render thread/INFO] (Minecraft) Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
+[20:20:20] [Render thread/INFO] (Minecraft) Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
+[20:20:20] [Render thread/INFO] (Minecraft) Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[20:20:20] [Render thread/INFO] (Minecraft) Created: 1024x512x0 minecraft:textures/atlas/gui.png-atlas
+[20:20:27] [Render thread/INFO] (IAS/IASMinecraft) IAS: Received login request: LoginData{name='svinkacosmo', uuid=02dc41d3-b64c-3e33-a18e-f2bf1226f0a9, token=[TOKEN], online=false}
+[20:20:27] [IAS/INFO] (IAS/IASMinecraft) IAS: Creating user...
+[20:20:27] [Render thread/INFO] (IAS/IASMinecraft) IAS: Flushing user...
+[20:20:27] [Render thread/INFO] (IAS/IASMinecraft) IAS: Flushed user.
+[20:20:29] [Render thread/INFO] (Minecraft) Connecting to mc.funtime.su, 25565
+[20:20:32] [Render thread/INFO] (Minecraft) [System] [CHAT] [✾] Успешная авторизация! Приятной игры!
+[20:20:32] [Render thread/INFO] (Minecraft) [System] [CHAT] ╔════ ★ FunTime.su ★ ════╗
+[20:20:33] [Render thread/INFO] (Minecraft) [System] [CHAT] ║
+[20:20:33] [Render thread/INFO] (Minecraft) [System] [CHAT] ║  Добро пожаловать на FunTime
+[20:20:33] [Render thread/INFO] (Minecraft) [System] [CHAT] ║  Наши социальные сети – /links
+[20:20:33] [Render thread/INFO] (Minecraft) [System] [CHAT] ║  Приятной игры и новых побед!
+[20:20:33] [Render thread/INFO] (Minecraft) [System] [CHAT] ║
+[20:20:33] [Render thread/INFO] (Minecraft) [System] [CHAT] ╚═══════════════════╝
+[20:20:33] [Render thread/INFO] (Minecraft) Loaded 0 advancements
+[20:20:33] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player ae306c9b-9568-37ee-9f8f-0a5a3e057e9b ([UPDATE_GAME_MODE])
+[20:20:33] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 94b7d35e-b5a3-3ac9-b36f-ac60684a22e5 ([UPDATE_GAME_MODE])
+[20:20:33] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 2c2a18db-68b8-3404-ae3f-1acbb4f4fc50 ([UPDATE_GAME_MODE])
+[20:20:33] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 7269cb30-e941-3839-8dfc-61bf5f69e0f2 ([UPDATE_GAME_MODE])
+[20:20:33] [Render thread/INFO] (Minecraft) Loaded 2 advancements
+[20:20:34] [Render thread/INFO] (Minecraft) [STDOUT]: АЛО ПРОСЫПАЙСЯ ИНИТ true
+[20:20:35] [Render thread/INFO] (Minecraft) [STDOUT]: [Localization] Начинаем загрузку всех переводов...
+[20:20:35] [Render thread/INFO] (Minecraft) [STDOUT]: [Localization] Загружаем язык: en_us
+[20:20:35] [Render thread/INFO] (Minecraft) [STDOUT]: [Localization] Загружаем язык: ru_ru
+[20:20:35] [Render thread/INFO] (Minecraft) [STDOUT]: [Localization] Все переводы загружены.
+[20:20:35] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player c719d7b1-7e70-36f0-a62e-c84dc5a3e219 ([UPDATE_GAME_MODE])
+[20:20:36] [Render thread/INFO] (Minecraft) [System] [CHAT] ** ! Внимание !\n** Чтобы ваш Аккаунт был в БЕЗОПАСНОСТИ!\n** Привяжите его к ВК: /vk \n** Или к Телеграм: /tg \n \n** ! Внимание !\n** Чтобы ваш Аккаунт был в БЕЗОПАСНОСТИ!\n** Привяжите его к ВК: /vk \n** Или к Телеграм: /tg 
+[20:20:36] [Render thread/INFO] (Minecraft) [STDOUT]: [DEBUG] Module Interface activated!
+[20:20:37] [Render thread/INFO] (Minecraft) [STDOUT]: [DEBUG] Module Sprint activated!
+[20:20:37] [Render thread/INFO] (Minecraft) [STDOUT]: [DEBUG] Module FixMovement activated!
+[20:20:39] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player c769fda1-96fd-32b1-8fd5-41e1e91bdfee ([UPDATE_GAME_MODE])
+[20:20:45] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 4cdbe762-88e4-332e-86f1-d1d981717db4 ([UPDATE_GAME_MODE])
+[20:20:45] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 0e6c08e5-0c29-31b7-975d-b75422e466c2 ([UPDATE_GAME_MODE])
+[20:20:45] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 2646dad6-fd84-3af0-bb7e-0d2a548b2157 ([UPDATE_GAME_MODE])
+[20:20:45] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player a4cf479f-aae9-3022-9ed4-314e05e282e5 ([UPDATE_GAME_MODE])
+[20:20:45] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 1ec4537e-ad85-352a-a54f-da23bf81fb4c ([UPDATE_GAME_MODE])
+[20:20:45] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 1ec952fd-4e50-3fe6-8c98-dab54e94da93 ([UPDATE_GAME_MODE])
+[20:20:46] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 6123d756-2cf6-38df-be7a-a49e9cc01a70 ([UPDATE_GAME_MODE])
+[20:20:46] [Render thread/WARN] (Minecraft) Ignoring player info update for unknown player 7148a5ad-4989-3fa6-81f6-4f637a380752 ([UPDATE_GAME_MODE])
+[20:20:52] [Render thread/INFO] (Minecraft) [STDOUT]: [DEBUG] Module Interface deactivated!
+[20:20:52] [Render thread/INFO] (Minecraft) [STDOUT]: [DEBUG] Module Sprint deactivated!
+[20:20:52] [Render thread/INFO] (Minecraft) [STDOUT]: [DEBUG] Module FixMovement deactivated!
+[20:20:52] [Render thread/INFO] (Minecraft) [STDOUT]: [DEBUG] Module Unhook activated!
+[20:21:00] [Render thread/INFO] (Minecraft) [System] [CHAT]  
+[20:21:00] [Render thread/INFO] (Minecraft) [System] [CHAT]  ⚡ Наш Дискорд dd.FunTime.su
+[20:21:00] [Render thread/INFO] (Minecraft) [System] [CHAT]  
