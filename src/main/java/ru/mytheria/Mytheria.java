@@ -6,6 +6,7 @@ import net.fabricmc.api.ModInitializer;
 import meteordevelopment.orbit.EventBus;
 import meteordevelopment.orbit.IEventBus;
 
+import ru.mytheria.api.client.KeyboardInputHook;
 import ru.mytheria.api.client.configuration.ConfigurationService;
 import ru.mytheria.api.client.draggable.data.DraggableRepository;
 import ru.mytheria.api.client.localization.Language;
@@ -47,6 +48,8 @@ public class Mytheria implements ModInitializer {
                 "ru.mytheria",
                 ( Method method, Class<?> clazz) -> MethodHandles.privateLookupIn(clazz, MethodHandles.lookup())
         );
+        KeyboardInputHook.init();
+
 
         mediaPlayer = new MediaPlayer();
         moduleManager = new ModuleManager();
