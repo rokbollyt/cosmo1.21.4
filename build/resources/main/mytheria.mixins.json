@@ -15,8 +15,7 @@
     "accessor.ClientPlayerEntityAccessor",
     "accessor.LivingEntityInvoker",
     "ChatSendMixin",
-    "MixinClientPlayNetworkHandler",
-    "MixinKeyboard"
+    "MixinClientPlayNetworkHandler"
   ],
   "injectors": {
     "defaultRequire": 1

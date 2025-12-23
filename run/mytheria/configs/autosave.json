@@ -4,21 +4,25 @@
   },
   {
     "Module-Name": "Interface",
-    "Module-Enabled": false,
+    "Module-Enabled": true,
     "Module-Key": -1,
     "Module-Toggle-Action": 0,
     "Module-Settings": [
       {
         "Setting-Name": "Показывать",
-        "Mode-List-Setting-Selected": []
+        "Mode-List-Setting-Selected": [
+          "Watermark",
+          "Keybinds",
+          "Target"
+        ]
       },
       {
         "Setting-Name": "Тип",
-        "Mode-Setting-Value": "Блюр"
+        "Mode-Setting-Value": "Стекло"
       },
       {
         "Setting-Name": "Тема",
-        "Mode-Setting-Value": "Тёмная"
+        "Mode-Setting-Value": "Светлая"
       }
     ]
   },
@@ -31,29 +35,29 @@
   },
   {
     "Module-Name": "FullBright",
-    "Module-Enabled": false,
+    "Module-Enabled": true,
     "Module-Key": -1,
     "Module-Toggle-Action": 0,
     "Module-Settings": []
   },
   {
     "Module-Name": "Sprint",
-    "Module-Enabled": false,
+    "Module-Enabled": true,
     "Module-Key": -1,
     "Module-Toggle-Action": 0,
     "Module-Settings": []
   },
   {
     "Module-Name": "FixMovement",
-    "Module-Enabled": false,
+    "Module-Enabled": true,
     "Module-Key": -1,
     "Module-Toggle-Action": 0,
     "Module-Settings": []
   },
   {
     "Module-Name": "Aura",
-    "Module-Enabled": false,
-    "Module-Key": -1,
+    "Module-Enabled": true,
+    "Module-Key": 90,
     "Module-Toggle-Action": 0,
     "Module-Settings": []
   }
