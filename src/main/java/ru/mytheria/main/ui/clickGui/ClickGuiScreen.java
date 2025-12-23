@@ -6,6 +6,7 @@ import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.experimental.FieldDefaults;
 import meteordevelopment.orbit.EventHandler;
+import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.text.Text;
@@ -17,6 +18,7 @@ import ru.mytheria.api.util.animations.Animation;
 import ru.mytheria.api.util.animations.Direction;
 import ru.mytheria.api.util.animations.implement.DecelerateAnimation;
 import ru.mytheria.api.util.window.WindowRepository;
+import ru.mytheria.main.module.misc.Unhook;
 import ru.mytheria.main.ui.clickGui.components.language.LanguageComponent;
 import ru.mytheria.main.ui.clickGui.components.panel.PanelsLayer;
 import ru.mytheria.main.ui.clickGui.components.search.SearchComponent;
@@ -28,9 +30,11 @@ import java.util.function.Supplier;
 
 import static  ru.mytheria.api.util.math.Math.scale;
 
+
 @Getter
 @FieldDefaults(level = AccessLevel.PRIVATE, makeFinal = true)
 public class ClickGuiScreen extends Screen implements QuickImport {
+
 
     List<Component> componentsList = new ArrayList<>();
 
@@ -40,6 +44,9 @@ public class ClickGuiScreen extends Screen implements QuickImport {
     PanelsLayer panelsLayer = new PanelsLayer();
     SearchComponent searchComponent = new SearchComponent();
     LanguageComponent languageComponent = new LanguageComponent();
+
+    private static final MinecraftClient mc = MinecraftClient.getInstance();
+    private static final ClickGuiScreen SCREEN = new ClickGuiScreen();
 
     Animation animation = new DecelerateAnimation()
             .setMs(150)
@@ -89,6 +96,11 @@ public class ClickGuiScreen extends Screen implements QuickImport {
 
     @Override
     public void render(DrawContext context, int mouseX, int mouseY, float delta) {
+        if (Unhook.ACTIVE) {
+            mc.setScreen(null);
+            return;
+        }
+
         if (animation.isFinished(Direction.BACKWARDS))
             mc.setScreen(null);
 
@@ -105,8 +117,13 @@ public class ClickGuiScreen extends Screen implements QuickImport {
 
     @EventHandler
     public void keyListener(KeyEvent keyEvent) {
-        if (Objects.isNull(mc.currentScreen) && keyEvent.getKey() == GLFW.GLFW_KEY_RIGHT_SHIFT)
+
+        if (Unhook.ACTIVE) return;
+
+        if (Objects.isNull(mc.currentScreen)
+                && keyEvent.getKey() == GLFW.GLFW_KEY_RIGHT_SHIFT) {
             mc.setScreen(Mytheria.getInstance().getClickGuiScreen());
+        }
     }
 
     @Override

@@ -1,6 +1,5 @@
 package ru.mytheria.main.module.misc;
 
-import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.text.Text;
 import ru.mytheria.Mytheria;
 import ru.mytheria.api.module.Category;
@@ -19,14 +18,14 @@ public class Unhook extends Module {
     public void activate() {
         ACTIVE = true;
 
-        // 1. Выключаем ВСЕ модули кроме себя
+        // 1. Выключаем ВСЕ модули кроме Unhook
         Mytheria.getInstance().getModuleManager().forEach(module -> {
             if (module != this && module.getEnabled()) {
                 module.setEnabled(false);
             }
         });
 
-        // 2. ПРИНУДИТЕЛЬНО закрываем любой GUI
+        // 2. Закрываем любой экран
         if (mc.currentScreen != null) {
             mc.setScreen(null);
         }
