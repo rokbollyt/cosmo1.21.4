@@ -57,7 +57,7 @@ public class TargetESP extends Module {
                 target.prevZ + (target.getZ() - target.prevZ) * e.getPartialTicks()
         );
 
-        // уровень груди
+
         targetPos = targetPos.add(0, target.getHeight() * 0.55, 0);
 
         Vec3d camPos = cam.getPos();

@@ -73,6 +73,9 @@ public class Module implements QuickImport {
         if (enabled) activate();
         else deactivate();
     }
+    public boolean isEnabled() {
+        return enabled;
+    }
 
     public List<Setting> filter(Predicate<Setting> predicate) {
         return settingLayers.stream().filter(predicate).toList();

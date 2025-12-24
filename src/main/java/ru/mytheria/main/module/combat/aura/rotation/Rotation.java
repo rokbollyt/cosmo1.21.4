@@ -30,4 +30,16 @@ public class Rotation implements QuickImport {
         return angleSmooth.limitAngleChange(fromAngle, angle, vec3d, entity);
     }
 
+    // Добавь эти методы если их нет
+    public boolean isChangeLook() {
+        return changeLook;
+    }
+
+    public boolean isMoveCorrection() {
+        return moveCorrection;
+    }
+
+    public boolean isFreeCorrection() {
+        return freeCorrection;
+    }
 }
