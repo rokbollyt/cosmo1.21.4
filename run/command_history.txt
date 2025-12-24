@@ -1,8 +1,3 @@
-/time set night
-/time set day
-/time set night
-/reg maks555
-/ah search Талисман
 /ping
 /piona
 /ah search Алмаз
@@ -41,3 +36,15 @@
 /ah search Алмазы
 /ah search Алмаз
 /ah sell 459999
+/ac
+/spawn
+/help
+/teleport bludnov
+/food
+/food 20
+/give elytra
+/give ffireworks
+/give fireworks
+/give firework_rocket
+/give firework_rocket 100
+/give enchanted_golden_apple 32

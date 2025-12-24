@@ -23,6 +23,13 @@
     ]
   },
   {
+    "Module-Name": "TargetESP",
+    "Module-Enabled": false,
+    "Module-Key": -1,
+    "Module-Toggle-Action": 0,
+    "Module-Settings": []
+  },
+  {
     "Module-Name": "Unhook",
     "Module-Enabled": false,
     "Module-Key": -1,

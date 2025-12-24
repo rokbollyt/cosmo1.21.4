@@ -112,7 +112,6 @@ public class ClickGuiScreen extends Screen implements QuickImport {
         super.render(context, mouseX, mouseY, delta);
     }
 
-    // ⛔ RIGHT SHIFT МЁРТВ ПРИ UNHOOK
     @EventHandler
     public void keyListener(KeyEvent keyEvent) {
 

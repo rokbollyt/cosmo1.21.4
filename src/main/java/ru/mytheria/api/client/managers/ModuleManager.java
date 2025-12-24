@@ -13,6 +13,7 @@ import ru.mytheria.main.module.movement.FixMovement;
 import ru.mytheria.main.module.movement.Sprint;
 import ru.mytheria.main.module.render.FullBright;
 import ru.mytheria.main.module.render.Interface;
+import ru.mytheria.main.module.render.TargetESP;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -32,6 +33,7 @@ public final class ModuleManager implements QuickImport {
         moduleLayers.addAll(
                 List.of(
                 new Interface(),
+                        new TargetESP(),
                         new Unhook(),
                         new FullBright(),
                         new Sprint(),
