@@ -4,21 +4,17 @@
   },
   {
     "Module-Name": "Interface",
-    "Module-Enabled": true,
+    "Module-Enabled": false,
     "Module-Key": -1,
     "Module-Toggle-Action": 0,
     "Module-Settings": [
       {
         "Setting-Name": "Показывать",
-        "Mode-List-Setting-Selected": [
-          "Watermark",
-          "Keybinds",
-          "Target"
-        ]
+        "Mode-List-Setting-Selected": []
       },
       {
         "Setting-Name": "Тип",
-        "Mode-Setting-Value": "Стекло"
+        "Mode-Setting-Value": "Блюр"
       },
       {
         "Setting-Name": "Тема",
@@ -28,7 +24,7 @@
   },
   {
     "Module-Name": "TargetESP",
-    "Module-Enabled": true,
+    "Module-Enabled": false,
     "Module-Key": -1,
     "Module-Toggle-Action": 0,
     "Module-Settings": []
@@ -42,7 +38,7 @@
   },
   {
     "Module-Name": "FullBright",
-    "Module-Enabled": true,
+    "Module-Enabled": false,
     "Module-Key": -1,
     "Module-Toggle-Action": 0,
     "Module-Settings": []
@@ -63,8 +59,8 @@
   },
   {
     "Module-Name": "Aura",
-    "Module-Enabled": true,
-    "Module-Key": 90,
+    "Module-Enabled": false,
+    "Module-Key": -1,
     "Module-Toggle-Action": 0,
     "Module-Settings": []
   }

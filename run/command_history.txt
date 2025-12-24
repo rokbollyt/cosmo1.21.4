@@ -1,5 +1,3 @@
-/ah sell 313
-/skin cosmo
 /hub
 /skin celka
 /skin nursultan
@@ -48,3 +46,5 @@
 /give cooked_beef
 /give honeycomb_block
 /give honeycomb_block 43
+/give enchanted_golden_apple 32
+/teleport bludnov
