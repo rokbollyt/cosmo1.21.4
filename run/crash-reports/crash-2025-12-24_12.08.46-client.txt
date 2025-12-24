@@ -1,19 +1,20 @@
 ---- Minecraft Crash Report ----
-// I let you down. Sorry :(
+// Surprise! Haha. Well, this is awkward.
 
-Time: 2025-12-23 18:31:19
+Time: 2025-12-24 12:08:46
 Description: Unexpected error
 
-java.lang.IllegalStateException: Missing elements in vertex: UV2
+java.lang.IllegalStateException: Missing elements in vertex: Normal
 	at knot//net.minecraft.client.render.BufferBuilder.endVertex(BufferBuilder.java:127)
 	at knot//net.minecraft.client.render.BufferBuilder.beginVertex(BufferBuilder.java:96)
 	at knot//net.minecraft.client.render.BufferBuilder.vertex(BufferBuilder.java:156)
 	at knot//net.minecraft.client.render.VertexConsumer.vertex(VertexConsumer.java:132)
-	at knot//ru.mytheria.main.module.render.TargetESP.renderCrystal(TargetESP.java:104)
-	at knot//ru.mytheria.main.module.render.TargetESP.onRender3D(TargetESP.java:57)
+	at knot//ru.mytheria.main.module.render.TargetESP.drawQuad(TargetESP.java:105)
+	at knot//ru.mytheria.main.module.render.TargetESP.drawBeam(TargetESP.java:83)
+	at knot//ru.mytheria.main.module.render.TargetESP.onRender3D(TargetESP.java:68)
 	at knot//meteordevelopment.orbit.listeners.LambdaListener.call(LambdaListener.java:83)
 	at knot//meteordevelopment.orbit.EventBus.post(EventBus.java:47)
-	at knot//net.minecraft.client.render.WorldRenderer.handler$zbf000$melody$onRender(WorldRenderer.java:1562)
+	at knot//net.minecraft.client.render.WorldRenderer.handler$zik000$melody$onRender(WorldRenderer.java:1562)
 	at knot//net.minecraft.client.render.WorldRenderer.render(WorldRenderer.java:575)
 	at knot//net.minecraft.client.render.GameRenderer.renderWorld(GameRenderer.java:733)
 	at knot//net.minecraft.client.render.GameRenderer.render(GameRenderer.java:493)
@@ -36,20 +37,21 @@ Stacktrace:
 	at knot//net.minecraft.client.render.BufferBuilder.beginVertex(BufferBuilder.java:96)
 	at knot//net.minecraft.client.render.BufferBuilder.vertex(BufferBuilder.java:156)
 	at knot//net.minecraft.client.render.VertexConsumer.vertex(VertexConsumer.java:132)
-	at knot//ru.mytheria.main.module.render.TargetESP.renderCrystal(TargetESP.java:104)
-	at knot//ru.mytheria.main.module.render.TargetESP.onRender3D(TargetESP.java:57)
+	at knot//ru.mytheria.main.module.render.TargetESP.drawQuad(TargetESP.java:105)
+	at knot//ru.mytheria.main.module.render.TargetESP.drawBeam(TargetESP.java:83)
+	at knot//ru.mytheria.main.module.render.TargetESP.onRender3D(TargetESP.java:68)
 	at knot//meteordevelopment.orbit.listeners.LambdaListener.call(LambdaListener.java:83)
 	at knot//meteordevelopment.orbit.EventBus.post(EventBus.java:47)
-	at knot//net.minecraft.client.render.WorldRenderer.handler$zbf000$melody$onRender(WorldRenderer.java:1562)
+	at knot//net.minecraft.client.render.WorldRenderer.handler$zik000$melody$onRender(WorldRenderer.java:1562)
 	at knot//net.minecraft.client.render.WorldRenderer.render(WorldRenderer.java:575)
 	at knot//net.minecraft.client.render.GameRenderer.renderWorld(GameRenderer.java:733)
 
 -- Uptime --
 Details:
-	JVM uptime: 54.466s
-	Wall uptime: 31.918s
-	High-res time: 29.361s
-	Client ticks: 499 ticks / 24.950s
+	JVM uptime: 44.829s
+	Wall uptime: 23.595s
+	High-res time: 22.017s
+	Client ticks: 381 ticks / 19.050s
 Stacktrace:
 	at knot//net.minecraft.client.MinecraftClient.addDetailsToCrashReport(MinecraftClient.java:2371)
 	at knot//net.minecraft.client.MinecraftClient.printCrashReport(MinecraftClient.java:991)
@@ -62,14 +64,14 @@ Stacktrace:
 
 -- Affected level --
 Details:
-	All players: 3 total; [ClientPlayerEntity['svinkacosmo'/24714, l='ClientLevel', x=0.50, y=64.00, z=0.50], OtherClientPlayerEntity['Grinexx'/24703, l='ClientLevel', x=0.50, y=64.00, z=0.50], OtherClientPlayerEntity['funa18'/24710, l='ClientLevel', x=0.50, y=64.00, z=0.50]]
-	Chunk stats: 169, 81
+	All players: 2 total; [ClientPlayerEntity['svinkacosmo'/20591, l='ClientLevel', x=251.53, y=62.00, z=214.95], OtherClientPlayerEntity['bludnov'/16532, l='ClientLevel', x=251.70, y=62.00, z=216.89]]
+	Chunk stats: 729, 5
 	Level dimension: minecraft:overworld
-	Level spawn location: World: (174,18,216), Section: (at 14,2,8 in 10,1,13; chunk contains blocks 160,0,208 to 175,255,223), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
-	Level time: 186580 game time, 125212 day time
-	Server brand: BotFilter (git:BungeeCord-Bootstrap:1.21-R0.5-SNAPSHOT:7f8b350:unknown) <- Paper
+	Level spawn location: World: (212,62,183), Section: (at 4,14,7 in 13,3,11; chunk contains blocks 208,-64,176 to 223,319,191), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,-64,0 to 511,319,511)
+	Level time: 1005436 game time, 1000 day time
+	Server brand: Paper
 	Server type: Non-integrated multiplayer server
-	Tracked entity count: 3
+	Tracked entity count: 4
 
 -- Last reload --
 Details:
@@ -85,7 +87,7 @@ Details:
 	Operating System: Windows 11 (amd64) version 10.0
 	Java Version: 21.0.8, Amazon.com Inc.
 	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Amazon.com Inc.
-	Memory: 238219808 bytes (227 MiB) / 635437056 bytes (606 MiB) up to 4280287232 bytes (4082 MiB)
+	Memory: 256905376 bytes (245 MiB) / 740294656 bytes (706 MiB) up to 4280287232 bytes (4082 MiB)
 	CPUs: 4
 	Processor Vendor: GenuineIntel
 	Processor Name: Intel(R) Core(TM) i5-7400 CPU @ 3.00GHz
@@ -107,14 +109,14 @@ Details:
 	Memory slot #1 clockSpeed (GHz): 2.13
 	Memory slot #1 type: DDR4
 	Virtual memory max (MiB): 32708.16
-	Virtual memory used (MiB): 14296.64
+	Virtual memory used (MiB): 16983.47
 	Swap memory total (MiB): 16384.00
-	Swap memory used (MiB): 780.53
+	Swap memory used (MiB): 839.48
 	Space in storage for jna.tmpdir (MiB): <path not set>
 	Space in storage for org.lwjgl.system.SharedLibraryExtractPath (MiB): <path not set>
 	Space in storage for io.netty.native.workdir (MiB): <path not set>
-	Space in storage for java.io.tmpdir (MiB): available: 58450.75, total: 238408.00
-	Space in storage for workdir (MiB): available: 140935.88, total: 953868.69
+	Space in storage for java.io.tmpdir (MiB): available: 57579.84, total: 238408.00
+	Space in storage for workdir (MiB): available: 140910.42, total: 953868.69
 	JVM Flags: 0 total; 
 	Fabric Mods: 
 		fabric-api: Fabric API 0.119.3+1.21.4
@@ -184,7 +186,7 @@ Details:
 	Universe: 400921fb54442d18
 	Type: Client (map_client.txt)
 	Graphics mode: fast
-	Render Distance: 3/12 chunks
+	Render Distance: 10/12 chunks
 	Resource Packs: vanilla, fabric, fabric-api, fabric-api-base, fabric-api-lookup-api-v1, fabric-biome-api-v1, fabric-block-api-v1, fabric-block-view-api-v2, fabric-blockrenderlayer-v1, fabric-client-gametest-api-v1, fabric-client-tags-api-v1, fabric-command-api-v1, fabric-command-api-v2, fabric-commands-v0, fabric-content-registries-v0, fabric-convention-tags-v1, fabric-convention-tags-v2, fabric-crash-report-info-v1, fabric-data-attachment-api-v1, fabric-data-generation-api-v1, fabric-dimensions-v1, fabric-entity-events-v1, fabric-events-interaction-v0, fabric-game-rule-api-v1, fabric-gametest-api-v1, fabric-item-api-v1, fabric-item-group-api-v1, fabric-key-binding-api-v1, fabric-keybindings-v0, fabric-lifecycle-events-v1, fabric-loot-api-v2, fabric-loot-api-v3, fabric-message-api-v1, fabric-model-loading-api-v1, fabric-networking-api-v1, fabric-object-builder-api-v1, fabric-particles-v1, fabric-recipe-api-v1, fabric-registry-sync-v0, fabric-renderer-api-v1, fabric-renderer-indigo, fabric-rendering-data-attachment-v1, fabric-rendering-fluids-v1, fabric-rendering-v1, fabric-resource-conditions-api-v1, fabric-resource-loader-v0, fabric-screen-api-v1, fabric-screen-handler-api-v1, fabric-sound-api-v1, fabric-tag-api-v1, fabric-transfer-api-v1, fabric-transitive-access-wideners-v1, fabricloader, ias, melody
 	Current Language: ru_ru
 	Locale: ru_RU

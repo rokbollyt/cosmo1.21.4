@@ -1,8 +1,8 @@
-[11:12:11] [main/INFO] (FabricLoader/GameProvider) Loading Minecraft 1.21.4 with Fabric Loader 0.16.10
-[11:12:11] [main/WARN] (FabricLoader/Resolution) Warnings were found!
+[19:14:48] [main/INFO] (FabricLoader/GameProvider) Loading Minecraft 1.21.4 with Fabric Loader 0.16.10
+[19:14:48] [main/WARN] (FabricLoader/Resolution) Warnings were found!
  - Mod 'In-Game Account Switcher' (ias) 9.0.4 recommends any version of modmenu, which is missing!
 	 - You should install any version of modmenu for the optimal experience.
-[11:12:11] [main/INFO] (FabricLoader) Loading 56 mods:
+[19:14:48] [main/INFO] (FabricLoader) Loading 56 mods:
 	- fabric-api 0.119.3+1.21.4
 	- fabric-api-base 0.4.54+b47eab6b04
 	- fabric-api-lookup-api-v1 1.6.86+b1caf1e904
@@ -59,71 +59,325 @@
 	- melody 1.0
 	- minecraft 1.21.4
 	- mixinextras 0.4.1
-[11:12:17] [main/INFO] (FabricLoader/Mixin) SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/C:/Users/RokBolL/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.15.4+mixin.0.8.7/6a12aacc794f1078458433116e9ed42c1cc98096/sponge-mixin-0.15.4+mixin.0.8.7.jar Service=Knot/Fabric Env=CLIENT
-[11:12:17] [main/INFO] (FabricLoader/Mixin) Loaded Fabric development mappings for mixin remapper!
-[11:12:18] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_21
-[11:12:20] [main/INFO] (FabricLoader/MixinExtras|Service) Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.4.1).
-[11:12:23] [Datafixer Bootstrap/INFO] (Minecraft) 243 Datafixer optimizations took 1740 milliseconds
-[11:12:33] [Render thread/INFO] (Minecraft) Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
-[11:12:33] [Render thread/INFO] (Minecraft) Setting user: Player132
-[11:12:34] [Render thread/INFO] (IAS/IASMinecraft) IAS: Booting up... (version: 9.0.4, loader: Fabric, loader version: 0.16.10, game version: 1.21.4)
-[11:12:34] [Render thread/INFO] (IAS) IAS: Initializing IAS...
-[11:12:34] [Render thread/INFO] (IAS) IAS: IAS has been loaded.
-[11:12:34] [Render thread/INFO] (Indigo) [Indigo] Registering Indigo renderer!
-[11:12:35] [Render thread/INFO] (Minecraft) Backend library: LWJGL version 3.3.3-snapshot
-[11:12:36] [Render thread/INFO] (Minecraft) Reloading ResourceManager: vanilla, fabric, fabric-api, fabric-api-base, fabric-api-lookup-api-v1, fabric-biome-api-v1, fabric-block-api-v1, fabric-block-view-api-v2, fabric-blockrenderlayer-v1, fabric-client-gametest-api-v1, fabric-client-tags-api-v1, fabric-command-api-v1, fabric-command-api-v2, fabric-commands-v0, fabric-content-registries-v0, fabric-convention-tags-v1, fabric-convention-tags-v2, fabric-crash-report-info-v1, fabric-data-attachment-api-v1, fabric-data-generation-api-v1, fabric-dimensions-v1, fabric-entity-events-v1, fabric-events-interaction-v0, fabric-game-rule-api-v1, fabric-gametest-api-v1, fabric-item-api-v1, fabric-item-group-api-v1, fabric-key-binding-api-v1, fabric-keybindings-v0, fabric-lifecycle-events-v1, fabric-loot-api-v2, fabric-loot-api-v3, fabric-message-api-v1, fabric-model-loading-api-v1, fabric-networking-api-v1, fabric-object-builder-api-v1, fabric-particles-v1, fabric-recipe-api-v1, fabric-registry-sync-v0, fabric-renderer-api-v1, fabric-renderer-indigo, fabric-rendering-data-attachment-v1, fabric-rendering-fluids-v1, fabric-rendering-v1, fabric-resource-conditions-api-v1, fabric-resource-loader-v0, fabric-screen-api-v1, fabric-screen-handler-api-v1, fabric-sound-api-v1, fabric-tag-api-v1, fabric-transfer-api-v1, fabric-transitive-access-wideners-v1, fabricloader, ias, melody
-[11:12:36] [Worker-Main-3/INFO] (Minecraft) Found unifont_all_no_pua-16.0.01.hex, loading
-[11:12:37] [Worker-Main-3/INFO] (Minecraft) Found unifont_jp_patch-16.0.01.hex, loading
-[11:12:39] [Render thread/INFO] (Minecraft) OpenAL initialized on device OpenAL Soft on Динамики (2- USB Audio Device)
-[11:12:39] [Render thread/INFO] (Minecraft) Sound engine started
-[11:12:39] [Render thread/INFO] (Minecraft) Created: 1024x512x4 minecraft:textures/atlas/blocks.png-atlas
-[11:12:39] [Render thread/INFO] (Minecraft) Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
-[11:12:39] [Render thread/INFO] (Minecraft) Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
-[11:12:39] [Render thread/INFO] (Minecraft) Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
-[11:12:39] [Render thread/INFO] (Minecraft) Created: 2048x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
-[11:12:39] [Render thread/INFO] (Minecraft) Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
-[11:12:39] [Render thread/INFO] (Minecraft) Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
-[11:12:39] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
-[11:12:39] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
-[11:12:39] [Render thread/INFO] (Minecraft) Created: 64x64x0 minecraft:textures/atlas/map_decorations.png-atlas
-[11:12:39] [Render thread/INFO] (Minecraft) Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
-[11:12:39] [Render thread/INFO] (Minecraft) Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
-[11:12:39] [Render thread/INFO] (Minecraft) Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
-[11:12:39] [Render thread/INFO] (Minecraft) Created: 1024x512x0 minecraft:textures/atlas/gui.png-atlas
-[11:12:45] [Render thread/INFO] (IAS/IASMinecraft) IAS: Received login request: LoginData{name='svinkacosmo', uuid=02dc41d3-b64c-3e33-a18e-f2bf1226f0a9, token=[TOKEN], online=false}
-[11:12:45] [IAS/INFO] (IAS/IASMinecraft) IAS: Creating user...
-[11:12:45] [Render thread/INFO] (IAS/IASMinecraft) IAS: Flushing user...
-[11:12:45] [Render thread/INFO] (IAS/IASMinecraft) IAS: Flushed user.
-[11:12:46] [Render thread/INFO] (Minecraft) Connecting to pvp.mioclient.me, 25565
-[11:12:53] [Render thread/INFO] (Minecraft) [System] [CHAT] svinkacosmo присоединился к игре
-[11:12:53] [Render thread/INFO] (Minecraft) Loaded 39 advancements
-[11:12:53] [Render thread/INFO] (Minecraft) [STDOUT]: АЛО ПРОСЫПАЙСЯ ИНИТ true
-[11:12:53] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Alerts enabled
-[11:12:53] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Verbose enabled
-[11:12:55] [Render thread/INFO] (Minecraft) [STDOUT]: [Localization] Начинаем загрузку всех переводов...
-[11:12:55] [Render thread/INFO] (Minecraft) [STDOUT]: [Localization] Загружаем язык: en_us
-[11:12:55] [Render thread/INFO] (Minecraft) [STDOUT]: [Localization] Загружаем язык: ru_ru
-[11:12:55] [Render thread/INFO] (Minecraft) [STDOUT]: [Localization] Все переводы загружены.
-[11:12:57] [Render thread/INFO] (Minecraft) [STDOUT]: [DEBUG] Module TargetESP activated!
-[11:13:01] [Render thread/INFO] (Minecraft) [STDOUT]: [DEBUG] Module Interface activated!
-[11:13:28] [Render thread/ERROR] (Minecraft) Unreported exception thrown!
-java.lang.IllegalStateException: Missing elements in vertex: UV0
-	at knot/net.minecraft.client.render.BufferBuilder.endVertex(BufferBuilder.java:127) ~[minecraft-merged-a172fc6613-1.21.4-net.fabricmc.yarn.1_21_4.1.21.4+build.8-v2.jar:?]
-	at knot/net.minecraft.client.render.BufferBuilder.beginVertex(BufferBuilder.java:96) ~[minecraft-merged-a172fc6613-1.21.4-net.fabricmc.yarn.1_21_4.1.21.4+build.8-v2.jar:?]
-	at knot/net.minecraft.client.render.BufferBuilder.vertex(BufferBuilder.java:156) ~[minecraft-merged-a172fc6613-1.21.4-net.fabricmc.yarn.1_21_4.1.21.4+build.8-v2.jar:?]
-	at knot/net.minecraft.client.render.VertexConsumer.vertex(VertexConsumer.java:132) ~[minecraft-merged-a172fc6613-1.21.4-net.fabricmc.yarn.1_21_4.1.21.4+build.8-v2.jar:?]
-	at knot/ru.mytheria.main.module.render.TargetESP.renderCrystal(TargetESP.java:94) ~[main/:?]
-	at knot/ru.mytheria.main.module.render.TargetESP.onRender3D(TargetESP.java:59) ~[main/:?]
-	at knot/meteordevelopment.orbit.listeners.LambdaListener.call(LambdaListener.java:83) ~[orbit-0.2.3.jar:?]
-	at knot/meteordevelopment.orbit.EventBus.post(EventBus.java:47) ~[orbit-0.2.3.jar:?]
-	at knot/net.minecraft.client.render.WorldRenderer.handler$zcn000$melody$onRender(WorldRenderer.java:1562) ~[minecraft-merged-a172fc6613-1.21.4-net.fabricmc.yarn.1_21_4.1.21.4+build.8-v2.jar:?]
-	at knot/net.minecraft.client.render.WorldRenderer.render(WorldRenderer.java:575) ~[minecraft-merged-a172fc6613-1.21.4-net.fabricmc.yarn.1_21_4.1.21.4+build.8-v2.jar:?]
-	at knot/net.minecraft.client.render.GameRenderer.renderWorld(GameRenderer.java:733) ~[minecraft-merged-a172fc6613-1.21.4-net.fabricmc.yarn.1_21_4.1.21.4+build.8-v2.jar:?]
-	at knot/net.minecraft.client.render.GameRenderer.render(GameRenderer.java:493) ~[minecraft-merged-a172fc6613-1.21.4-net.fabricmc.yarn.1_21_4.1.21.4+build.8-v2.jar:?]
-	at knot/net.minecraft.client.MinecraftClient.render(MinecraftClient.java:1341) ~[minecraft-merged-a172fc6613-1.21.4-net.fabricmc.yarn.1_21_4.1.21.4+build.8-v2.jar:?]
-	at knot/net.minecraft.client.MinecraftClient.run(MinecraftClient.java:922) [minecraft-merged-a172fc6613-1.21.4-net.fabricmc.yarn.1_21_4.1.21.4+build.8-v2.jar:?]
-	at knot/net.minecraft.client.main.Main.main(Main.java:267) [minecraft-merged-a172fc6613-1.21.4-net.fabricmc.yarn.1_21_4.1.21.4+build.8-v2.jar:?]
-	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:480) [fabric-loader-0.16.10.jar:?]
-	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:74) [fabric-loader-0.16.10.jar:?]
-	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23) [fabric-loader-0.16.10.jar:?]
-	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86) [dev-launch-injector-0.2.1+build.8.jar:?]
+[19:14:55] [main/INFO] (FabricLoader/Mixin) SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/C:/Users/RokBolL/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.15.4+mixin.0.8.7/6a12aacc794f1078458433116e9ed42c1cc98096/sponge-mixin-0.15.4+mixin.0.8.7.jar Service=Knot/Fabric Env=CLIENT
+[19:14:55] [main/INFO] (FabricLoader/Mixin) Loaded Fabric development mappings for mixin remapper!
+[19:14:55] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_21
+[19:14:59] [main/INFO] (FabricLoader/MixinExtras|Service) Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.4.1).
+[19:15:06] [Datafixer Bootstrap/INFO] (Minecraft) 243 Datafixer optimizations took 4297 milliseconds
+[19:15:13] [Render thread/INFO] (Minecraft) Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[19:15:13] [Render thread/INFO] (Minecraft) Setting user: Player790
+[19:15:14] [Render thread/INFO] (IAS/IASMinecraft) IAS: Booting up... (version: 9.0.4, loader: Fabric, loader version: 0.16.10, game version: 1.21.4)
+[19:15:14] [Render thread/INFO] (IAS) IAS: Initializing IAS...
+[19:15:14] [Render thread/INFO] (IAS) IAS: IAS has been loaded.
+[19:15:14] [Render thread/INFO] (Indigo) [Indigo] Registering Indigo renderer!
+[19:15:15] [Render thread/INFO] (Minecraft) Backend library: LWJGL version 3.3.3-snapshot
+[19:15:17] [Render thread/INFO] (Minecraft) Reloading ResourceManager: vanilla, fabric, fabric-api, fabric-api-base, fabric-api-lookup-api-v1, fabric-biome-api-v1, fabric-block-api-v1, fabric-block-view-api-v2, fabric-blockrenderlayer-v1, fabric-client-gametest-api-v1, fabric-client-tags-api-v1, fabric-command-api-v1, fabric-command-api-v2, fabric-commands-v0, fabric-content-registries-v0, fabric-convention-tags-v1, fabric-convention-tags-v2, fabric-crash-report-info-v1, fabric-data-attachment-api-v1, fabric-data-generation-api-v1, fabric-dimensions-v1, fabric-entity-events-v1, fabric-events-interaction-v0, fabric-game-rule-api-v1, fabric-gametest-api-v1, fabric-item-api-v1, fabric-item-group-api-v1, fabric-key-binding-api-v1, fabric-keybindings-v0, fabric-lifecycle-events-v1, fabric-loot-api-v2, fabric-loot-api-v3, fabric-message-api-v1, fabric-model-loading-api-v1, fabric-networking-api-v1, fabric-object-builder-api-v1, fabric-particles-v1, fabric-recipe-api-v1, fabric-registry-sync-v0, fabric-renderer-api-v1, fabric-renderer-indigo, fabric-rendering-data-attachment-v1, fabric-rendering-fluids-v1, fabric-rendering-v1, fabric-resource-conditions-api-v1, fabric-resource-loader-v0, fabric-screen-api-v1, fabric-screen-handler-api-v1, fabric-sound-api-v1, fabric-tag-api-v1, fabric-transfer-api-v1, fabric-transitive-access-wideners-v1, fabricloader, ias, melody
+[19:15:18] [Worker-Main-3/INFO] (Minecraft) Found unifont_all_no_pua-16.0.01.hex, loading
+[19:15:18] [Worker-Main-3/INFO] (Minecraft) Found unifont_jp_patch-16.0.01.hex, loading
+[19:15:21] [Render thread/INFO] (Minecraft) OpenAL initialized on device OpenAL Soft on Динамики (2- USB Audio Device)
+[19:15:21] [Render thread/INFO] (Minecraft) Sound engine started
+[19:15:21] [Render thread/INFO] (Minecraft) Created: 1024x512x4 minecraft:textures/atlas/blocks.png-atlas
+[19:15:21] [Render thread/INFO] (Minecraft) Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
+[19:15:21] [Render thread/INFO] (Minecraft) Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[19:15:21] [Render thread/INFO] (Minecraft) Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[19:15:21] [Render thread/INFO] (Minecraft) Created: 2048x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
+[19:15:21] [Render thread/INFO] (Minecraft) Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[19:15:21] [Render thread/INFO] (Minecraft) Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
+[19:15:21] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[19:15:21] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[19:15:21] [Render thread/INFO] (Minecraft) Created: 64x64x0 minecraft:textures/atlas/map_decorations.png-atlas
+[19:15:22] [Render thread/INFO] (Minecraft) Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
+[19:15:22] [Render thread/INFO] (Minecraft) Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
+[19:15:22] [Render thread/INFO] (Minecraft) Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[19:15:22] [Render thread/INFO] (Minecraft) Created: 1024x512x0 minecraft:textures/atlas/gui.png-atlas
+[19:15:52] [Render thread/INFO] (IAS/IASMinecraft) IAS: Received login request: LoginData{name='svinkacosmo', uuid=02dc41d3-b64c-3e33-a18e-f2bf1226f0a9, token=[TOKEN], online=false}
+[19:15:52] [IAS/INFO] (IAS/IASMinecraft) IAS: Creating user...
+[19:15:52] [Render thread/INFO] (IAS/IASMinecraft) IAS: Flushing user...
+[19:15:52] [Render thread/INFO] (IAS/IASMinecraft) IAS: Flushed user.
+[19:15:58] [Render thread/INFO] (Minecraft) Connecting to pvp.mioclient.me, 25565
+[19:16:04] [Render thread/INFO] (Minecraft) [System] [CHAT] svinkacosmo присоединился к игре
+[19:16:04] [Render thread/INFO] (Minecraft) Loaded 8 advancements
+[19:16:04] [Render thread/INFO] (Minecraft) [STDOUT]: АЛО ПРОСЫПАЙСЯ ИНИТ true
+[19:16:05] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Alerts enabled
+[19:16:05] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Verbose enabled
+[19:16:07] [Render thread/INFO] (Minecraft) [STDOUT]: [Localization] Начинаем загрузку всех переводов...
+[19:16:07] [Render thread/INFO] (Minecraft) [STDOUT]: [Localization] Загружаем язык: en_us
+[19:16:07] [Render thread/INFO] (Minecraft) [STDOUT]: [Localization] Загружаем язык: ru_ru
+[19:16:07] [Render thread/INFO] (Minecraft) [STDOUT]: [Localization] Все переводы загружены.
+[19:16:08] [Render thread/INFO] (Minecraft) [STDOUT]: [DEBUG] Module TargetESP activated!
+[19:16:08] [Render thread/INFO] (Minecraft) [STDOUT]: [DEBUG] Module Interface activated!
+[19:16:13] [Render thread/INFO] (Minecraft) [System] [CHAT] Player844 покинул игру
+[19:16:17] [Render thread/INFO] (Minecraft) [System] [CHAT] tongilazlox выпал из мира
+[19:16:29] [Render thread/INFO] (Minecraft) [STDOUT]: [DEBUG] Module Aura activated!
+[19:16:39] [Render thread/INFO] (Minecraft) [System] [CHAT] iAmTheBest присоединился к игре
+[19:16:45] [Render thread/INFO] (Minecraft) [System] [CHAT] iAmTheBest покинул игру
+[19:16:47] [Render thread/INFO] (Minecraft) [System] [CHAT] iAmTheBest присоединился к игре
+[19:16:51] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x1) .673827 /gl 120
+[19:16:51] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x2) .998033 /gl 121
+[19:16:51] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x3) .083663 /gl 122
+[19:16:51] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x4) .347907 /gl 123
+[19:17:04] [Render thread/INFO] (Minecraft) [System] [CHAT] Oxusihogap24 присоединился к игре
+[19:17:05] [Render thread/INFO] (Minecraft) [System] [CHAT] 1x4zy покинул игру
+[19:17:27] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed BadPacketsJ (x1) 
+[19:17:27] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed BadPacketsJ (x2) 
+[19:17:28] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x5) .554030 /gl 124
+[19:17:29] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x6) .306366 /gl 125
+[19:17:29] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x7) .180340 /gl 126
+[19:17:30] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x8) .116380 /gl 127
+[19:17:32] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x9) .554030 /gl 128
+[19:17:33] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x10) .034142 /gl 129
+[19:17:38] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x11) .076660 /gl 130
+[19:17:40] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x12) .322754 /gl 131
+[19:17:41] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x13) .458342 /gl 132
+[19:17:42] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x14) .565696 /gl 133
+[19:17:43] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x15) .061113 /gl 134
+[19:17:43] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x16) .059891 /gl 135
+[19:17:43] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x17) .058693 /gl 136
+[19:17:43] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x18) .057519 /gl 137
+[19:17:43] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x19) .362464 /gl 138
+[19:17:44] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x20) .221538 /gl 139
+[19:17:45] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x21) .802168 /gl 140
+[19:17:45] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x22) .723792 /gl 141
+[19:17:46] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x23) .100406 /gl 142
+[19:17:46] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x24) .347665 /gl 143
+[19:17:47] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x25) .221538 /gl 144
+[19:17:47] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x26) .347665 /gl 145
+[19:17:48] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x27) .346348 /gl 146
+[19:17:48] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x28) .280125 /gl 147
+[19:17:48] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x29) .861625 /gl 148
+[19:17:49] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x30) 1.061625 /gl 149
+[19:17:49] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x31) 1.111625 /gl 150
+[19:17:49] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x32) .965393 /gl 151
+[19:17:49] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x33) 1.221625 /gl 152
+[19:17:49] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x34) 1.411425 /gl 153
+[19:17:49] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x35) 2.261625 /gl 154
+[19:17:49] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x36) 2.911625 /gl 155
+[19:17:49] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x37) 3.611625 /gl 156
+[19:17:50] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x38) 3.621625 /gl 157
+[19:17:50] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x39) .311625 /gl 158
+[19:17:50] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x40) .061625 /gl 159
+[19:17:50] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x41) 1.039393 /gl 160
+[19:17:50] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x42) .727482 /gl 161
+[19:17:51] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x43) .054287 /gl 162
+[19:17:52] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x44) .504902 /gl 163
+[19:17:52] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x45) .390952 /gl 164
+[19:17:53] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x46) .544367 /gl 165
+[19:17:54] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x47) .423235 /gl 166
+[19:17:55] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x48) .121600 /gl 167
+[19:17:55] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x49) .111625 /gl 168
+[19:17:55] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x50) .111625 /gl 169
+[19:17:55] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x51) .111625 /gl 170
+[19:17:55] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x52) .111625 /gl 171
+[19:17:55] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x53) .111625 /gl 172
+[19:17:55] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x54) .111625 /gl 173
+[19:17:56] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x55) .111625 /gl 174
+[19:17:56] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x56) .111625 /gl 175
+[19:17:56] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x57) .111625 /gl 176
+[19:17:56] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x58) .111625 /gl 177
+[19:17:56] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x59) .111625 /gl 178
+[19:17:56] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x60) .111625 /gl 179
+[19:17:56] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x61) .111625 /gl 180
+[19:17:56] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x62) .111625 /gl 181
+[19:17:56] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x63) .111625 /gl 182
+[19:17:56] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x64) .111625 /gl 183
+[19:17:56] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x65) .111625 /gl 184
+[19:17:56] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x66) .111625 /gl 185
+[19:17:56] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x67) .111625 /gl 186
+[19:17:56] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x68) .111625 /gl 187
+[19:17:56] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x69) .111625 /gl 188
+[19:17:56] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x70) .111625 /gl 189
+[19:17:56] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x71) .111625 /gl 190
+[19:17:56] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x72) .111625 /gl 191
+[19:17:56] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x73) .111625 /gl 192
+[19:17:57] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x74) .111625 /gl 193
+[19:17:57] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x75) .111625 /gl 194
+[19:17:57] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x76) .111625 /gl 195
+[19:17:57] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x77) .111625 /gl 196
+[19:17:57] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x78) .111625 /gl 197
+[19:17:57] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x79) .111625 /gl 198
+[19:17:57] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x80) .111425 /gl 199
+[19:17:58] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x81) .011625 /gl 200
+[19:17:58] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x82) 1.039393 /gl 201
+[19:17:58] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x83) .744315 /gl 202
+[19:17:59] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x84) .003243 /gl 203
+[19:18:00] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x85) .003243 /gl 204
+[19:18:00] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x86) .003060 /gl 205
+[19:18:00] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x87) 1.000168 /gl 206
+[19:18:00] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x88) .816029 /gl 207
+[19:18:01] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x89) .294294 /gl 208
+[19:18:01] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x90) .164408 /gl 209
+[19:18:06] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x91) .574560 /gl 210
+[19:18:06] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x92) .564600 /gl 211
+[19:18:06] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x93) .564600 /gl 212
+[19:18:06] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x94) .690000 /gl 213
+[19:18:06] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x95) .564600 /gl 214
+[19:18:06] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x96) .564600 /gl 215
+[19:18:06] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x97) .564600 /gl 216
+[19:18:06] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x98) .564600 /gl 217
+[19:18:06] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x99) .564600 /gl 218
+[19:18:06] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x100) .564600 /gl 219
+[19:18:06] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x101) .564600 /gl 220
+[19:18:06] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x102) .564600 /gl 221
+[19:18:06] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x103) .564600 /gl 222
+[19:18:07] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x104) .564600 /gl 223
+[19:18:07] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x105) .564600 /gl 224
+[19:18:07] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x106) .564600 /gl 225
+[19:18:07] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x107) .564600 /gl 226
+[19:18:07] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x108) .564600 /gl 227
+[19:18:07] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x109) .564600 /gl 228
+[19:18:07] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x110) .564600 /gl 229
+[19:18:07] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x111) .564600 /gl 230
+[19:18:07] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x112) .564600 /gl 231
+[19:18:07] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x113) .564600 /gl 232
+[19:18:07] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x114) .564600 /gl 233
+[19:18:07] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x115) .564600 /gl 234
+[19:18:07] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x116) .564600 /gl 235
+[19:18:07] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x117) .564600 /gl 236
+[19:18:07] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x118) .564600 /gl 237
+[19:18:07] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x119) .564600 /gl 238
+[19:18:07] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x120) .564600 /gl 239
+[19:18:08] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x121) .564600 /gl 240
+[19:18:08] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x122) .564600 /gl 241
+[19:18:08] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x123) .564600 /gl 242
+[19:18:08] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x124) .564600 /gl 243
+[19:18:08] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x125) .564600 /gl 244
+[19:18:08] [Render thread/INFO] (Minecraft) [System] [CHAT] sdasfasdga присоединился к игре
+[19:18:08] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x126) .574600 /gl 245
+[19:18:09] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x127) .564400 /gl 246
+[19:18:10] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x128) .564400 /gl 247
+[19:18:10] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x129) .484400 /gl 248
+[19:18:11] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x130) .404600 /gl 249
+[19:18:11] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x131) .404400 /gl 250
+[19:18:11] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x132) .324600 /gl 251
+[19:18:12] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x133) .324400 /gl 252
+[19:18:13] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » svinkacosmo failed TimerLimit (x1) 
+[19:18:13] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x134) .324400 /gl 253
+[19:18:13] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x135) .334600 /gl 254
+[19:18:13] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » svinkacosmo failed TimerLimit (x2) 
+[19:18:14] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x136) .324400 /gl 255
+[19:18:14] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x137) .693393 /gl 256
+[19:18:15] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x138) .589127 /gl 1
+[19:18:15] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x139) .059720 /gl 2
+[19:18:15] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x140) .677674 /gl 3
+[19:18:18] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x141) .334601 /gl 4
+[19:18:18] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x142) .203869 /gl 5
+[19:18:18] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x143) .334600 /gl 6
+[19:18:18] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x144) .324600 /gl 7
+[19:18:18] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x145) .324600 /gl 8
+[19:18:18] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x146) .324600 /gl 9
+[19:18:18] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x147) .324600 /gl 10
+[19:18:18] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x148) .324600 /gl 11
+[19:18:19] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x149) .324600 /gl 12
+[19:18:19] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x150) .324600 /gl 13
+[19:18:19] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x151) .324600 /gl 14
+[19:18:19] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x152) .324600 /gl 15
+[19:18:19] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x153) .324600 /gl 16
+[19:18:19] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x154) .324600 /gl 17
+[19:18:19] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x155) .324600 /gl 18
+[19:18:19] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x156) .324600 /gl 19
+[19:18:19] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x157) .324600 /gl 20
+[19:18:19] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x158) .324600 /gl 21
+[19:18:19] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x159) .324600 /gl 22
+[19:18:19] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x160) .324600 /gl 23
+[19:18:19] [Render thread/INFO] (Minecraft) [System] [CHAT] The scaffold area is going to be cleared in 60 seconds
+[19:18:23] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x161) .053675 /gl 24
+[19:18:26] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x162) .053675 /gl 25
+[19:18:28] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x163) .221293 /gl 26
+[19:18:30] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x164) .053675 /gl 27
+[19:18:34] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x165) .053675 /gl 28
+[19:18:38] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » sdasfasdga failed AimDuplicateLook (x1) 
+[19:18:38] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » sdasfasdga failed AimDuplicateLook (x2) 
+[19:18:38] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » sdasfasdga failed AimDuplicateLook (x3) 
+[19:18:39] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » sdasfasdga failed AimDuplicateLook (x4) 
+[19:18:39] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed BadPacketsJ (x3) 
+[19:18:40] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » sdasfasdga failed AimDuplicateLook (x5) 
+[19:18:40] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » sdasfasdga failed AimDuplicateLook (x6) 
+[19:18:43] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x166) .053675 /gl 29
+[19:18:45] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x167) .053675 /gl 30
+[19:18:49] [Render thread/INFO] (Minecraft) [System] [CHAT] The scaffold area is going to be cleared in 30 seconds
+[19:18:52] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x168) .053675 /gl 31
+[19:18:54] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x169) .053675 /gl 32
+[19:18:59] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x170) .035199 /gl 33
+[19:19:00] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x171) .440569 /gl 34
+[19:19:02] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x172) .703168 /gl 35
+[19:19:02] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x173) .677674 /gl 36
+[19:19:04] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x174) .345897 /gl 37
+[19:19:04] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x175) .075871 /gl 38
+[19:19:05] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x176) .151262 /gl 39
+[19:19:06] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x177) .089800 /gl 40
+[19:19:06] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x178) .151262 /gl 41
+[19:19:07] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x179) .089800 /gl 42
+[19:19:07] [Render thread/INFO] (Minecraft) [System] [CHAT] kUfuHuTOma покинул игру
+[19:19:07] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x180) .151262 /gl 43
+[19:19:08] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x181) .203522 /gl 44
+[19:19:08] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x182) .597227 /gl 45
+[19:19:09] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » sdasfasdga failed PacketOrderB (x1) post-attack
+[19:19:09] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » sdasfasdga failed PacketOrderF* (x1) action=interact, sprinting=true, sneaking=false
+[19:19:09] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » sdasfasdga failed BadPacketsX* (x1) 
+[19:19:09] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x183) .351631 /gl 46
+[19:19:09] [Render thread/INFO] (Minecraft) [System] [CHAT] The scaffold area is going to be cleared in 10 seconds
+[19:19:10] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x184) .075871 /gl 47
+[19:19:11] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x185) .252349 /gl 48
+[19:19:11] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » sdasfasdga failed PacketOrderB (x2) post-attack
+[19:19:12] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x186) .732209 /gl 49
+[19:19:14] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x187) .291568 /gl 50
+[19:19:18] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x188) .053675 /gl 51
+[19:19:19] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x189) .280822 /gl 52
+[19:19:20] [Render thread/INFO] (Minecraft) [System] [CHAT] The scaffold area has been cleared
+[19:19:21] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x190) .053675 /gl 53
+[19:19:28] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x191) .053675 /gl 54
+[19:19:31] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x192) .053675 /gl 55
+[19:19:35] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x193) .002147 /gl 56
+[19:19:41] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x194) .053675 /gl 57
+[19:19:42] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x195) .053675 /gl 58
+[19:19:45] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x196) .053494 /gl 59
+[19:19:46] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x197) .053675 /gl 60
+[19:19:47] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x198) .053675 /gl 61
+[19:19:48] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x199) .053675 /gl 62
+[19:19:49] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x200) .053675 /gl 63
+[19:19:50] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x201) .053675 /gl 64
+[19:19:53] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x202) .053675 /gl 65
+[19:19:55] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x203) .068265 /gl 66
+[19:19:58] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed BadPacketsJ (x4) 
+[19:20:00] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x204) .061845 /gl 67
+[19:20:04] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed BadPacketsJ (x5) 
+[19:20:05] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x205) .234093 /gl 68
+[19:20:07] [Render thread/INFO] (Minecraft) [System] [CHAT] iAmTheBest покинул игру
+[19:20:53] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » sdasfasdga failed BadPacketsO (x1) id=915458042
+[19:20:53] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » sdasfasdga failed TransactionOrder (x1) skipped: 1
+[19:21:23] [Render thread/INFO] (Minecraft) Loaded 46 advancements
+[19:22:20] [Render thread/INFO] (Minecraft) Loaded 67 advancements
+[19:22:45] [Render thread/INFO] (Minecraft) [System] [CHAT] slonyara присоединился к игре
+[19:22:46] [Render thread/INFO] (Minecraft) Loaded 77 advancements
+[19:23:45] [Render thread/INFO] (Minecraft) [System] [CHAT] Gave 1 [Steak] to svinkacosmo
+[19:23:54] [Render thread/INFO] (Minecraft) [System] [CHAT] Gave 1 [Honeycomb Block] to svinkacosmo
+[19:23:57] [Render thread/INFO] (Minecraft) [System] [CHAT] Gave 43 [Honeycomb Block] to svinkacosmo
+[19:24:12] [Render thread/INFO] (Minecraft) [System] [CHAT] iAmTheBest присоединился к игре
+[19:24:24] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed BadPacketsJ (x1) 
+[19:24:24] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed BadPacketsJ (x2) 
+[19:24:24] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x1) .339294 /gl 69
+[19:24:24] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x2) .308758 /gl 70
+[19:24:27] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x3) .203427 /gl 71
+[19:24:28] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x4) .239590 /gl 72
+[19:24:30] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x5) .018577 /gl 73
+[19:24:33] [Render thread/INFO] (Minecraft) [System] [CHAT] <svinkacosmo> пасаны дайте кт килк спастит на 1.21.4 пж
+[19:24:35] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x6) .505630 /gl 74
+[19:24:38] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x7) .475386 /gl 75
+[19:24:48] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x8) .222014 /gl 76
+[19:24:50] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x9) .233637 /gl 77
+[19:24:52] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x10) .260159 /gl 78
+[19:24:54] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x11) .643580 /gl 79
+[19:25:12] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x12) .510815 /gl 80
+[19:25:14] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x13) .282445 /gl 81
+[19:25:16] [Render thread/INFO] (Minecraft) [STDOUT]: [DEBUG] Module Aura deactivated!
+[19:25:16] [Render thread/INFO] (Minecraft) [STDOUT]: [DEBUG] Module Aura activated!
+[19:25:17] [Render thread/INFO] (Minecraft) [STDOUT]: [DEBUG] Module Aura deactivated!
+[19:25:18] [Render thread/INFO] (Minecraft) [STDOUT]: [DEBUG] Module Aura activated!
+[19:25:18] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x14) .105644 /gl 82
+[19:25:19] [Render thread/INFO] (Minecraft) [STDOUT]: [DEBUG] Module Aura deactivated!
+[19:25:20] [Render thread/INFO] (Minecraft) [STDOUT]: [DEBUG] Module Aura activated!
+[19:25:20] [Render thread/INFO] (Minecraft) [System] [CHAT] The scaffold area is going to be cleared in 60 seconds
+[19:25:20] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » iAmTheBest failed Simulation (x15) .210880 /gl 83
+[19:25:22] [Render thread/INFO] (Minecraft) [STDOUT]: [DEBUG] Module Aura deactivated!
+[19:25:22] [Render thread/INFO] (Minecraft) [STDOUT]: [DEBUG] Module Aura activated!
+[19:25:22] [Render thread/INFO] (Minecraft) [STDOUT]: [DEBUG] Module Aura deactivated!

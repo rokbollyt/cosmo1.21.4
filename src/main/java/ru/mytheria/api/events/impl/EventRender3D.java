@@ -7,6 +7,7 @@ import net.minecraft.client.render.VertexConsumerProvider;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.util.math.Vec3d;
 import ru.mytheria.api.events.Event;
+import ru.mytheria.api.util.render.Render3DUtil;
 
 public class EventRender3D extends Event {
 
@@ -33,5 +34,6 @@ public class EventRender3D extends Event {
         this.vertexConsumers = vertexConsumers;
         this.camera = camera;
         this.cameraPos = camera.getPos();
+        Render3DUtil.render();
     }
 }
