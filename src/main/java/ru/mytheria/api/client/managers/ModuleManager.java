@@ -2,10 +2,12 @@ package ru.mytheria.api.client.managers;
 
 import lombok.Getter;
 import meteordevelopment.orbit.EventHandler;
+import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import ru.mytheria.Mytheria;
 import ru.mytheria.api.clientannotation.QuickImport;
 import ru.mytheria.api.events.impl.KeyEvent;
 import ru.mytheria.api.events.impl.ModuleEvent;
+import ru.mytheria.api.events.impl.TickEvent;
 import ru.mytheria.api.module.Module;
 import ru.mytheria.main.module.combat.AttackAura;
 import ru.mytheria.main.module.misc.Unhook;
@@ -27,12 +29,22 @@ public final class ModuleManager implements QuickImport {
 
     public ModuleManager() {
         Mytheria.getInstance().getEventProvider().subscribe(this);
+        // Регистрируем публикацию TickEvent
+        registerTickPublisher();
+    }
+
+    // ВАЖНО: Этот метод публикует TickEvent каждый тик
+    private void registerTickPublisher() {
+        ClientTickEvents.END_CLIENT_TICK.register(client -> {
+            // Публикуем TickEvent в шину событий
+            Mytheria.getInstance().getEventProvider().post(new TickEvent());
+        });
     }
 
     public void init() {
         moduleLayers.addAll(
                 List.of(
-                new Interface(),
+                        new Interface(),
                         new TargetESP(),
                         new Unhook(),
                         new FullBright(),
@@ -76,7 +88,7 @@ public final class ModuleManager implements QuickImport {
     }
 
     @EventHandler
-    private void toggleEventListener( ModuleEvent.ToggleEvent toggleEvent) {
+    private void toggleEventListener(ModuleEvent.ToggleEvent toggleEvent) {
         moduleLayers.forEach(e -> {
             if (toggleEvent.getModuleLayer().equals(e))
                 e.toggleEnabled();

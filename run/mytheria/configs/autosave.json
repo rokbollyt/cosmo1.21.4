@@ -62,6 +62,34 @@
     "Module-Enabled": false,
     "Module-Key": -1,
     "Module-Toggle-Action": 0,
-    "Module-Settings": []
+    "Module-Settings": [
+      {
+        "Setting-Name": "Ротация",
+        "Mode-Setting-Value": "Humanized"
+      },
+      {
+        "Setting-Name": "Дистанция",
+        "Slider-Value": 3.5
+      },
+      {
+        "Setting-Name": "Пред-наводка",
+        "Slider-Value": 5.0
+      },
+      {
+        "Setting-Name": "Макс. Угол Наводки",
+        "Slider-Value": 45.0
+      },
+      {
+        "Setting-Name": "Таргет",
+        "Mode-List-Setting-Selected": [
+          "Игроки",
+          "Мобы"
+        ]
+      },
+      {
+        "Setting-Name": "Только криты",
+        "Boolean-Enabled": false
+      }
+    ]
   }
 ]

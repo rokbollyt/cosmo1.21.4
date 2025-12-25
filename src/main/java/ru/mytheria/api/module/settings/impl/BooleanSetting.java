@@ -42,6 +42,10 @@ public class BooleanSetting extends Setting {
         return this;
     }*/
 
+    // Добавить этот метод!
+    public boolean getValue() {
+        return enabled;
+    }
     @Override
     public BooleanSetting collection(Collection collection) {
         collection.put(this);

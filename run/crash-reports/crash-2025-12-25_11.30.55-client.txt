@@ -1,30 +1,42 @@
 ---- Minecraft Crash Report ----
-// Surprise! Haha. Well, this is awkward.
+// Don't be sad, have a hug! <3
 
-Time: 2025-12-24 12:08:46
-Description: Unexpected error
+Time: 2025-12-25 11:30:55
+Description: keyPressed event handler
 
-java.lang.IllegalStateException: Missing elements in vertex: Normal
-	at knot//net.minecraft.client.render.BufferBuilder.endVertex(BufferBuilder.java:127)
-	at knot//net.minecraft.client.render.BufferBuilder.beginVertex(BufferBuilder.java:96)
-	at knot//net.minecraft.client.render.BufferBuilder.vertex(BufferBuilder.java:156)
-	at knot//net.minecraft.client.render.VertexConsumer.vertex(VertexConsumer.java:132)
-	at knot//ru.mytheria.main.module.render.TargetESP.drawQuad(TargetESP.java:105)
-	at knot//ru.mytheria.main.module.render.TargetESP.drawBeam(TargetESP.java:83)
-	at knot//ru.mytheria.main.module.render.TargetESP.onRender3D(TargetESP.java:68)
-	at knot//meteordevelopment.orbit.listeners.LambdaListener.call(LambdaListener.java:83)
-	at knot//meteordevelopment.orbit.EventBus.post(EventBus.java:47)
-	at knot//net.minecraft.client.render.WorldRenderer.handler$zik000$melody$onRender(WorldRenderer.java:1562)
-	at knot//net.minecraft.client.render.WorldRenderer.render(WorldRenderer.java:575)
-	at knot//net.minecraft.client.render.GameRenderer.renderWorld(GameRenderer.java:733)
-	at knot//net.minecraft.client.render.GameRenderer.render(GameRenderer.java:493)
-	at knot//net.minecraft.client.MinecraftClient.render(MinecraftClient.java:1341)
+java.lang.RuntimeException: java.io.FileNotFoundException: D:\downloads\Dettex-1.21.4-main\run\mytheria\configs\fr.json (Не удается найти указанный файл)
+	at knot//ru.mytheria.api.client.configuration.Configuration.load(Configuration.java:68)
+	at knot//ru.mytheria.api.client.configuration.ConfigurationService.load(ConfigurationService.java:18)
+	at knot//ru.mytheria.api.client.ChatCommandExecutor.handleCfg(ChatCommandExecutor.java:38)
+	at knot//ru.mytheria.api.client.ChatCommandExecutor.execute(ChatCommandExecutor.java:21)
+	at knot//net.minecraft.client.network.ClientPlayNetworkHandler.handler$zgp000$melody$onSendChatMessage(ClientPlayNetworkHandler.java:3638)
+	at knot//net.minecraft.client.network.ClientPlayNetworkHandler.sendChatMessage(ClientPlayNetworkHandler.java)
+	at knot//net.minecraft.client.gui.screen.ChatScreen.sendMessage(ChatScreen.java:260)
+	at knot//net.minecraft.client.gui.screen.ChatScreen.keyPressed(ChatScreen.java:103)
+	at knot//net.minecraft.client.Keyboard.mixinextras$bridge$keyPressed$30(Keyboard.java)
+	at knot//net.minecraft.client.Keyboard.wrapOperation$zza000$fabric-screen-api-v1$invokeKeyPressedEvents(Keyboard.java:666)
+	at knot//net.minecraft.client.Keyboard.onKey(Keyboard.java:423)
+	at knot//net.minecraft.client.Keyboard.method_22678(Keyboard.java:527)
+	at knot//net.minecraft.util.thread.ThreadExecutor.execute(ThreadExecutor.java:110)
+	at knot//net.minecraft.client.Keyboard.method_22676(Keyboard.java:527)
+	at knot//org.lwjgl.glfw.GLFWKeyCallbackI.callback(GLFWKeyCallbackI.java:44)
+	at knot//org.lwjgl.system.JNI.invokeV(Native Method)
+	at knot//org.lwjgl.glfw.GLFW.glfwWaitEventsTimeout(GLFW.java:3509)
+	at knot//com.mojang.blaze3d.systems.RenderSystem.limitDisplayFPS(RenderSystem.java:186)
+	at knot//net.minecraft.client.MinecraftClient.render(MinecraftClient.java:1364)
 	at knot//net.minecraft.client.MinecraftClient.run(MinecraftClient.java:922)
 	at knot//net.minecraft.client.main.Main.main(Main.java:267)
 	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:480)
 	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:74)
 	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23)
 	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86)
+Caused by: java.io.FileNotFoundException: D:\downloads\Dettex-1.21.4-main\run\mytheria\configs\fr.json (Не удается найти указанный файл)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+	at java.base/java.io.FileReader.<init>(FileReader.java:75)
+	at knot//ru.mytheria.api.client.configuration.Configuration.load(Configuration.java:49)
+	... 24 more
 
 
 A detailed walkthrough of the error, its code path and all known details is as follows:
@@ -33,29 +45,76 @@ A detailed walkthrough of the error, its code path and all known details is as f
 -- Head --
 Thread: Render thread
 Stacktrace:
-	at knot//net.minecraft.client.render.BufferBuilder.endVertex(BufferBuilder.java:127)
-	at knot//net.minecraft.client.render.BufferBuilder.beginVertex(BufferBuilder.java:96)
-	at knot//net.minecraft.client.render.BufferBuilder.vertex(BufferBuilder.java:156)
-	at knot//net.minecraft.client.render.VertexConsumer.vertex(VertexConsumer.java:132)
-	at knot//ru.mytheria.main.module.render.TargetESP.drawQuad(TargetESP.java:105)
-	at knot//ru.mytheria.main.module.render.TargetESP.drawBeam(TargetESP.java:83)
-	at knot//ru.mytheria.main.module.render.TargetESP.onRender3D(TargetESP.java:68)
-	at knot//meteordevelopment.orbit.listeners.LambdaListener.call(LambdaListener.java:83)
-	at knot//meteordevelopment.orbit.EventBus.post(EventBus.java:47)
-	at knot//net.minecraft.client.render.WorldRenderer.handler$zik000$melody$onRender(WorldRenderer.java:1562)
-	at knot//net.minecraft.client.render.WorldRenderer.render(WorldRenderer.java:575)
-	at knot//net.minecraft.client.render.GameRenderer.renderWorld(GameRenderer.java:733)
+	at knot//ru.mytheria.api.client.configuration.Configuration.load(Configuration.java:68)
+	at knot//ru.mytheria.api.client.configuration.ConfigurationService.load(ConfigurationService.java:18)
+	at knot//ru.mytheria.api.client.ChatCommandExecutor.handleCfg(ChatCommandExecutor.java:38)
+	at knot//ru.mytheria.api.client.ChatCommandExecutor.execute(ChatCommandExecutor.java:21)
+	at knot//net.minecraft.client.network.ClientPlayNetworkHandler.handler$zgp000$melody$onSendChatMessage(ClientPlayNetworkHandler.java:3638)
+	at knot//net.minecraft.client.network.ClientPlayNetworkHandler.sendChatMessage(ClientPlayNetworkHandler.java)
+	at knot//net.minecraft.client.gui.screen.ChatScreen.sendMessage(ChatScreen.java:260)
+	at knot//net.minecraft.client.gui.screen.ChatScreen.keyPressed(ChatScreen.java:103)
+	at knot//net.minecraft.client.Keyboard.mixinextras$bridge$keyPressed$30(Keyboard.java)
+	at knot//net.minecraft.client.Keyboard.wrapOperation$zza000$fabric-screen-api-v1$invokeKeyPressedEvents(Keyboard.java:666)
+	at knot//net.minecraft.client.Keyboard.onKey(Keyboard.java:423)
+	at knot//net.minecraft.client.Keyboard.method_22678(Keyboard.java:527)
+	at knot//net.minecraft.util.thread.ThreadExecutor.execute(ThreadExecutor.java:110)
+	at knot//net.minecraft.client.Keyboard.method_22676(Keyboard.java:527)
+	at knot//org.lwjgl.glfw.GLFWKeyCallbackI.callback(GLFWKeyCallbackI.java:44)
+	at knot//org.lwjgl.system.JNI.invokeV(Native Method)
+	at knot//org.lwjgl.glfw.GLFW.glfwWaitEventsTimeout(GLFW.java:3509)
+
+-- Affected screen --
+Details:
+	Screen name: net.minecraft.client.gui.screen.ChatScreen
+Stacktrace:
+	at knot//net.minecraft.client.Keyboard.onKey(Keyboard.java:423)
+	at knot//net.minecraft.client.Keyboard.method_22678(Keyboard.java:527)
+	at knot//net.minecraft.util.thread.ThreadExecutor.execute(ThreadExecutor.java:110)
+	at knot//net.minecraft.client.Keyboard.method_22676(Keyboard.java:527)
+	at knot//org.lwjgl.glfw.GLFWKeyCallbackI.callback(GLFWKeyCallbackI.java:44)
+	at knot//org.lwjgl.system.JNI.invokeV(Native Method)
+	at knot//org.lwjgl.glfw.GLFW.glfwWaitEventsTimeout(GLFW.java:3509)
+	at knot//com.mojang.blaze3d.systems.RenderSystem.limitDisplayFPS(RenderSystem.java:186)
+	at knot//net.minecraft.client.MinecraftClient.render(MinecraftClient.java:1364)
+	at knot//net.minecraft.client.MinecraftClient.run(MinecraftClient.java:922)
+	at knot//net.minecraft.client.main.Main.main(Main.java:267)
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:480)
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:74)
+	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23)
+	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86)
+
+-- Key --
+Details:
+	Key: 257
+	Scancode: 28
+	Mods: 0
+Stacktrace:
+	at knot//net.minecraft.client.Keyboard.onKey(Keyboard.java:423)
+	at knot//net.minecraft.client.Keyboard.method_22678(Keyboard.java:527)
+	at knot//net.minecraft.util.thread.ThreadExecutor.execute(ThreadExecutor.java:110)
+	at knot//net.minecraft.client.Keyboard.method_22676(Keyboard.java:527)
+	at knot//org.lwjgl.glfw.GLFWKeyCallbackI.callback(GLFWKeyCallbackI.java:44)
+	at knot//org.lwjgl.system.JNI.invokeV(Native Method)
+	at knot//org.lwjgl.glfw.GLFW.glfwWaitEventsTimeout(GLFW.java:3509)
+	at knot//com.mojang.blaze3d.systems.RenderSystem.limitDisplayFPS(RenderSystem.java:186)
+	at knot//net.minecraft.client.MinecraftClient.render(MinecraftClient.java:1364)
+	at knot//net.minecraft.client.MinecraftClient.run(MinecraftClient.java:922)
+	at knot//net.minecraft.client.main.Main.main(Main.java:267)
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:480)
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:74)
+	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23)
+	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86)
 
 -- Uptime --
 Details:
-	JVM uptime: 44.829s
-	Wall uptime: 23.595s
-	High-res time: 22.017s
-	Client ticks: 381 ticks / 19.050s
+	JVM uptime: 56.286s
+	Wall uptime: 30.862s
+	High-res time: 29.314s
+	Client ticks: 532 ticks / 26.600s
 Stacktrace:
 	at knot//net.minecraft.client.MinecraftClient.addDetailsToCrashReport(MinecraftClient.java:2371)
 	at knot//net.minecraft.client.MinecraftClient.printCrashReport(MinecraftClient.java:991)
-	at knot//net.minecraft.client.MinecraftClient.run(MinecraftClient.java:946)
+	at knot//net.minecraft.client.MinecraftClient.run(MinecraftClient.java:943)
 	at knot//net.minecraft.client.main.Main.main(Main.java:267)
 	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:480)
 	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:74)
@@ -64,14 +123,14 @@ Stacktrace:
 
 -- Affected level --
 Details:
-	All players: 2 total; [ClientPlayerEntity['svinkacosmo'/20591, l='ClientLevel', x=251.53, y=62.00, z=214.95], OtherClientPlayerEntity['bludnov'/16532, l='ClientLevel', x=251.70, y=62.00, z=216.89]]
-	Chunk stats: 729, 5
+	All players: 2 total; [ClientPlayerEntity['svinkacosmo'/4637, l='ClientLevel', x=257.90, y=62.00, z=219.59], OtherClientPlayerEntity['bludnov'/25, l='ClientLevel', x=256.30, y=62.00, z=220.79]]
+	Chunk stats: 729, 473
 	Level dimension: minecraft:overworld
 	Level spawn location: World: (212,62,183), Section: (at 4,14,7 in 13,3,11; chunk contains blocks 208,-64,176 to 223,319,191), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,-64,0 to 511,319,511)
-	Level time: 1005436 game time, 1000 day time
+	Level time: 949899 game time, 1000 day time
 	Server brand: Paper
 	Server type: Non-integrated multiplayer server
-	Tracked entity count: 4
+	Tracked entity count: 19
 
 -- Last reload --
 Details:
@@ -87,7 +146,7 @@ Details:
 	Operating System: Windows 11 (amd64) version 10.0
 	Java Version: 21.0.8, Amazon.com Inc.
 	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Amazon.com Inc.
-	Memory: 256905376 bytes (245 MiB) / 740294656 bytes (706 MiB) up to 4280287232 bytes (4082 MiB)
+	Memory: 99634328 bytes (95 MiB) / 784334848 bytes (748 MiB) up to 4280287232 bytes (4082 MiB)
 	CPUs: 4
 	Processor Vendor: GenuineIntel
 	Processor Name: Intel(R) Core(TM) i5-7400 CPU @ 3.00GHz
@@ -109,14 +168,14 @@ Details:
 	Memory slot #1 clockSpeed (GHz): 2.13
 	Memory slot #1 type: DDR4
 	Virtual memory max (MiB): 32708.16
-	Virtual memory used (MiB): 16983.47
+	Virtual memory used (MiB): 14282.76
 	Swap memory total (MiB): 16384.00
-	Swap memory used (MiB): 839.48
+	Swap memory used (MiB): 771.61
 	Space in storage for jna.tmpdir (MiB): <path not set>
 	Space in storage for org.lwjgl.system.SharedLibraryExtractPath (MiB): <path not set>
 	Space in storage for io.netty.native.workdir (MiB): <path not set>
-	Space in storage for java.io.tmpdir (MiB): available: 57579.84, total: 238408.00
-	Space in storage for workdir (MiB): available: 140910.42, total: 953868.69
+	Space in storage for java.io.tmpdir (MiB): available: 58397.27, total: 238408.00
+	Space in storage for workdir (MiB): available: 140817.84, total: 953868.69
 	JVM Flags: 0 total; 
 	Fabric Mods: 
 		fabric-api: Fabric API 0.119.3+1.21.4

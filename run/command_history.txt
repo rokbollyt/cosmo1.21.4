@@ -1,18 +1,3 @@
-/hub
-/skin celka
-/skin nursultan
-/hub
-/skin dildo
-/skin fluger
-/hub
-/skin FlugerNew
-/skin cfg
-/hub
-/skin santa
-/login maks555
-/ip
-/itemname
-/ah search Огниво
 /ah sell 25000
 /ping
 /login maks555
@@ -48,3 +33,18 @@
 /give honeycomb_block 43
 /give enchanted_golden_apple 32
 /teleport bludnov
+/give enchanted_golden_apple 21
+/give firework_rocket 90000
+/god
+/ac Vanilla
+/give netherite_chestplate
+/ac Grim
+/ac Vanilla
+/ac Grim
+/ac Vanilla
+/ac Grim
+/ac Vanilla\
+/ac Vanilla
+/ac Grim
+/ac Vanilla
+/ac Grim

@@ -27,6 +27,20 @@
     ]
   },
   {
+    "Module-Name": "TargetESP",
+    "Module-Enabled": true,
+    "Module-Key": -1,
+    "Module-Toggle-Action": 0,
+    "Module-Settings": []
+  },
+  {
+    "Module-Name": "Unhook",
+    "Module-Enabled": false,
+    "Module-Key": -1,
+    "Module-Toggle-Action": 0,
+    "Module-Settings": []
+  },
+  {
     "Module-Name": "FullBright",
     "Module-Enabled": true,
     "Module-Key": -1,
@@ -35,14 +49,14 @@
   },
   {
     "Module-Name": "Sprint",
-    "Module-Enabled": false,
+    "Module-Enabled": true,
     "Module-Key": -1,
     "Module-Toggle-Action": 0,
     "Module-Settings": []
   },
   {
     "Module-Name": "FixMovement",
-    "Module-Enabled": false,
+    "Module-Enabled": true,
     "Module-Key": -1,
     "Module-Toggle-Action": 0,
     "Module-Settings": []
@@ -52,13 +66,39 @@
     "Module-Enabled": false,
     "Module-Key": 90,
     "Module-Toggle-Action": 0,
-    "Module-Settings": []
-  },
-  {
-    "Module-Name": "AntiUnhook",
-    "Module-Enabled": false,
-    "Module-Key": -1,
-    "Module-Toggle-Action": 0,
-    "Module-Settings": []
+    "Module-Settings": [
+      {
+        "Setting-Name": "Ротация",
+        "Mode-Setting-Value": "Humanized"
+      },
+      {
+        "Setting-Name": "Дистанция",
+        "Slider-Value": 3.5
+      },
+      {
+        "Setting-Name": "Пред-наводка",
+        "Slider-Value": 5.0
+      },
+      {
+        "Setting-Name": "Таргет",
+        "Mode-List-Setting-Selected": [
+          "Игроки",
+          "Голые игроки",
+          "Мобы"
+        ]
+      },
+      {
+        "Setting-Name": "Только криты",
+        "Boolean-Enabled": false
+      },
+      {
+        "Setting-Name": "Высота крита",
+        "Slider-Value": 0.2
+      },
+      {
+        "Setting-Name": "Скорость атаки",
+        "Slider-Value": 12.0
+      }
+    ]
   }
 ]
