@@ -1,46 +1,3 @@
-/ah sell 25000
-/ping
-/login maks555
-/hub
-/ah search Бирка
-/ah sell 50000
-/ah search Вспышка
-/ah sell 19999
-/ah search Алмазы
-/ah search Алмаз
-/ah sell 459999
-/ac
-/spawn
-/help
-/teleport bludnov
-/food
-/food 20
-/give elytra
-/give ffireworks
-/give fireworks
-/give firework_rocket
-/give firework_rocket 100
-/give enchanted_golden_apple 32
-/give firework_rocket 100
-/teleport bludnov
-/give firework_rocket 90000
-/give acacia_boat
-/give netherite_sword
-/give netherite_leggings
-/give elytra
-/give cooked_beef
-/give honeycomb_block
-/give honeycomb_block 43
-/give enchanted_golden_apple 32
-/teleport bludnov
-/give enchanted_golden_apple 21
-/give firework_rocket 90000
-/god
-/ac Vanilla
-/give netherite_chestplate
-/ac Grim
-/ac Vanilla
-/ac Grim
 /ac Vanilla
 /ac Grim
 /ac Vanilla\
@@ -48,3 +5,46 @@
 /ac Grim
 /ac Vanilla
 /ac Grim
+/ac Vanilla
+/give netherite_sword
+/give elytra
+/ac Grim
+/ac Vanilla
+/ac Grim
+/give firework_rocket 90000
+/give elytra
+/health svinkacosmo bludnov
+/health 36
+/health 363
+/give enchanted_golden_apple 6745
+/ping
+/login maks555
+/ping
+/free
+/health 363
+/give enchanted_golden_apple 6745
+/give elytra
+/give netherite_sword
+/ac Vanilla
+/give acacia_boat
+/give acacia_planks
+/ac Grim
+/login maks555
+/skin url https://radika1.link/2025/12/26/nursultan605259eb4c3aee3c.png
+/skin
+/skin-info
+/skinselect https://radika1.link/2025/12/26/nursultan605259eb4c3aee3c.png
+/skin https://radika1.link/2025/12/26/nursultan605259eb4c3aee3c.png
+/skin-info
+/free
+/login maks555
+/ac Vanilla
+/ac Grim
+/ac Vanilla
+/ac Grim
+/ac Vanilla
+/ac Grim
+/free
+/ac Vanilla
+/ac Grim
+/ac Vanilla

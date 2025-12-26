@@ -47,7 +47,6 @@ public class MediaUtils {
         if (!initialized) {
             boolean bb = MediaTransport.init();
             initialized = true;
-            System.out.println("АЛО ПРОСЫПАЙСЯ ИНИТ " + bb);
 
             s.scheduleAtFixedRate(() -> {
                 try {
