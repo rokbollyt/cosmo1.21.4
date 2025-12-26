@@ -76,8 +76,8 @@
         "Slider-Value": 5.0
       },
       {
-        "Setting-Name": "Плавность (Интерполяция)",
-        "Slider-Value": 0.25
+        "Setting-Name": "Скорость рывка (Snap Multiplier)",
+        "Slider-Value": 0.5
       },
       {
         "Setting-Name": "Таргет",
