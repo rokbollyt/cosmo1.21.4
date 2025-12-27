@@ -4,298 +4,189 @@ import lombok.Getter;
 import lombok.experimental.NonFinal;
 import meteordevelopment.orbit.EventHandler;
 import net.minecraft.client.network.ClientPlayerEntity;
-import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.mob.HostileEntity;
+import net.minecraft.entity.mob.Monster;
+import net.minecraft.entity.passive.AnimalEntity;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.network.packet.c2s.play.PlayerMoveC2SPacket;
-// ИСПРАВЛЕНИЕ: Пакет возвращен на net.minecraft.network.packet.c2s.play, что является стандартом для Fabric 1.21.4
-import net.minecraft.network.packet.c2s.play.EntityActionC2SPacket;
 import net.minecraft.text.Text;
 import net.minecraft.util.Hand;
 import net.minecraft.util.math.MathHelper;
-import net.minecraft.util.math.Vec2f;
 import net.minecraft.util.math.Vec3d;
-
 import ru.mytheria.api.events.impl.TickEvent;
 import ru.mytheria.api.events.impl.EventRender3D;
+import ru.mytheria.api.events.impl.EventSync;
+import ru.mytheria.api.events.impl.EventPostSync;
 import ru.mytheria.api.module.Category;
 import ru.mytheria.api.module.Module;
 import ru.mytheria.api.module.settings.impl.BooleanSetting;
-import ru.mytheria.api.module.settings.impl.ModeListSetting;
 import ru.mytheria.api.module.settings.impl.ModeSetting;
 import ru.mytheria.api.module.settings.impl.SliderSetting;
+import org.joml.Vector2f;
 
 import java.security.SecureRandom;
-import java.util.Random;
+import java.util.concurrent.ThreadLocalRandom;
+import java.util.stream.StreamSupport;
 
-// Класс для хранения углов (Turns в оригинале)
+// Класс для хранения углов
 record Turns(float yaw, float pitch) {}
 
-// Класс для расчета разницы углов (MathAngle.calculateDelta в оригинале)
+// Класс для расчета разницы углов
 class MathAngle {
-    public static Turns calculateDelta(Vec2f current, Vec2f target) {
-        float yawDelta = MathHelper.wrapDegrees(target.x - current.x);
-        float pitchDelta = target.y - current.y;
+    public static Turns calculateDelta(Vector2f current, Vector2f target) {
+        float yawDelta = MathHelper.wrapDegrees(target.y - current.y);
+        float pitchDelta = target.x - current.x;
         return new Turns(yawDelta, pitchDelta);
     }
 }
+
 
 @Getter
 public class AttackAura extends Module {
     private static final net.minecraft.client.MinecraftClient mc = net.minecraft.client.MinecraftClient.getInstance();
     private static final SecureRandom secureRandom = new SecureRandom();
 
+    // --- НАСТРОЙКИ ---
+    private final SliderSetting distance = new SliderSetting(Text.of("Дистанция"), null, () -> true).set(3f, 6f, 0.1f).set(4.2f);
+    private final SliderSetting rotationSpeed = new SliderSetting(Text.of("Скорость поворота"), null, () -> true).set(0.1f, 1.0f, 0.01f).set(0.95f);
+    private final ModeSetting sprintMode = new ModeSetting(Text.of("Обход Спринта"), null, () -> true).set("None", "Legit").setDefault("Legit");
+    private final BooleanSetting onlyCrits = new BooleanSetting(Text.of("Только криты"), null, () -> false).set(false);
+    private final BooleanSetting targetPlayers = new BooleanSetting(Text.of("Игроки"), null, () -> true).set(true);
+    private final BooleanSetting targetMobs = new BooleanSetting(Text.of("Мобы/Животные"), null, () -> true).set(false);
+
+    // --- НОВАЯ НАСТРОЙКА ДЛЯ FUNTIME LOGIC ---
+    private final SliderSetting rotationTolerance = new SliderSetting(Text.of("Точность поворота (Grim)"), null, () -> true).set(0.1f, 5.0f, 0.1f).set(1.5f);
+
+    // --- СИНХРОНИЗАЦИЯ И РОТАЦИЯ ---
     @NonFinal
     private LivingEntity target = null;
+    public static Vector2f headVector = new Vector2f(0f, 0f); // Расчетная ротация
+
+    // Переменные для Spoof/Reset (Funtime Test Logic)
+    static float spoofYaw, spoofPitch;
     @NonFinal
-    private LivingEntity lastTarget = null;
-
+    private boolean isAuraSpoofing = false; // Состояние сброса ротации (Тик N)
     @NonFinal
-    private Vec2f rotateVector = new Vec2f(secureRandom.nextFloat() * 360f, 0f);
+    private boolean shouldAttackNextTick = false; // Флаг для атаки в N+1
+
+    // Jitter/Prediction
+    private long lastShakeTime = 0;
+    private float targetVectorOffsetX = 0;
+    private float targetVectorOffsetZ = 0;
+    private float currentVectorOffsetX = 0;
+    private float currentVectorOffsetZ = 0;
+    private final long SHAKE_INTERVAL_MS = ThreadLocalRandom.current().nextLong(60, 180);
+
+    // Attack Cooldown
+    private final long MIN_ATTACK_DELAY_MS = 380;
     @NonFinal
-    private Vec2f snapTargetRotation = new Vec2f(0f, 0f);
-    private final Random random = new Random();
-    private Vec3d randomOffset = new Vec3d(0, 0, 0);
-    private long lastRandomizationTime = 0;
-    private static final long RANDOMIZATION_INTERVAL = 150;
-
-    // --- Grim AC Bypass Logic V29 ---
-    private int attackSequenceDelay = 0;
-    private static final int ATTACK_SEQUENCE_LENGTH = 1; // T0=Rotation (Snap), T1=Interact+Swing
-
-    private int movePacketCooldown = 0;
-    private static final int MIN_MOVE_PACKET_DELAY = 6;
-    private static final int MAX_MOVE_PACKET_DELAY = 12;
-
-    // Настройки
-    // >>> МОДИФИКАЦИЯ: Добавлен режим "FunTime Focused" <<<
-    private final ModeSetting rotate = new ModeSetting(Text.of("Ротация"), null, () -> true).set("Silent", "None", "FunTime Focused").setDefault("FunTime Focused");
-
-    private final SliderSetting distance = new SliderSetting(Text.of("Дистанция"), null, () -> true).set(2f, 6f, 0.1f).set(6.0f);
-    private final SliderSetting snapSpeed = new SliderSetting(Text.of("Скорость рывка (Snap Multiplier)"), null, () -> true)
-            .set(0.0f, 1.0f, 0.05f).set(0.5f);
-
-    // >>> НОВЫЕ НАСТРОЙКИ ДЛЯ FunTime Focused <<<
-    private final SliderSetting focusSpeed = new SliderSetting(Text.of("Скорость Фокуса"), null, () -> rotate.getValue().equals("FunTime Focused"))
-            .set(0.1f, 1.0f, 0.01f).set(0.85f);
-    private final SliderSetting jitterStrength = new SliderSetting(Text.of("Сила Тряски"), null, () -> rotate.getValue().equals("FunTime Focused"))
-            .set(0.0f, 0.5f, 0.01f).set(0.05f);
-    // >>> КОНЕЦ НОВЫХ НАСТРОЕК <<<
-
-    private final ModeSetting sprintMode = new ModeSetting(Text.of("Обход Спринта"), null, () -> true).set("None", "Grim", "Legit").setDefault("Grim");
-    private final BooleanSetting breakShield = new BooleanSetting(Text.of("Ломать щит"), null, () -> true).set(true);
-    private final BooleanSetting unblockShield = new BooleanSetting(Text.of("Отжимать щит"), null, () -> false).set(false);
-    private final BooleanSetting onlyCrits = new BooleanSetting(Text.of("Только криты"), null, () -> false).set(false);
+    private long lastAttackTime = 0;
+    private final float HIT_CHANCE_PERCENT = 95.0f;
 
 
     public AttackAura() {
-        super(Text.of("Aura"), Category.COMBAT);
-        // >>> МОДИФИКАЦИЯ: Добавлены focusSpeed и jitterStrength <<<
-        this.addSettings(rotate, distance, snapSpeed, focusSpeed, jitterStrength, sprintMode, breakShield, unblockShield, onlyCrits);
+        super(Text.of("AttackAura"), Category.COMBAT);
+        this.addSettings(distance, rotationSpeed, sprintMode, onlyCrits, targetPlayers, targetMobs, rotationTolerance);
     }
 
     @Override
     public void activate() {
         super.activate();
         target = null;
-        lastTarget = null;
-        attackSequenceDelay = 0;
-        movePacketCooldown = 0;
         if (mc.player != null) {
-            rotateVector = new Vec2f(mc.player.getYaw(), mc.player.getPitch());
+            headVector = new Vector2f(mc.player.getPitch(), mc.player.getYaw());
         }
+        lastAttackTime = 0;
+        isAuraSpoofing = false;
+        shouldAttackNextTick = false;
     }
 
     @Override
     public void deactivate() {
         target = null;
-        lastTarget = null;
+        // Восстанавливаем ротацию при выключении
+        if (isAuraSpoofing && mc.player != null) {
+            mc.player.setYaw(spoofYaw);
+            mc.player.setPitch(spoofPitch);
+        }
+        isAuraSpoofing = false;
+        shouldAttackNextTick = false;
         super.deactivate();
     }
 
-    // =========================================================================
-    // >>>>> MOUSE SENSITIVITY UTILS (GCD) <<<<<
-    // =========================================================================
-
     private float getGCDValue() {
         if (mc.options.getMouseSensitivity() == null) return 0.001f;
-
-        // Формула из MakimaAngle
         float sens = (float) (mc.options.getMouseSensitivity().getValue() * 0.6 + 0.2);
         float t = sens * sens * sens * 8.0f;
         return t * 0.15f;
     }
 
-    private float randomLerp(float min, float max) {
-        return MathHelper.lerp(secureRandom.nextFloat(), min, max);
-    }
-
     // =========================================================================
-    // >>>>> 1. ROTATION LOGIC ON RENDER (Main Handler) <<<<<
+    // >>>>> 1. ROTATION LOGIC (onRender3D) <<<<<
     // =========================================================================
 
     @EventHandler
     public void onRender3D(EventRender3D event) {
-        if (!this.isEnabled() || mc.player == null || mc.world == null || rotate.getValue().equals("None")) return;
+        if (!this.isEnabled() || mc.player == null || mc.world == null) return;
 
         target = updateTarget();
 
         if (target != null) {
-            Vec2f idealTargetRot = calculateIdealRotation(target);
-
-            if (rotate.getValue().equals("FunTime Focused")) {
-                applyFunTimeFocusedRotation(idealTargetRot, target);
-            } else { // "Silent" (Makima/LG Hybrid)
-                applyMakimaRotation(idealTargetRot, target);
-            }
-
-            if (attackSequenceDelay == ATTACK_SEQUENCE_LENGTH) {
-                snapTargetRotation = rotateVector;
-            }
-        } else {
-            applyIdleJitter();
+            Vector2f idealTargetRot = calculateIdealRotation(target);
+            applyRotation(idealTargetRot);
         }
     }
 
-    // >>>>> НОВАЯ ЛОГИКА: FunTime Focused Rotation <<<<<
-    private void applyFunTimeFocusedRotation(Vec2f idealRotation, LivingEntity entity) {
+    private void applyRotation(Vector2f idealRotation) {
         if (mc.player == null) return;
 
-        Turns angleDelta = MathAngle.calculateDelta(rotateVector, idealRotation);
+        Turns angleDelta = MathAngle.calculateDelta(headVector, idealRotation);
         float yawDelta = angleDelta.yaw();
         float pitchDelta = angleDelta.pitch();
 
-        float rotationDifference = (float) Math.hypot(Math.abs(yawDelta), Math.abs(pitchDelta));
-        boolean isLookingAtTarget = rotationDifference < 10.0f; // Условие для джиттера
+        float speed = rotationSpeed.getValue();
 
-        // --- 1. DYNAMIC SPEED (FunTime Focused: Yaw=1.0, Pitch=0.5 priority) ---
-        float baseSpeed = focusSpeed.getValue().floatValue();
-        float dynamicYawSpeed = baseSpeed * 1.0f; // Приоритет Yaw
-        float dynamicPitchSpeed = baseSpeed * 0.5f; // Пониженный Pitch
+        float targetYawDelta = yawDelta * speed;
+        float targetPitchDelta = pitchDelta * speed;
 
-        float targetYawDelta = yawDelta * dynamicYawSpeed;
-        float targetPitchDelta = pitchDelta * dynamicPitchSpeed;
-
-        // --- 2. MINIMIZED JITTER ---
-        if (isLookingAtTarget) {
-            float jitter = jitterStrength.getValue().floatValue();
-            targetYawDelta += (float) secureRandom.nextGaussian() * jitter;
-            targetPitchDelta += (float) secureRandom.nextGaussian() * jitter * 0.5f; // Pitch Jitter ниже
-        }
-
-        // --- 3. GCD CORRECTION ---
         float gcd = getGCDValue();
         targetYawDelta -= (targetYawDelta % gcd);
         targetPitchDelta -= (targetPitchDelta % gcd);
 
-        // --- 4. APPLY ---
-        float fixYaw = rotateVector.x + targetYawDelta;
-        float fixPitch = rotateVector.y + targetPitchDelta;
+        float fixYaw = headVector.y + targetYawDelta;
+        float fixPitch = headVector.x + targetPitchDelta;
         fixPitch = MathHelper.clamp(fixPitch, -90.0F, 90.0F);
 
-        rotateVector = new Vec2f(MathHelper.wrapDegrees(fixYaw), fixPitch);
+        headVector = new Vector2f(fixPitch, MathHelper.wrapDegrees(fixYaw));
     }
 
-    // >>>>> СТАРЫЙ МЕТОД (переименован для новой логики) <<<<<
-    private void applyMakimaRotation(Vec2f idealRotation, LivingEntity entity) {
-        if (mc.player == null) return;
+    private Vector2f calculateIdealRotation(LivingEntity entity) {
+        if (mc.player == null) return headVector;
 
-        Turns angleDelta = MathAngle.calculateDelta(rotateVector, idealRotation);
-        float yawDelta = angleDelta.yaw();
-        float pitchDelta = angleDelta.pitch();
+        final float VECTOR_OFFSET_MUL = 0.14f;
+        final float VECTOR_Y_OFFSET = -0.66f;
+        final float VECTOR_LERP_SPEED = 0.26f;
 
-        float rotationDifference = (float) Math.hypot(Math.abs(yawDelta), Math.abs(pitchDelta));
-        boolean isLookingAtTarget = rotationDifference < 30.0f;
-        boolean canAttack = mc.player.getAttackCooldownProgress(0) >= 1.0f;
-        float dist = (entity != null) ? (float) mc.player.distanceTo(entity) : 3.0f;
-
-        // --- 1. DYNAMIC SPEED (Makima/LG Hybrid) ---
-        float speed;
-        if (!isLookingAtTarget) {
-            speed = randomLerp(0.95F, 1.0F);
-        } else {
-            float accuracyFactor = MathHelper.clamp(rotationDifference / 20.0f, 0.2f, 1.0f);
-            float baseSpeed = canAttack ? randomLerp(0.9F, 0.98F) : randomLerp(0.5F, 0.7F);
-            speed = baseSpeed * accuracyFactor;
-
-            if (dist > 0 && dist < 0.66F) {
-                float closeRangeSpeed = MathHelper.clamp(dist / 1.5F * 0.35F, 0.1F, 0.6F);
-                speed = canAttack ? 0.85f : Math.min(speed, closeRangeSpeed);
-            }
+        long currentTime = System.currentTimeMillis();
+        if (currentTime - lastShakeTime >= SHAKE_INTERVAL_MS) {
+            targetVectorOffsetX = (secureRandom.nextFloat() * 2 - 1) * VECTOR_OFFSET_MUL;
+            targetVectorOffsetZ = (secureRandom.nextFloat() * 2 - 1) * VECTOR_OFFSET_MUL;
+            lastShakeTime = currentTime;
         }
 
-        // --- 2. SMOOTHING (Makima Logic) ---
-        float div = (rotationDifference < 0.0001f) ? 0.0001f : rotationDifference;
-        float lineYaw = (Math.abs(yawDelta / div) * 180F);
-        float linePitch = (Math.abs(pitchDelta / div) * 180F);
-
-        float targetYawDelta = MathHelper.clamp(yawDelta, -lineYaw, lineYaw) * speed;
-        float targetPitchDelta = MathHelper.clamp(pitchDelta, -linePitch, linePitch) * speed;
-
-        // --- 3. JITTER/SHAKE (Makima Gaussian Jitter) ---
-        if (isLookingAtTarget) {
-            float distFactor = MathHelper.clamp(dist / 4.0f, 0.3f, 1.0f);
-            float gaussianYaw = (float) secureRandom.nextGaussian();
-            float gaussianPitch = (float) secureRandom.nextGaussian();
-            float movementStress = MathHelper.clamp(rotationDifference / 10.0f, 0.5f, 1.5f);
-
-            float shakeStrengthYaw = 3.5f * distFactor * movementStress;
-            float shakeStrengthPitch = 2.0f * distFactor * movementStress;
-
-            targetYawDelta += gaussianYaw * shakeStrengthYaw;
-            targetPitchDelta += gaussianPitch * shakeStrengthPitch;
-        }
-
-        // --- 4. GCD CORRECTION ---
-        float gcd = getGCDValue();
-        targetYawDelta -= (targetYawDelta % gcd);
-        targetPitchDelta -= (targetPitchDelta % gcd);
-
-        // --- 5. APPLY ---
-        float fixYaw = rotateVector.x + targetYawDelta;
-        float fixPitch = rotateVector.y + targetPitchDelta;
-        fixPitch = MathHelper.clamp(fixPitch, -90.0F, 90.0F);
-
-        rotateVector = new Vec2f(MathHelper.wrapDegrees(fixYaw), fixPitch);
-    }
-    // >>>>> КОНЕЦ СТАРОГО МЕТОДА <<<<<
-
-
-    private void applyIdleJitter() {
-        if (mc.player == null) return;
-
-        float baseSpeed = 0.35F;
-        double time = System.currentTimeMillis() / 50D;
-
-        float jitterYaw = (float) (randomLerp(18, 27) * Math.sin(time));
-        float jitterPitch = (float) (randomLerp(15, 22) * Math.sin(System.currentTimeMillis() / 13D));
-
-        float moveYaw = MathHelper.lerp(baseSpeed, rotateVector.x, rotateVector.x + jitterYaw);
-        float movePitch = MathHelper.lerp(baseSpeed, rotateVector.y, rotateVector.y + jitterPitch);
-
-        rotateVector = new Vec2f(MathHelper.wrapDegrees(moveYaw), MathHelper.clamp(movePitch, -90.0F, 90.0F));
-    }
-
-    private Vec2f calculateIdealRotation(LivingEntity entity) {
-        if (mc.player == null) return rotateVector;
+        currentVectorOffsetX = MathHelper.lerp(VECTOR_LERP_SPEED, currentVectorOffsetX, targetVectorOffsetX);
+        currentVectorOffsetZ = MathHelper.lerp(VECTOR_LERP_SPEED, currentVectorOffsetZ, targetVectorOffsetZ);
 
         Vec3d targetVelocity = entity.getVelocity();
-        double predictionFactor = 0.5 + random.nextDouble() * 0.5;
+        double predictionFactor = 0.1;
         Vec3d predictedPos = entity.getPos().add(targetVelocity.multiply(predictionFactor));
 
-        if (System.currentTimeMillis() - lastRandomizationTime > RANDOMIZATION_INTERVAL) {
-            float width = entity.getWidth() * 0.3f;
-            float height = entity.getHeight() * 0.75f;
+        Vec3d targetPos = predictedPos.add(
+                currentVectorOffsetX,
+                (entity.getHeight() * (0.5 + secureRandom.nextFloat() * 0.2)) + VECTOR_Y_OFFSET,
+                currentVectorOffsetZ
+        );
 
-            randomOffset = new Vec3d(
-                    (secureRandom.nextGaussian() * 0.3) * width,
-                    (0.6 + secureRandom.nextFloat() * 0.4) * height,
-                    (secureRandom.nextGaussian() * 0.3) * width
-            );
-            lastRandomizationTime = System.currentTimeMillis();
-        }
-
-        Vec3d targetPos = predictedPos.add(randomOffset);
         Vec3d eyePos = mc.player.getEyePos();
         Vec3d vec = targetPos.subtract(eyePos);
         double dist = vec.length();
@@ -305,144 +196,181 @@ public class AttackAura extends Module {
 
         finalYaw = MathHelper.wrapDegrees(finalYaw);
 
-        return new Vec2f(finalYaw, MathHelper.clamp(finalPitch, -90.0F, 90.0F));
-    }
-
-    private void sendRotationPacket(float yaw, float pitch) {
-        if (mc.player != null && mc.player.networkHandler != null) {
-            boolean onGround = mc.player.isOnGround() && !mc.player.isRiding();
-            mc.player.networkHandler.sendPacket(
-                    new PlayerMoveC2SPacket.LookAndOnGround(
-                            yaw,
-                            pitch,
-                            onGround,
-                            true
-                    )
-            );
-        }
+        return new Vector2f(MathHelper.clamp(finalPitch, -90.0F, 90.0F), finalYaw);
     }
 
 
     // =========================================================================
-    // >>>>> 2. LOGIC ON TICK (20 Hz) - ATTACK AND BYPASS LOGIC <<<<<
+    // >>>>> 2. CORE GRIM BYPASS LOGIC (onTickEvent / onSync / onPostSync) <<<<<
     // =========================================================================
 
-    @EventHandler
-    public void onTickEvent(TickEvent event) {
-        if (!this.isEnabled() || mc.player == null || mc.world == null || rotate.getValue().equals("None")) return;
+    /**
+     * Проверяет, насколько близко HeadVector к текущей ротации игрока.
+     */
+    private boolean isRotationAligned() {
+        if (mc.player == null || target == null) return false;
 
-        if (movePacketCooldown > 0) movePacketCooldown--;
+        // Расчет идеальной ротации
+        Vector2f idealRot = calculateIdealRotation(target);
 
-        // --- 1. СЕКВЕНЦИЯ АТАКИ (2 ТИКА: R -> I+S) ---
-        if (attackSequenceDelay > 0) {
+        // Разница между расчетной ротацией (headVector) и идеальной ротацией
+        Turns delta = MathAngle.calculateDelta(headVector, idealRot);
 
-            // T0 (attackSequenceDelay == 1): Smooth Snap Rotation
-            if (attackSequenceDelay == ATTACK_SEQUENCE_LENGTH) {
+        float tolerance = rotationTolerance.getValue();
 
-                float snapMultiplier = snapSpeed.getValue().floatValue();
+        // Проверяем, что наша расчетная ротация близка к идеальной ротации
+        return Math.abs(delta.yaw()) < tolerance && Math.abs(delta.pitch()) < tolerance;
+    }
 
-                float interpolatedYaw = rotateVector.x + MathHelper.wrapDegrees(snapTargetRotation.x - rotateVector.x) * snapMultiplier;
-                float interpolatedPitch = rotateVector.y + (snapTargetRotation.y - rotateVector.y) * snapMultiplier;
 
-                sendRotationPacket(interpolatedYaw, interpolatedPitch);
-            }
+    private boolean shouldStartAttackSequence() {
+        if (mc.player == null) return false;
+        long currentTime = System.currentTimeMillis();
 
-            // T1 (attackSequenceDelay == 0): Interact Entity + Swing
-            else if (attackSequenceDelay == ATTACK_SEQUENCE_LENGTH - 1) {
-                if (target != null && mc.player.getAttackCooldownProgress(0) >= 1.0f) {
-                    updateAttack();
-                }
-            }
-
-            attackSequenceDelay--;
-
-        } else {
-            // --- 2. НОРМАЛЬНАЯ ОТПРАВКА (Makima/LG ротация или FunTime) ---
-            sendRotationPacket(rotateVector.x, rotateVector.y);
-        }
-
-        // --- 3. ЛОГИКА ИНИЦИАЦИИ АТАКИ ---
-        boolean isCooldownReady = mc.player.getAttackCooldownProgress(0) >= 1.0f;
+        boolean isClientCooldownReady = mc.player.getAttackCooldownProgress(0) >= 1.0f;
+        boolean isServerCooldownReady = (currentTime - lastAttackTime) >= MIN_ATTACK_DELAY_MS;
         float currentDistance = (target != null) ? mc.player.distanceTo(target) : 0f;
-
         boolean canCrit = !mc.player.isOnGround() && !mc.player.isRiding();
         boolean critCheckPassed = !onlyCrits.getValue() || canCrit;
 
-        boolean canAttack = target != null && isCooldownReady && currentDistance <= distance.getValue() && critCheckPassed;
+        // Добавляем проверку на наведение!
+        boolean isAligned = isRotationAligned();
 
-        if (canAttack && attackSequenceDelay == 0) {
-            if (movePacketCooldown <= 0) {
-                movePacketCooldown = MIN_MOVE_PACKET_DELAY + random.nextInt(MAX_MOVE_PACKET_DELAY - MIN_MOVE_PACKET_DELAY + 1);
-                attackSequenceDelay = ATTACK_SEQUENCE_LENGTH;
+        return target != null
+                && isAligned // Только если ротация вычислена
+                && isClientCooldownReady
+                && isServerCooldownReady
+                && currentDistance <= distance.getValue()
+                && critCheckPassed;
+    }
+
+    /**
+     * EventSync: ТИК N. Сохраняет и применяет спуф-ротацию. Grim видит ротацию.
+     */
+    @EventHandler
+    public void onSync(EventSync eventSync) {
+        if (!this.isEnabled() || mc.player == null) return;
+
+        // Если флаг атаки уже установлен, мы ждем N+1, не вмешиваемся
+        if (shouldAttackNextTick) return;
+
+        boolean shouldRotate = shouldStartAttackSequence();
+
+        if (shouldRotate) {
+            // Сохраняем ротацию
+            if (!isAuraSpoofing) {
+                spoofYaw = mc.player.getYaw();
+                spoofPitch = mc.player.getPitch();
             }
+            isAuraSpoofing = true;
+            shouldAttackNextTick = true; // Планируем атаку в N+1
+
+            // Применяем спуф-ротацию
+            mc.player.setYaw(headVector.y);
+            mc.player.setPitch(headVector.x);
+        } else {
+            // Сбрасываем флаги, если нет условий для атаки
+            if (isAuraSpoofing) {
+                isAuraSpoofing = false;
+            }
+            shouldAttackNextTick = false;
         }
     }
 
-    private void updateAttack() {
-        if (target == null || mc.player == null || mc.interactionManager == null) return;
+    /**
+     * EventPostSync: ТИК N. Восстанавливает реальную ротацию после отправки пакета.
+     */
+    @EventHandler
+    public void onPostSync(EventPostSync eventPostSync) {
+        if (!this.isEnabled() || !isAuraSpoofing || mc.player == null) return;
 
-        // 1. Отжать щит
-        if (mc.player.isBlocking() && unblockShield.getValue()) {
-            mc.interactionManager.onStoppedUsingItem(mc.player);
+        // Восстанавливаем ротацию
+        mc.player.setYaw(spoofYaw);
+        mc.player.setPitch(spoofPitch);
+    }
+
+    /**
+     * TickEvent: ТИК N+1. Атакует. Grim считает, что ротация была в N-тике.
+     */
+    @EventHandler
+    public void onTickEvent(TickEvent event) {
+        if (!this.isEnabled() || mc.player == null || mc.world == null) return;
+
+        if (shouldAttackNextTick && target != null) {
+            // Атака в N+1 тике
+            updateAttack(mc.player, target, System.currentTimeMillis());
+
+            // Сброс флагов после успешной атаки
+            shouldAttackNextTick = false;
+            isAuraSpoofing = false;
+
+            // Восстанавливаем углы (на всякий случай)
+            mc.player.setYaw(spoofYaw);
+            mc.player.setPitch(spoofPitch);
         }
 
-        // 2. Атака и Свинг
-        mc.interactionManager.attackEntity(mc.player, target);
-        mc.player.swingHand(Hand.MAIN_HAND);
-
-        // 3. Обход спринта (Grim/Legit)
-        if (mc.player.isSprinting()) {
-            String mode = sprintMode.getValue();
-            if (mode.equals("Grim") || mode.equals("Legit")) {
-                // Используем исправленный пакет
-                mc.player.networkHandler.sendPacket(new EntityActionC2SPacket(mc.player, EntityActionC2SPacket.Action.STOP_SPRINTING));
-            }
-            if (mode.equals("Legit")) {
-                mc.player.setSprinting(false);
-            }
-        }
-
-        // 4. Ломать щит
-        if (target instanceof PlayerEntity player && breakShield.getValue()) {
-            // Здесь должна быть логика breakShieldPlayer(player);
+        // Если флаг был установлен, но цель исчезла
+        if (shouldAttackNextTick && target == null) {
+            shouldAttackNextTick = false;
+            isAuraSpoofing = false;
         }
     }
 
+    private void updateAttack(ClientPlayerEntity player, LivingEntity target, long currentTime) {
+        if (mc.interactionManager == null) return;
+
+        // --- ОБХОД СПРИНТА (Legit Bypass) ---
+        if (player.isSprinting() && sprintMode.getValue().equals("Legit")) {
+            player.setSprinting(false);
+        }
+
+        // --- ЛОГИКА ПРОМАХА (Humanization) ---
+        if (secureRandom.nextFloat() * 100 < (100 - HIT_CHANCE_PERCENT)) {
+            float yawOffset = ThreadLocalRandom.current().nextFloat(10, 20);
+            float pitchOffset = secureRandom.nextBoolean() ? 5 : -5;
+
+            headVector = new Vector2f(
+                    MathHelper.clamp(headVector.x + pitchOffset, -90, 90),
+                    headVector.y + (secureRandom.nextBoolean() ? yawOffset : -yawOffset)
+            );
+        }
+
+        // 1. Атака и Свинг (Grim Fix: ANIMATION должен быть сразу после INTERACT_ENTITY)
+        mc.interactionManager.attackEntity(player, target);
+        player.swingHand(Hand.MAIN_HAND);
+
+        // 2. Обновляем время последней атаки
+        lastAttackTime = currentTime;
+    }
+
+    // ... (Метод updateTarget - оставлен без изменений)
     private LivingEntity updateTarget() {
         if (mc.player == null || mc.world == null) return null;
 
-        LivingEntity currentClosest = null;
-        double closestDistance = Double.MAX_VALUE;
         float searchRange = distance.getValue() * 1.5f;
 
-        if (target != null) {
-            float lockDistance = distance.getValue() + 0.5f;
-            if (mc.player.distanceTo(target) <= lockDistance) {
-                return target;
-            }
+        if (target != null && mc.player.distanceTo(target) <= distance.getValue() + 1.0f) {
+            return target;
         }
 
-        for (net.minecraft.entity.Entity entity : mc.world.getEntities()) {
-            if (entity instanceof LivingEntity livingEntity && livingEntity != mc.player) {
-                if (livingEntity instanceof PlayerEntity playerEntity && (playerEntity.isSpectator() || playerEntity.getAbilities().creativeMode)) {
-                    continue;
-                }
-                double dist = mc.player.distanceTo(entity);
+        return StreamSupport.stream(mc.world.getEntities().spliterator(), false)
+                .filter(entity -> entity instanceof LivingEntity livingEntity && livingEntity != mc.player)
+                .map(entity -> (LivingEntity) entity)
+                .filter(livingEntity -> {
+                    if (livingEntity.isDead() || livingEntity.getHealth() <= 0) return false;
 
-                if (dist <= searchRange) {
-                    if (dist < closestDistance) {
-                        closestDistance = dist;
-                        currentClosest = livingEntity;
+                    if (livingEntity instanceof PlayerEntity player) {
+                        if (player.isSpectator() || player.getAbilities().creativeMode) return false;
+                        if (!targetPlayers.getValue()) return false;
+                    } else if (livingEntity instanceof Monster || livingEntity instanceof HostileEntity || livingEntity instanceof AnimalEntity) {
+                        if (!targetMobs.getValue()) return false;
+                    } else {
+                        return false;
                     }
-                }
-            }
-        }
 
-        if (currentClosest != lastTarget) {
-            lastTarget = currentClosest;
-            lastRandomizationTime = 0;
-        }
-
-        return currentClosest;
+                    return mc.player.distanceTo(livingEntity) <= searchRange;
+                })
+                .min((e1, e2) -> Double.compare(mc.player.distanceTo(e1), mc.player.distanceTo(e2)))
+                .orElse(null);
     }
 }

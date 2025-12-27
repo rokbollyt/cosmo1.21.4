@@ -58,37 +58,38 @@
     "Module-Settings": []
   },
   {
-    "Module-Name": "Aura",
+    "Module-Name": "AttackAura",
     "Module-Enabled": false,
     "Module-Key": -1,
     "Module-Toggle-Action": 0,
     "Module-Settings": [
       {
-        "Setting-Name": "Ротация",
-        "Mode-Setting-Value": "Silent"
-      },
-      {
         "Setting-Name": "Дистанция",
-        "Slider-Value": 6.0
+        "Slider-Value": 4.2
       },
       {
-        "Setting-Name": "Пред-наводка",
-        "Slider-Value": 5.0
+        "Setting-Name": "Скорость поворота",
+        "Slider-Value": 0.95
       },
       {
-        "Setting-Name": "Скорость рывка (Snap Multiplier)",
-        "Slider-Value": 0.5
-      },
-      {
-        "Setting-Name": "Таргет",
-        "Mode-List-Setting-Selected": [
-          "Игроки",
-          "Мобы"
-        ]
+        "Setting-Name": "Обход Спринта",
+        "Mode-Setting-Value": "Legit"
       },
       {
         "Setting-Name": "Только криты",
         "Boolean-Enabled": false
+      },
+      {
+        "Setting-Name": "Игроки",
+        "Boolean-Enabled": true
+      },
+      {
+        "Setting-Name": "Мобы/Животные",
+        "Boolean-Enabled": false
+      },
+      {
+        "Setting-Name": "Точность поворота (Grim)",
+        "Slider-Value": 1.5
       }
     ]
   }
