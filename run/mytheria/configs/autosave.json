@@ -4,17 +4,21 @@
   },
   {
     "Module-Name": "Interface",
-    "Module-Enabled": false,
+    "Module-Enabled": true,
     "Module-Key": -1,
     "Module-Toggle-Action": 0,
     "Module-Settings": [
       {
         "Setting-Name": "Показывать",
-        "Mode-List-Setting-Selected": []
+        "Mode-List-Setting-Selected": [
+          "Watermark",
+          "Keybinds",
+          "Target"
+        ]
       },
       {
         "Setting-Name": "Тип",
-        "Mode-Setting-Value": "Блюр"
+        "Mode-Setting-Value": "Стекло"
       },
       {
         "Setting-Name": "Тема",
@@ -24,7 +28,7 @@
   },
   {
     "Module-Name": "TargetESP",
-    "Module-Enabled": false,
+    "Module-Enabled": true,
     "Module-Key": -1,
     "Module-Toggle-Action": 0,
     "Module-Settings": []
@@ -38,7 +42,7 @@
   },
   {
     "Module-Name": "FullBright",
-    "Module-Enabled": false,
+    "Module-Enabled": true,
     "Module-Key": -1,
     "Module-Toggle-Action": 0,
     "Module-Settings": []
@@ -51,11 +55,16 @@
     "Module-Settings": []
   },
   {
-    "Module-Name": "FixMovement",
-    "Module-Enabled": false,
+    "Module-Name": "SeeInvisible",
+    "Module-Enabled": true,
     "Module-Key": -1,
     "Module-Toggle-Action": 0,
-    "Module-Settings": []
+    "Module-Settings": [
+      {
+        "Setting-Name": "Альфа",
+        "Slider-Value": 0.44
+      }
+    ]
   },
   {
     "Module-Name": "AttackAura",
@@ -72,8 +81,16 @@
         "Slider-Value": 0.95
       },
       {
-        "Setting-Name": "Обход Спринта",
-        "Mode-Setting-Value": "Legit"
+        "Setting-Name": "Режим ротации",
+        "Mode-Setting-Value": "FunTime"
+      },
+      {
+        "Setting-Name": "Режим атаки",
+        "Mode-Setting-Value": "1.9"
+      },
+      {
+        "Setting-Name": "CPS",
+        "Slider-Value": 12.0
       },
       {
         "Setting-Name": "Только криты",
@@ -84,12 +101,24 @@
         "Boolean-Enabled": true
       },
       {
-        "Setting-Name": "Мобы/Животные",
+        "Setting-Name": "Мобы",
         "Boolean-Enabled": false
       },
       {
-        "Setting-Name": "Точность поворота (Grim)",
-        "Slider-Value": 1.5
+        "Setting-Name": "Животные",
+        "Boolean-Enabled": false
+      },
+      {
+        "Setting-Name": "Бить через блоки",
+        "Boolean-Enabled": false
+      },
+      {
+        "Setting-Name": "Только оружие",
+        "Boolean-Enabled": false
+      },
+      {
+        "Setting-Name": "FunTime Bypass",
+        "Boolean-Enabled": true
       }
     ]
   }

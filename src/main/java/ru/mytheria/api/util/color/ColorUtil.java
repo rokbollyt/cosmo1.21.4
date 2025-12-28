@@ -1,15 +1,36 @@
 package ru.mytheria.api.util.color;
 
-
-
-
 import net.minecraft.util.math.ColorHelper;
 import org.lwjgl.opengl.GL11;
 import ru.mytheria.api.util.shader.common.states.QuadColorState;
 
+import java.awt.Color;
 import java.nio.ByteBuffer;
 
 public class ColorUtil extends ColorHelper {
+
+    // --- ДИНАМИЧЕСКИЙ ЦВЕТ КЛИЕНТА ---
+
+    private static int clientColor = ColorHelper.getArgb(255, 85, 179, 255);
+
+    public static int getClientColor() {
+        return clientColor;
+    }
+
+    public static void setClientColor(int newColor) {
+        clientColor = newColor;
+    }
+
+    // --- СУЩЕСТВУЮЩИЕ И ДОБАВЛЕННЫЕ МЕТОДЫ ---
+
+    public static int alpha(int color) {
+        return (color >> 24) & 0xFF;
+    }
+
+    public static int changeAlpha(int color, int newAlpha) {
+        newAlpha = Math.max(0, Math.min(255, newAlpha));
+        return (color & 0x00FFFFFF) | (newAlpha << 24);
+    }
 
     public static int applyOpacity(int hex, int percent) {
         return applyOpacity(hex, 2.55f * Math.min(percent, 100));
@@ -37,5 +58,4 @@ public class ColorUtil extends ColorHelper {
 
         return ColorHelper.getArgb(getRed(byteBuffer.get()), getGreen(byteBuffer.get()), getBlue(byteBuffer.get()));
     }
-
 }

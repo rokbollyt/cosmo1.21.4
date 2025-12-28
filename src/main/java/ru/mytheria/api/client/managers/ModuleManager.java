@@ -11,11 +11,8 @@ import ru.mytheria.api.events.impl.TickEvent;
 import ru.mytheria.api.module.Module;
 import ru.mytheria.main.module.combat.AttackAura;
 import ru.mytheria.main.module.misc.Unhook;
-import ru.mytheria.main.module.movement.FixMovement;
 import ru.mytheria.main.module.movement.Sprint;
-import ru.mytheria.main.module.render.FullBright;
-import ru.mytheria.main.module.render.Interface;
-import ru.mytheria.main.module.render.TargetESP;
+import ru.mytheria.main.module.render.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -49,12 +46,22 @@ public final class ModuleManager implements QuickImport {
                         new Unhook(),
                         new FullBright(),
                         new Sprint(),
-                        new FixMovement(),
+                        new SeeInvisible(),
                         new AttackAura()
                 )
         );
 
         moduleLayers.forEach(Mytheria.getInstance().getEventProvider()::subscribe);
+    }
+
+    // Метод для получения модуля по имени
+    public Module getModule(String name) {
+        for (Module module : moduleLayers) {
+            if (module.getModuleName().getString().equalsIgnoreCase(name)) {
+                return module;
+            }
+        }
+        return null;
     }
 
     public Module find(Class<? extends Module> clazz) {

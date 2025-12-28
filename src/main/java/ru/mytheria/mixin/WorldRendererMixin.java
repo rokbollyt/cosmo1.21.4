@@ -9,6 +9,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import ru.mytheria.Mytheria;
+
 import ru.mytheria.api.events.impl.EventRender3D;
 
 import static ru.mytheria.api.clientannotation.QuickImport.mc;
@@ -30,6 +31,5 @@ public class WorldRendererMixin {
 
         Mytheria.getInstance().eventProvider.post(
                 new EventRender3D(matrices, tickDelta, vertexConsumers, camera)
-        );
-    }
+        );    }
 }
