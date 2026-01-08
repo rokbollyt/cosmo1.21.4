@@ -10,7 +10,7 @@
   "environment": "client",
   "entrypoints": {
     "main": [
-      "ru.mytheria.Mytheria"
+      "fun.cosmo.Mytheria"
     ]
   },
   "mixins": [

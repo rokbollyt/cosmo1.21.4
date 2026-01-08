@@ -4,21 +4,17 @@
   },
   {
     "Module-Name": "Interface",
-    "Module-Enabled": true,
+    "Module-Enabled": false,
     "Module-Key": -1,
     "Module-Toggle-Action": 0,
     "Module-Settings": [
       {
         "Setting-Name": "Показывать",
-        "Mode-List-Setting-Selected": [
-          "Watermark",
-          "Keybinds",
-          "Target"
-        ]
+        "Mode-List-Setting-Selected": []
       },
       {
         "Setting-Name": "Тип",
-        "Mode-Setting-Value": "Стекло"
+        "Mode-Setting-Value": "Блюр"
       },
       {
         "Setting-Name": "Тема",
@@ -28,10 +24,15 @@
   },
   {
     "Module-Name": "TargetESP",
-    "Module-Enabled": true,
+    "Module-Enabled": false,
     "Module-Key": -1,
     "Module-Toggle-Action": 0,
-    "Module-Settings": []
+    "Module-Settings": [
+      {
+        "Setting-Name": "Эффект",
+        "Mode-Setting-Value": "Обычный"
+      }
+    ]
   },
   {
     "Module-Name": "Unhook",
@@ -42,7 +43,7 @@
   },
   {
     "Module-Name": "FullBright",
-    "Module-Enabled": true,
+    "Module-Enabled": false,
     "Module-Key": -1,
     "Module-Toggle-Action": 0,
     "Module-Settings": []
@@ -56,70 +57,109 @@
   },
   {
     "Module-Name": "SeeInvisible",
-    "Module-Enabled": true,
-    "Module-Key": -1,
-    "Module-Toggle-Action": 0,
-    "Module-Settings": [
-      {
-        "Setting-Name": "Альфа",
-        "Slider-Value": 0.44
-      }
-    ]
-  },
-  {
-    "Module-Name": "AttackAura",
     "Module-Enabled": false,
     "Module-Key": -1,
     "Module-Toggle-Action": 0,
     "Module-Settings": [
       {
-        "Setting-Name": "Дистанция",
-        "Slider-Value": 4.2
+        "Setting-Name": "Альфа",
+        "Slider-Value": 0.5
+      }
+    ]
+  },
+  {
+    "Module-Name": "World tweaks",
+    "Module-Enabled": false,
+    "Module-Key": -1,
+    "Module-Toggle-Action": 0,
+    "Module-Settings": [
+      {
+        "Setting-Name": "World tweaks",
+        "Mode-List-Setting-Selected": []
       },
       {
-        "Setting-Name": "Скорость поворота",
-        "Slider-Value": 0.95
+        "Setting-Name": "Время",
+        "Boolean-Enabled": false
       },
       {
-        "Setting-Name": "Режим ротации",
-        "Mode-Setting-Value": "FunTime"
+        "Setting-Name": "Туман",
+        "Boolean-Enabled": false
       },
       {
-        "Setting-Name": "Режим атаки",
-        "Mode-Setting-Value": "1.9"
+        "Setting-Name": "Частицы",
+        "Boolean-Enabled": false
       },
       {
-        "Setting-Name": "CPS",
+        "Setting-Name": "Время суток",
         "Slider-Value": 12.0
       },
       {
-        "Setting-Name": "Только криты",
-        "Boolean-Enabled": false
+        "Setting-Name": "Дистанция тумана",
+        "Slider-Value": 100.0
       },
       {
-        "Setting-Name": "Игроки",
+        "Setting-Name": "Тип частиц",
+        "Mode-Setting-Value": "Bloom"
+      },
+      {
+        "Setting-Name": "Количество частиц",
+        "Slider-Value": 100.0
+      },
+      {
+        "Setting-Name": "Скорость частиц",
+        "Slider-Value": 1.0
+      },
+      {
+        "Setting-Name": "Размер частиц",
+        "Slider-Value": 0.15
+      }
+    ]
+  },
+  {
+    "Module-Name": "NoRender",
+    "Module-Enabled": false,
+    "Module-Key": -1,
+    "Module-Toggle-Action": 0,
+    "Module-Settings": [
+      {
+        "Setting-Name": "Убрать огонь",
         "Boolean-Enabled": true
       },
       {
-        "Setting-Name": "Мобы",
-        "Boolean-Enabled": false
-      },
-      {
-        "Setting-Name": "Животные",
-        "Boolean-Enabled": false
-      },
-      {
-        "Setting-Name": "Бить через блоки",
-        "Boolean-Enabled": false
-      },
-      {
-        "Setting-Name": "Только оружие",
-        "Boolean-Enabled": false
-      },
-      {
-        "Setting-Name": "FunTime Bypass",
+        "Setting-Name": "Убрать тряску",
         "Boolean-Enabled": true
       }
     ]
+  },
+  {
+    "Module-Name": "HitColor",
+    "Module-Enabled": false,
+    "Module-Key": -1,
+    "Module-Toggle-Action": 0,
+    "Module-Settings": [
+      {
+        "Setting-Name": "Альфа",
+        "Slider-Value": 0.8
+      }
+    ]
+  },
+  {
+    "Module-Name": "Slime Booster",
+    "Module-Enabled": false,
+    "Module-Key": -1,
+    "Module-Toggle-Action": 0,
+    "Module-Settings": [
+      {
+        "Setting-Name": "Высота прыжка",
+        "Slider-Value": 1.5
+      }
+    ]
+  },
+  {
+    "Module-Name": "Aura",
+    "Module-Enabled": false,
+    "Module-Key": -1,
+    "Module-Toggle-Action": 0,
+    "Module-Settings": []
   }
 ]

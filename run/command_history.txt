@@ -1,50 +1,50 @@
+/give milk_bucket
+/teleport Epstein2283d
 /login maks555
-/skin url https://radika1.link/2025/12/26/nursultan605259eb4c3aee3c.png
-/skin
-/skin-info
-/skinselect https://radika1.link/2025/12/26/nursultan605259eb4c3aee3c.png
-/skin https://radika1.link/2025/12/26/nursultan605259eb4c3aee3c.png
-/skin-info
-/free
-/login maks555
-/ac Vanilla
-/ac Grim
-/ac Vanilla
-/ac Grim
-/ac Vanilla
-/ac Grim
-/free
-/ac Vanilla
-/ac Grim
-/ac Vanilla
-/ac Grim
-/ac Vanilla
-/ac Grim
-/ac Vanilla
-/ac Grim
-/god
+/rtp
+/give slime_block
 /give elytra
-/teleport _rokik_
+/give firework_rocket 12312312
+/give netherite_chestplate
+/god
+/give nether_bricks
+/give nether_bricks 131
+/give slime_block
+/ac Grim
+/give slime_block
+/give slime_block 1231
+/ah search Блок слизи
+/give netherite_sword
+/give diamond_sword
+/ac Vanilla
+/login maks5
+/login maks555
+/piona
 /skin ggsell
-/reg maks555
-/ah search Звезда Незера
-/ah sell 200000
-/buyer
-/skin ggsell
-/hub
-/skin gift
-/skin free
-/hub
-/skin dream
-/skin candy
-/hub
-/skin labubu
-/skin mouse
-/hub
 /ping
-/skin optifine
-/рги
-/hub
-/skin skineditor
-/skin _FreshWater
-/hub
+/login maks555
+/login makss555
+/login maks555
+/give golden_carrot
+/give golden_carrot 123
+/skin ggsell
+/skin playerok
+/skin jojo
+/ac vanila
+/ac Vanilla
+/ac Grim
+/ac Vanilla
+/skin ft
+/ac Grim
+/ac Vanilla
+/ac Grim
+/give slime_block 213
+/free
+/reg ijkdsnf
+/ac Grim
+/give golden_carrot 321321
+/kill
+/donate
+/god
+/skin MatrixStack
+/reg pasta

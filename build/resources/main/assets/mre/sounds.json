@@ -1,0 +1,26 @@
+{
+  "module.enable": {
+    "sounds": [
+      {
+        "name": "mre:module/activate",
+        "stream": true
+      }
+    ]
+  },
+  "module.disable": {
+    "sounds": [
+      {
+        "name": "mre:module/deactivate",
+        "stream": true
+      }
+    ]
+  },
+  "swipe": {
+    "sounds": [
+      {
+        "name": "mre:swipe",
+        "stream": false
+      }
+    ]
+  }
+}
