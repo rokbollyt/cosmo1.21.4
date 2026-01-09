@@ -27,7 +27,8 @@
       "Lnet/minecraft/client/network/ClientPlayerEntity;getYaw()F": "Lnet/minecraft/class_746;method_36454()F",
       "Lnet/minecraft/network/packet/c2s/play/PlayerMoveC2SPacket$Full;<init>(DDDFFZZ)V": "Lnet/minecraft/class_2828$class_2830;<init>(DDDFFZZ)V",
       "Lnet/minecraft/network/packet/c2s/play/PlayerMoveC2SPacket$LookAndOnGround;<init>(FFZZ)V": "Lnet/minecraft/class_2828$class_2831;<init>(FFZZ)V",
-      "sendMovementPackets()V": "Lnet/minecraft/class_746;method_3136()V"
+      "sendMovementPackets()V": "Lnet/minecraft/class_746;method_3136()V",
+      "tick": "Lnet/minecraft/class_746;method_5773()V"
     },
     "fun/cosmo/mixin/ClientWorldMixin": {
       "tick": "Lnet/minecraft/class_638;method_8441(Ljava/util/function/BooleanSupplier;)V"
@@ -45,6 +46,9 @@
       "Lnet/minecraft/client/option/InactivityFpsLimiter;onInput()V": "Lnet/minecraft/class_9919;method_61939()V",
       "onKey": "Lnet/minecraft/class_309;method_1466(JIIII)V"
     },
+    "fun/cosmo/mixin/KeyboardInputMixin": {
+      "tick": "Lnet/minecraft/class_743;method_3129()V"
+    },
     "fun/cosmo/mixin/LivingEntityMixin": {
       "travel(Lnet/minecraft/util/math/Vec3d;)V": "Lnet/minecraft/class_1309;method_6091(Lnet/minecraft/class_243;)V"
     },
@@ -57,11 +61,6 @@
     },
     "fun/cosmo/mixin/MinecraftClientMixin": {
       "tick": "Lnet/minecraft/class_310;method_1574()V"
-    },
-    "fun/cosmo/mixin/RotationMovementMixin": {
-      "Lnet/minecraft/client/network/ClientPlayerEntity;isCamera()Z": "Lnet/minecraft/class_746;method_3134()Z",
-      "sendMovementPackets": "Lnet/minecraft/class_746;method_3136()V",
-      "tickMovement": "Lnet/minecraft/class_746;method_6007()V"
     },
     "fun/cosmo/mixin/SlimeBlockMixin": {
       "onEntityLand(Lnet/minecraft/world/BlockView;Lnet/minecraft/entity/Entity;)V": "Lnet/minecraft/class_2490;method_9502(Lnet/minecraft/class_1922;Lnet/minecraft/class_1297;)V"
@@ -109,7 +108,8 @@
         "Lnet/minecraft/client/network/ClientPlayerEntity;getYaw()F": "Lnet/minecraft/class_746;method_36454()F",
         "Lnet/minecraft/network/packet/c2s/play/PlayerMoveC2SPacket$Full;<init>(DDDFFZZ)V": "Lnet/minecraft/class_2828$class_2830;<init>(DDDFFZZ)V",
         "Lnet/minecraft/network/packet/c2s/play/PlayerMoveC2SPacket$LookAndOnGround;<init>(FFZZ)V": "Lnet/minecraft/class_2828$class_2831;<init>(FFZZ)V",
-        "sendMovementPackets()V": "Lnet/minecraft/class_746;method_3136()V"
+        "sendMovementPackets()V": "Lnet/minecraft/class_746;method_3136()V",
+        "tick": "Lnet/minecraft/class_746;method_5773()V"
       },
       "fun/cosmo/mixin/ClientWorldMixin": {
         "tick": "Lnet/minecraft/class_638;method_8441(Ljava/util/function/BooleanSupplier;)V"
@@ -127,6 +127,9 @@
         "Lnet/minecraft/client/option/InactivityFpsLimiter;onInput()V": "Lnet/minecraft/class_9919;method_61939()V",
         "onKey": "Lnet/minecraft/class_309;method_1466(JIIII)V"
       },
+      "fun/cosmo/mixin/KeyboardInputMixin": {
+        "tick": "Lnet/minecraft/class_743;method_3129()V"
+      },
       "fun/cosmo/mixin/LivingEntityMixin": {
         "travel(Lnet/minecraft/util/math/Vec3d;)V": "Lnet/minecraft/class_1309;method_6091(Lnet/minecraft/class_243;)V"
       },
@@ -139,11 +142,6 @@
       },
       "fun/cosmo/mixin/MinecraftClientMixin": {
         "tick": "Lnet/minecraft/class_310;method_1574()V"
-      },
-      "fun/cosmo/mixin/RotationMovementMixin": {
-        "Lnet/minecraft/client/network/ClientPlayerEntity;isCamera()Z": "Lnet/minecraft/class_746;method_3134()Z",
-        "sendMovementPackets": "Lnet/minecraft/class_746;method_3136()V",
-        "tickMovement": "Lnet/minecraft/class_746;method_6007()V"
       },
       "fun/cosmo/mixin/SlimeBlockMixin": {
         "onEntityLand(Lnet/minecraft/world/BlockView;Lnet/minecraft/entity/Entity;)V": "Lnet/minecraft/class_2490;method_9502(Lnet/minecraft/class_1922;Lnet/minecraft/class_1297;)V"

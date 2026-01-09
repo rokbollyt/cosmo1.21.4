@@ -4,31 +4,34 @@
   "package": "fun.cosmo.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
-    "KeyBoardMixin",
-    "ChatScreenMixin",
-    "InGameHudMixin",
+    "BackGroundRendererMixin",
     "BossBarHudMixin",
-    "WorldRendererMixin",
+    "CameraMixin",
+    "ChatScreenMixin",
+    "ChatSendMixin",
+    "ClientConnectionMixin",
+    "ClientPlayerEntityMixin",
+    "ClientWorldMixin",
+    "GameOverlayRendererMixin",
     "IClientPlayerInteractionManager",
+    "InGameHudMixin",
+    "KeyBoardMixin",
+    "LivingEntityRendererMixin",
+    "MinecraftClientMixin",
+    "SlimeBlockMixin",
+    "WorldRendererMixin",
     "accessor.BossBarHudAccessor",
     "accessor.ClientPlayerEntityAccessor",
-    "accessor.LivingEntityInvoker",
-    "CameraMixin",
-    "ClientConnectionMixin",
-    "RotationMovementMixin",
-    "ClientPlayerEntityMixin",
-    "MinecraftClientMixin",
-    "GameOverlayRendererMixin",
-    "ClientWorldMixin",
-    "LivingEntityRendererMixin",
-    "BackGroundRendererMixin",
-    "SlimeBlockMixin",
-    "ChatSendMixin"
+    "accessor.LivingEntityInvoker"
   ],
   "injectors": {
     "defaultRequire": 1
   },
   "overwrites": {
     "requireAnnotations": true
-  }
+  },
+  "client": [
+    "KeyboardInputMixin",
+    "KeyboardMixin"
+  ]
 }

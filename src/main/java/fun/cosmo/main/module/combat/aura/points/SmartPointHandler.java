@@ -1,18 +1,13 @@
 package fun.cosmo.main.module.combat.aura.points;
 
-import lombok.AccessLevel;
-import lombok.Getter;
-import lombok.experimental.FieldDefaults;
-import lombok.experimental.NonFinal;
+import fun.cosmo.main.module.combat.aura.angle.Angle;
+import fun.cosmo.main.module.combat.aura.angle.AngleHandler;
 import net.minecraft.entity.Entity;
 import net.minecraft.util.hit.HitResult;
 import net.minecraft.util.math.Box;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.RaycastContext;
 import fun.cosmo.api.clientannotation.QuickImport;
-import fun.cosmo.main.module.combat.aura.angle.Angle;
-import fun.cosmo.main.module.combat.aura.angle.AngleHandler;
-
 
 import java.security.SecureRandom;
 import java.util.ArrayList;
@@ -20,72 +15,62 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.Random;
 
-@FieldDefaults(level = AccessLevel.PRIVATE, makeFinal = true)
-@Getter
 public class SmartPointHandler implements QuickImport {
-    private Random random = new SecureRandom();
-    @NonFinal
-    private Vec3d lastTarget = Vec3d.ZERO;
-    private double centerAimChance = 0.15;
 
-    public Vec3d computeVector( Entity entity, float maxDistance, Angle initialAngle, Vec3d velocity) {
+    private final Random random = new SecureRandom();
+
+    public Vec3d getBestPoint(Entity entity, float partialTicks) {
         if (entity == null) return Vec3d.ZERO;
 
         Vec3d eyePos = mc.player.getEyePos();
-        Vec3d targetPos;
+        Box box = entity.getBoundingBox().expand(0.1);
 
-        if (random.nextDouble() < centerAimChance) {
-            targetPos = entity.getBoundingBox().getCenter();
-            if (isWithinDistance(eyePos, targetPos, maxDistance) && isPointVisible(eyePos, targetPos)) {
-                lastTarget = targetPos;
-                return targetPos;
-            }
+        List<Vec3d> candidatePoints = new ArrayList<>();
+
+        // Основные точки: голова, тело, ноги, углы бокса
+        double headY = box.maxY - 0.1;
+        double bodyY = (box.maxY + box.minY) / 2.0;
+        double feetY = box.minY + 0.1;
+
+        candidatePoints.add(new Vec3d(entity.getX(), headY, entity.getZ()));
+        candidatePoints.add(new Vec3d(entity.getX(), bodyY, entity.getZ()));
+        candidatePoints.add(new Vec3d(entity.getX(), feetY, entity.getZ()));
+
+        // Углы бокса на разных высотах
+        for (double y : new double[]{headY, bodyY, feetY}) {
+            candidatePoints.add(new Vec3d(box.minX, y, box.minZ));
+            candidatePoints.add(new Vec3d(box.maxX, y, box.minZ));
+            candidatePoints.add(new Vec3d(box.minX, y, box.maxZ));
+            candidatePoints.add(new Vec3d(box.maxX, y, box.maxZ));
         }
 
-        List<Vec3d> candidatePoints = generateVisiblePoints(entity, maxDistance);
-        Vec3d bestVector = findBestVector(candidatePoints, initialAngle);
-
-        targetPos = bestVector != null ? bestVector : entity.getEyePos();
-        lastTarget = targetPos;
-        return targetPos;
-    }
-
-    public List<Vec3d> generateVisiblePoints(Entity entity, float maxDistance) {
-        Vec3d eyePos = mc.player.getEyePos();
-        Box box = entity.getBoundingBox().expand(-0.1);
+        // Фильтруем только видимые точки (raytrace)
         List<Vec3d> visiblePoints = new ArrayList<>();
-
-        double step = 0.15;
-        for (double x = box.minX; x <= box.maxX; x += step) {
-            for (double y = box.minY; y <= box.maxY; y += step) {
-                for (double z = box.minZ; z <= box.maxZ; z += step) {
-                    Vec3d point = new Vec3d(x, y, z);
-                    if (isWithinDistance(eyePos, point, maxDistance) && isPointVisible(eyePos, point)) {
-                        visiblePoints.add(point);
-                    }
-                }
+        for (Vec3d point : candidatePoints) {
+            if (isPointVisible(eyePos, point)) {
+                visiblePoints.add(point);
             }
         }
 
-        return visiblePoints;
+        if (visiblePoints.isEmpty()) {
+            // Если ничего не видно — берём центр головы
+            return new Vec3d(entity.getX(), box.maxY - 0.15, entity.getZ());
+        }
+
+        // Выбираем точку с минимальным угловым отклонением от текущего взгляда
+        Angle currentAngle = AngleHandler.fromVec3d(mc.player.getRotationVec(1.0f));
+
+        return visiblePoints.stream()
+                .min(Comparator.comparingDouble(point ->
+                        calculateAngleDifference(eyePos, point, currentAngle)))
+                .orElse(visiblePoints.get(0));
     }
 
-    private boolean isWithinDistance(Vec3d startPoint, Vec3d endPoint, float maxDistance) {
-        return startPoint.distanceTo(endPoint) < maxDistance;
-    }
-
-    private Vec3d findBestVector(List<Vec3d> candidatePoints, Angle initialAngle) {
-        Vec3d playerEyePos = mc.player.getEyePos();
-
-        return candidatePoints.stream()
-                .min(Comparator.comparing(point -> calculateRotationDifference(playerEyePos, point, initialAngle)))
-                .orElse(null);
-    }
-
-    private double calculateRotationDifference(Vec3d startPoint, Vec3d endPoint, Angle initialAngle) {
-        Angle targetAngle = AngleHandler.fromVec3d(endPoint.subtract(startPoint));
-        Angle delta = AngleHandler.calculateDelta(initialAngle, targetAngle);
-        return Math.hypot(delta.getYaw(), delta.getPitch());
+    private double calculateAngleDifference(Vec3d from, Vec3d to, Angle current) {
+        Vec3d direction = to.subtract(from).normalize();
+        Angle target = AngleHandler.fromVec3d(direction);
+        Angle delta = AngleHandler.calculateDelta(current, target);
+        return Math.sqrt(delta.getYaw() * delta.getYaw() + delta.getPitch() * delta.getPitch());
     }
 
     private boolean isPointVisible(Vec3d from, Vec3d to) {

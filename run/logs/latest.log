@@ -1,8 +1,8 @@
-[21:09:54] [main/INFO] (FabricLoader/GameProvider) Loading Minecraft 1.21.4 with Fabric Loader 0.16.10
-[21:09:55] [main/WARN] (FabricLoader/Resolution) Warnings were found!
+[14:23:54] [main/INFO] (FabricLoader/GameProvider) Loading Minecraft 1.21.4 with Fabric Loader 0.16.10
+[14:23:54] [main/WARN] (FabricLoader/Resolution) Warnings were found!
  - Mod 'In-Game Account Switcher' (ias) 9.0.4 recommends any version of modmenu, which is missing!
 	 - You should install any version of modmenu for the optimal experience.
-[21:09:55] [main/INFO] (FabricLoader) Loading 56 mods:
+[14:23:54] [main/INFO] (FabricLoader) Loading 56 mods:
 	- fabric-api 0.119.3+1.21.4
 	- fabric-api-base 0.4.54+b47eab6b04
 	- fabric-api-lookup-api-v1 1.6.86+b1caf1e904
@@ -59,187 +59,627 @@
 	- melody 1.0
 	- minecraft 1.21.4
 	- mixinextras 0.4.1
-[21:10:01] [main/INFO] (FabricLoader/Mixin) SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/C:/Users/RokBolL/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.15.4+mixin.0.8.7/6a12aacc794f1078458433116e9ed42c1cc98096/sponge-mixin-0.15.4+mixin.0.8.7.jar Service=Knot/Fabric Env=CLIENT
-[21:10:01] [main/INFO] (FabricLoader/Mixin) Loaded Fabric development mappings for mixin remapper!
-[21:10:01] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_21
-[21:10:03] [main/INFO] (FabricLoader/MixinExtras|Service) Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.4.1).
-[21:10:10] [Datafixer Bootstrap/INFO] (Minecraft) 243 Datafixer optimizations took 5185 milliseconds
-[21:10:18] [Render thread/INFO] (Minecraft) Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
-[21:10:18] [Render thread/INFO] (Minecraft) Setting user: Player919
-[21:10:19] [Render thread/INFO] (Indigo) [Indigo] Registering Indigo renderer!
-[21:10:19] [Render thread/INFO] (IAS/IASMinecraft) IAS: Booting up... (version: 9.0.4, loader: Fabric, loader version: 0.16.10, game version: 1.21.4)
-[21:10:19] [Render thread/INFO] (IAS) IAS: Initializing IAS...
-[21:10:19] [Render thread/INFO] (IAS) IAS: IAS has been loaded.
-[21:10:19] [Render thread/INFO] (Minecraft) Backend library: LWJGL version 3.3.3-snapshot
-[21:10:22] [Render thread/INFO] (Minecraft) Reloading ResourceManager: vanilla, fabric, fabric-api, fabric-api-base, fabric-api-lookup-api-v1, fabric-biome-api-v1, fabric-block-api-v1, fabric-block-view-api-v2, fabric-blockrenderlayer-v1, fabric-client-gametest-api-v1, fabric-client-tags-api-v1, fabric-command-api-v1, fabric-command-api-v2, fabric-commands-v0, fabric-content-registries-v0, fabric-convention-tags-v1, fabric-convention-tags-v2, fabric-crash-report-info-v1, fabric-data-attachment-api-v1, fabric-data-generation-api-v1, fabric-dimensions-v1, fabric-entity-events-v1, fabric-events-interaction-v0, fabric-game-rule-api-v1, fabric-gametest-api-v1, fabric-item-api-v1, fabric-item-group-api-v1, fabric-key-binding-api-v1, fabric-keybindings-v0, fabric-lifecycle-events-v1, fabric-loot-api-v2, fabric-loot-api-v3, fabric-message-api-v1, fabric-model-loading-api-v1, fabric-networking-api-v1, fabric-object-builder-api-v1, fabric-particles-v1, fabric-recipe-api-v1, fabric-registry-sync-v0, fabric-renderer-api-v1, fabric-renderer-indigo, fabric-rendering-data-attachment-v1, fabric-rendering-fluids-v1, fabric-rendering-v1, fabric-resource-conditions-api-v1, fabric-resource-loader-v0, fabric-screen-api-v1, fabric-screen-handler-api-v1, fabric-sound-api-v1, fabric-tag-api-v1, fabric-transfer-api-v1, fabric-transitive-access-wideners-v1, fabricloader, ias, melody
-[21:10:22] [Worker-Main-1/INFO] (Minecraft) Found unifont_all_no_pua-16.0.01.hex, loading
-[21:10:23] [Worker-Main-1/INFO] (Minecraft) Found unifont_jp_patch-16.0.01.hex, loading
-[21:10:24] [Render thread/INFO] (Minecraft) OpenAL initialized on device OpenAL Soft on Динамики (2- USB Audio Device)
-[21:10:24] [Render thread/INFO] (Minecraft) Sound engine started
-[21:10:25] [Render thread/INFO] (Minecraft) Created: 1024x512x0 minecraft:textures/atlas/blocks.png-atlas
-[21:10:25] [Render thread/INFO] (Minecraft) Created: 256x256x0 minecraft:textures/atlas/signs.png-atlas
-[21:10:25] [Render thread/INFO] (Minecraft) Created: 512x512x0 minecraft:textures/atlas/shield_patterns.png-atlas
-[21:10:25] [Render thread/INFO] (Minecraft) Created: 512x512x0 minecraft:textures/atlas/banner_patterns.png-atlas
-[21:10:25] [Render thread/INFO] (Minecraft) Created: 2048x1024x0 minecraft:textures/atlas/armor_trims.png-atlas
-[21:10:25] [Render thread/INFO] (Minecraft) Created: 128x64x0 minecraft:textures/atlas/decorated_pot.png-atlas
-[21:10:25] [Render thread/INFO] (Minecraft) Created: 256x256x0 minecraft:textures/atlas/chest.png-atlas
-[21:10:25] [Render thread/INFO] (Minecraft) Created: 512x256x0 minecraft:textures/atlas/shulker_boxes.png-atlas
-[21:10:25] [Render thread/INFO] (Minecraft) Created: 512x256x0 minecraft:textures/atlas/beds.png-atlas
-[21:10:25] [Render thread/INFO] (Minecraft) Created: 64x64x0 minecraft:textures/atlas/map_decorations.png-atlas
-[21:10:25] [Render thread/INFO] (Minecraft) Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
-[21:10:25] [Render thread/INFO] (Minecraft) Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
-[21:10:25] [Render thread/INFO] (Minecraft) Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
-[21:10:25] [Render thread/INFO] (Minecraft) Created: 1024x512x0 minecraft:textures/atlas/gui.png-atlas
-[21:10:33] [Render thread/INFO] (IAS/IASMinecraft) IAS: Received login request: LoginData{name='tintin_labuba', uuid=5647a0b6-ca39-309b-8dad-1a6326221160, token=[TOKEN], online=false}
-[21:10:33] [IAS/INFO] (IAS/IASMinecraft) IAS: Creating user...
-[21:10:33] [Render thread/INFO] (IAS/IASMinecraft) IAS: Flushing user...
-[21:10:33] [Render thread/INFO] (IAS/IASMinecraft) IAS: Flushed user.
-[21:10:33] [Render thread/INFO] (IAS/IASMinecraft) IAS: Received login request: LoginData{name='mega_paster_gpt', uuid=a1e82855-e447-34c1-94a3-28cd12921a78, token=[TOKEN], online=false}
-[21:10:33] [IAS/INFO] (IAS/IASMinecraft) IAS: Creating user...
-[21:10:33] [Render thread/INFO] (IAS/IASMinecraft) IAS: Flushing user...
-[21:10:33] [Render thread/INFO] (IAS/IASMinecraft) IAS: Flushed user.
-[21:10:35] [Render thread/INFO] (Minecraft) Connecting to pvp.mioclient.me, 25565
-[21:10:40] [Render thread/INFO] (Minecraft) [System] [CHAT] mega_paster_gpt присоединился к игре
-[21:10:40] [Render thread/INFO] (Minecraft) Loaded 12 advancements
-[21:10:41] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Alerts enabled
-[21:10:41] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Verbose enabled
-[21:10:41] [Render thread/INFO] (Minecraft) [System] [CHAT] Player540 присоединился к игре
-[21:10:41] [Render thread/INFO] (Minecraft) [System] [CHAT] Player53 присоединился к игре
-[21:10:42] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Player53 failed Timer (x1) 
-[21:10:42] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Player53 failed Timer (x2) 
-[21:10:56] [Render thread/INFO] (Minecraft) [System] [CHAT] sherudi присоединился к игре
-[21:11:07] [Render thread/INFO] (Minecraft) [STDOUT]: [SOUND DEBUG] Attempting to play: mre:module.enable at 5.0x volume.
-[21:11:07] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x1) .005743 /gl 73
-[21:11:07] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x2) .007322 /gl 74
-[21:11:07] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x3) .008516 /gl 75
-[21:11:07] [Render thread/INFO] (Minecraft) [System] [CHAT] LadyManningRUS присоединился к игре
-[21:11:08] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x4) .011218 /gl 76
-[21:11:08] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x5) .013867 /gl 77
-[21:11:08] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x6) .017158 /gl 78
-[21:11:08] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x7) .002578 /gl 79
-[21:11:08] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x8) .069961 /gl 80
-[21:11:08] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x9) .134705 /gl 81
-[21:11:08] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x10) .182096 /gl 82
-[21:11:08] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x11) .170329 /gl 83
-[21:11:08] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x12) .069042 /gl 84
-[21:11:08] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x13) .145288 /gl 85
-[21:11:08] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x14) .149878 /gl 86
-[21:11:08] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x15) .069136 /gl 87
-[21:11:08] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x16) .143920 /gl 88
-[21:11:08] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x17) .067472 /gl 89
-[21:11:08] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x18) .139751 /gl 90
-[21:11:10] [Render thread/INFO] (Minecraft) [STDOUT]: [SOUND DEBUG] Attempting to play: mre:module.disable at 5.0x volume.
-[21:11:10] [Render thread/INFO] (Minecraft) [STDOUT]: [SOUND DEBUG] Attempting to play: mre:module.enable at 5.0x volume.
-[21:11:11] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x19) .035551 /gl 91
-[21:11:11] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x20) .053503 /gl 92
-[21:11:11] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x21) .067726 /gl 93
-[21:11:11] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x22) .082587 /gl 94
-[21:11:11] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x23) .095353 /gl 95
-[21:11:11] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x24) .024827 /gl 96
-[21:11:11] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x25) .041971 /gl 97
-[21:11:11] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x26) .057408 /gl 98
-[21:11:11] [Render thread/INFO] (Minecraft) [STDOUT]: [SOUND DEBUG] Attempting to play: mre:module.disable at 5.0x volume.
-[21:11:12] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » HowerPaster failed MultiActionsD* (x1) sprinting
-[21:11:12] [Render thread/INFO] (Minecraft) [STDOUT]: [SOUND DEBUG] Attempting to play: mre:module.enable at 5.0x volume.
-[21:11:13] [Render thread/INFO] (Minecraft) [STDOUT]: [SOUND DEBUG] Attempting to play: mre:module.disable at 5.0x volume.
-[21:11:17] [Render thread/INFO] (Minecraft) [STDOUT]: [SOUND DEBUG] Attempting to play: mre:module.enable at 5.0x volume.
-[21:11:17] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Player53 failed TimerLimit (x1) 
-[21:11:17] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Player53 failed TimerLimit (x2) 
-[21:11:17] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Player53 failed TimerLimit (x3) 
-[21:11:17] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Player53 failed TimerLimit (x4) 
-[21:11:17] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Player53 failed TimerLimit (x5) 
-[21:11:17] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Player53 failed TimerLimit (x6) 
-[21:11:17] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Player53 failed TimerLimit (x7) 
-[21:11:17] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x27) .093093 /gl 99
-[21:11:17] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Player53 failed TimerLimit (x8) 
-[21:11:17] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x28) .144821 /gl 100
-[21:11:18] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x29) .060646 /gl 101
-[21:11:18] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x30) .097613 /gl 102
-[21:11:18] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed BadPacketsJ (x1) 
-[21:11:18] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed NoSlow (x1) 
-[21:11:18] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x31) .009272 /gl 103
-[21:11:18] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed NoSlow (x2) 
-[21:11:18] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x32) .014684 /gl 104
-[21:11:18] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed NoSlow (x3) 
-[21:11:18] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed NoSlow (x4) 
-[21:11:19] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed NoSlow (x5) 
-[21:11:19] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed NoSlow (x6) 
-[21:11:19] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed NoSlow (x7) 
-[21:11:19] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed NoSlow (x8) 
-[21:11:19] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed NoSlow (x9) 
-[21:11:19] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed NoSlow (x10) 
-[21:11:19] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed NoSlow (x11) 
-[21:11:19] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed NoSlow (x12) 
-[21:11:19] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed NoSlow (x13) 
-[21:11:19] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed NoSlow (x14) 
-[21:11:19] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed NoSlow (x15) 
-[21:11:19] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x33) .019162 /gl 105
-[21:11:19] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x34) .032755 /gl 106
-[21:11:19] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed NoSlow (x16) 
-[21:11:19] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x35) .037860 /gl 107
-[21:11:19] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed NoSlow (x17) 
-[21:11:19] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed NoSlow (x18) 
-[21:11:19] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed NoSlow (x19) 
-[21:11:19] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed NoSlow (x20) 
-[21:11:19] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x36) .020517 /gl 108
-[21:11:19] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed NoSlow (x21) 
-[21:11:19] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x37) .030760 /gl 109
-[21:11:19] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed NoSlow (x22) 
-[21:11:19] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x38) .036164 /gl 110
-[21:11:19] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed NoSlow (x23) 
-[21:11:19] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x39) .017518 /gl 111
-[21:11:19] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed NoSlow (x24) 
-[21:11:19] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x40) .022250 /gl 112
-[21:11:19] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed NoSlow (x25) 
-[21:11:19] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x41) .020895 /gl 113
-[21:11:19] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed NoSlow (x26) 
-[21:11:19] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x42) .004297 /gl 114
-[21:11:19] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed NoSlow (x27) 
-[21:11:19] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x43) .005268 /gl 115
-[21:11:19] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed NoSlow (x28) 
-[21:11:20] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x44) .002931 /gl 116
-[21:11:20] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed NoSlow (x29) 
-[21:11:20] [Render thread/INFO] (Minecraft) Loaded 33 advancements
-[21:11:20] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x45) .004578 /gl 117
-[21:11:20] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed NoSlow (x30) 
-[21:11:20] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed BadPacketsJ (x2) 
-[21:11:20] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed BadPacketsJ (x3) 
-[21:11:20] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x46) .014288 /gl 118
-[21:11:20] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed BadPacketsJ (x4) 
-[21:11:20] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed BadPacketsJ (x5) 
-[21:11:20] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » HowerPaster failed MultiActionsD* (x2) sprinting
-[21:11:20] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x47) .023260 /gl 119
-[21:11:20] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x48) .075164 /gl 120
-[21:11:20] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x49) .136480 /gl 121
-[21:11:21] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x50) .062961 /gl 122
-[21:11:21] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x51) .130769 /gl 123
-[21:11:21] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x52) .040544 /gl 124
-[21:11:21] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x53) .078671 /gl 125
-[21:11:21] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x54) .118770 /gl 126
-[21:11:21] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x55) .003605 /gl 127
-[21:11:21] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x56) .043450 /gl 128
-[21:11:21] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x57) .012934 /gl 129
-[21:11:21] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x58) .041901 /gl 130
-[21:11:21] [Render thread/INFO] (Minecraft) [System] [CHAT] LadyManningRUS умер
-[21:11:22] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x59) .068817 /gl 131
-[21:11:22] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x60) .132897 /gl 132
-[21:11:22] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x61) .141631 /gl 133
-[21:11:22] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x62) .064861 /gl 134
-[21:11:22] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x63) .134930 /gl 135
-[21:11:22] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » HowerPaster failed PacketOrderE* (x1) attacking=false, rightClicking=true, openingInventory=false, releasing=false, sneaking=false, sprinting=false, bed=false, sprinting=false, gliding=false, mountJumping=false
-[21:11:23] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed RotationBreak* (x1) post-flying, action=START_DIGGING
-[21:11:23] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x64) .029430 /gl 136
-[21:11:23] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x65) .049519 /gl 137
-[21:11:23] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x66) .001329 /gl 138
-[21:11:23] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x67) .015497 /gl 139
-[21:11:23] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x68) .038603 /gl 140
-[21:11:23] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x69) .012614 /gl 141
-[21:11:24] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x70) .038508 /gl 142
-[21:11:24] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x71) .085533 /gl 143
-[21:11:24] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x72) .017556 /gl 144
-[21:11:24] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x73) .040875 /gl 145
-[21:11:24] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x74) .121471 /gl 146
-[21:11:24] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x75) .035344 /gl 147
-[21:11:24] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x76) .091565 /gl 148
-[21:11:25] [Render thread/INFO] (Minecraft) [STDOUT]: [SOUND DEBUG] Attempting to play: mre:module.disable at 5.0x volume.
-[21:11:28] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » HowerPaster failed MultiActionsD* (x3) sprinting
+[14:24:03] [main/INFO] (FabricLoader/Mixin) SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/C:/Users/RokBolL/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.15.4+mixin.0.8.7/6a12aacc794f1078458433116e9ed42c1cc98096/sponge-mixin-0.15.4+mixin.0.8.7.jar Service=Knot/Fabric Env=CLIENT
+[14:24:03] [main/INFO] (FabricLoader/Mixin) Loaded Fabric development mappings for mixin remapper!
+[14:24:03] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_21
+[14:24:06] [main/INFO] (FabricLoader/MixinExtras|Service) Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.4.1).
+[14:24:08] [Datafixer Bootstrap/INFO] (Minecraft) 243 Datafixer optimizations took 1153 milliseconds
+[14:24:20] [Render thread/INFO] (Minecraft) Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[14:24:20] [Render thread/INFO] (Minecraft) Setting user: Player467
+[14:24:20] [Render thread/INFO] (IAS/IASMinecraft) IAS: Booting up... (version: 9.0.4, loader: Fabric, loader version: 0.16.10, game version: 1.21.4)
+[14:24:20] [Render thread/INFO] (IAS) IAS: Initializing IAS...
+[14:24:20] [Render thread/INFO] (IAS) IAS: IAS has been loaded.
+[14:24:20] [Render thread/INFO] (Indigo) [Indigo] Registering Indigo renderer!
+[14:24:21] [Render thread/INFO] (Minecraft) Backend library: LWJGL version 3.3.3-snapshot
+[14:24:22] [Render thread/WARN] (FabricLoader/Mixin) Method overwrite conflict for handler$zgc000$melody$onKey in mytheria.mixins.json:KeyboardMixin from mod melody, previously written by fun.cosmo.mixin.KeyBoardMixin. Skipping method.
+[14:24:23] [Render thread/INFO] (Minecraft) Reloading ResourceManager: vanilla, fabric, fabric-api, fabric-api-base, fabric-api-lookup-api-v1, fabric-biome-api-v1, fabric-block-api-v1, fabric-block-view-api-v2, fabric-blockrenderlayer-v1, fabric-client-gametest-api-v1, fabric-client-tags-api-v1, fabric-command-api-v1, fabric-command-api-v2, fabric-commands-v0, fabric-content-registries-v0, fabric-convention-tags-v1, fabric-convention-tags-v2, fabric-crash-report-info-v1, fabric-data-attachment-api-v1, fabric-data-generation-api-v1, fabric-dimensions-v1, fabric-entity-events-v1, fabric-events-interaction-v0, fabric-game-rule-api-v1, fabric-gametest-api-v1, fabric-item-api-v1, fabric-item-group-api-v1, fabric-key-binding-api-v1, fabric-keybindings-v0, fabric-lifecycle-events-v1, fabric-loot-api-v2, fabric-loot-api-v3, fabric-message-api-v1, fabric-model-loading-api-v1, fabric-networking-api-v1, fabric-object-builder-api-v1, fabric-particles-v1, fabric-recipe-api-v1, fabric-registry-sync-v0, fabric-renderer-api-v1, fabric-renderer-indigo, fabric-rendering-data-attachment-v1, fabric-rendering-fluids-v1, fabric-rendering-v1, fabric-resource-conditions-api-v1, fabric-resource-loader-v0, fabric-screen-api-v1, fabric-screen-handler-api-v1, fabric-sound-api-v1, fabric-tag-api-v1, fabric-transfer-api-v1, fabric-transitive-access-wideners-v1, fabricloader, ias, melody
+[14:24:23] [Worker-Main-2/INFO] (Minecraft) Found unifont_all_no_pua-16.0.01.hex, loading
+[14:24:24] [Worker-Main-2/INFO] (Minecraft) Found unifont_jp_patch-16.0.01.hex, loading
+[14:24:27] [Render thread/INFO] (Minecraft) OpenAL initialized on device OpenAL Soft on Динамики (2- USB Audio Device)
+[14:24:27] [Render thread/INFO] (Minecraft) Sound engine started
+[14:24:27] [Render thread/INFO] (Minecraft) Created: 1024x512x0 minecraft:textures/atlas/blocks.png-atlas
+[14:24:27] [Render thread/INFO] (Minecraft) Created: 256x256x0 minecraft:textures/atlas/signs.png-atlas
+[14:24:27] [Render thread/INFO] (Minecraft) Created: 512x512x0 minecraft:textures/atlas/shield_patterns.png-atlas
+[14:24:27] [Render thread/INFO] (Minecraft) Created: 512x512x0 minecraft:textures/atlas/banner_patterns.png-atlas
+[14:24:27] [Render thread/INFO] (Minecraft) Created: 2048x1024x0 minecraft:textures/atlas/armor_trims.png-atlas
+[14:24:27] [Render thread/INFO] (Minecraft) Created: 128x64x0 minecraft:textures/atlas/decorated_pot.png-atlas
+[14:24:27] [Render thread/INFO] (Minecraft) Created: 256x256x0 minecraft:textures/atlas/chest.png-atlas
+[14:24:27] [Render thread/INFO] (Minecraft) Created: 512x256x0 minecraft:textures/atlas/shulker_boxes.png-atlas
+[14:24:27] [Render thread/INFO] (Minecraft) Created: 512x256x0 minecraft:textures/atlas/beds.png-atlas
+[14:24:27] [Render thread/INFO] (Minecraft) Created: 64x64x0 minecraft:textures/atlas/map_decorations.png-atlas
+[14:24:27] [Render thread/INFO] (Minecraft) Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
+[14:24:27] [Render thread/INFO] (Minecraft) Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
+[14:24:27] [Render thread/INFO] (Minecraft) Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[14:24:27] [Render thread/INFO] (Minecraft) Created: 1024x512x0 minecraft:textures/atlas/gui.png-atlas
+[14:24:38] [Render thread/INFO] (IAS/IASMinecraft) IAS: Received login request: LoginData{name='mega_paster_gpt', uuid=a1e82855-e447-34c1-94a3-28cd12921a78, token=[TOKEN], online=false}
+[14:24:38] [IAS/INFO] (IAS/IASMinecraft) IAS: Creating user...
+[14:24:38] [Render thread/INFO] (IAS/IASMinecraft) IAS: Flushing user...
+[14:24:38] [Render thread/INFO] (IAS/IASMinecraft) IAS: Flushed user.
+[14:24:40] [Render thread/ERROR] (Minecraft) Can't ping 89.248.236.141:27467: Отключение
+[14:24:42] [Render thread/INFO] (Minecraft) Connecting to pvp.mioclient.me, 25565
+[14:24:47] [Render thread/INFO] (Minecraft) [System] [CHAT] mega_paster_gpt присоединился к игре
+[14:24:48] [Render thread/INFO] (Minecraft) Loaded 2 advancements
+[14:24:48] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Alerts enabled
+[14:24:48] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Verbose enabled
+[14:25:15] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed TimerLimit (x1) 
+[14:25:20] [Render thread/INFO] (Minecraft) [System] [CHAT] Player802 присоединился к игре
+[14:25:32] [Render thread/INFO] (Minecraft) [System] [CHAT] Player802 покинул игру
+[14:25:41] [Render thread/INFO] (Minecraft) [STDOUT]: [SOUND DEBUG] Attempting to play: mre:module.enable at 5.0x volume.
+[14:25:43] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed RotationBreak* (x1) post-flying, action=START_DIGGING
+[14:25:43] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x1) 
+[14:25:43] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x2) 
+[14:25:47] [Render thread/INFO] (Minecraft) [STDOUT]: [SOUND DEBUG] Attempting to play: mre:module.disable at 5.0x volume.
+[14:25:47] [Render thread/INFO] (Minecraft) [STDOUT]: [SOUND DEBUG] Attempting to play: mre:module.enable at 5.0x volume.
+[14:25:49] [Render thread/INFO] (Minecraft) [STDOUT]: [SOUND DEBUG] Attempting to play: mre:module.disable at 5.0x volume.
+[14:25:49] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x1) .054447 /gl 193
+[14:25:49] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x2) .088220 /gl 194
+[14:25:49] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x3) .067968 /gl 195
+[14:25:49] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x4) .056911 /gl 196
+[14:25:49] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x5) .050874 /gl 197
+[14:25:49] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x6) .047578 /gl 198
+[14:25:50] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x7) .045778 /gl 199
+[14:25:50] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x8) .024995 /gl 200
+[14:25:50] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x9) .013647 /gl 201
+[14:25:50] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x10) .007451 /gl 202
+[14:25:50] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x11) .004068 /gl 203
+[14:25:50] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x12) .002221 /gl 204
+[14:25:50] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x13) .001213 /gl 205
+[14:26:00] [Render thread/INFO] (Minecraft) [STDOUT]: [SOUND DEBUG] Attempting to play: mre:module.enable at 5.0x volume.
+[14:26:02] [Render thread/INFO] (Minecraft) [STDOUT]: [SOUND DEBUG] Attempting to play: mre:module.disable at 5.0x volume.
+[14:26:04] [Render thread/INFO] (Minecraft) [STDOUT]: [SOUND DEBUG] Attempting to play: mre:module.enable at 5.0x volume.
+[14:26:09] [Render thread/INFO] (Minecraft) [STDOUT]: [SOUND DEBUG] Attempting to play: mre:module.disable at 5.0x volume.
+[14:26:09] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x14) .064336 /gl 206
+[14:26:09] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x15) .060789 /gl 207
+[14:26:09] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x16) .058852 /gl 208
+[14:26:09] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x17) .057794 /gl 209
+[14:26:10] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x18) .137472 /gl 210
+[14:26:10] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x19) .075060 /gl 211
+[14:26:10] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x20) .040983 /gl 212
+[14:26:10] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x21) .022377 /gl 213
+[14:26:14] [Render thread/INFO] (Minecraft) [STDOUT]: [SOUND DEBUG] Attempting to play: mre:module.enable at 5.0x volume.
+[14:26:18] [Render thread/INFO] (Minecraft) [STDOUT]: [SOUND DEBUG] Attempting to play: mre:module.disable at 5.0x volume.
+[14:26:18] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x22) .015070 /gl 214
+[14:26:18] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x23) .023298 /gl 215
+[14:26:18] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x24) .027791 /gl 216
+[14:26:22] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed RotationBreak* (x2) pre-flying, action=START_DIGGING
+[14:26:43] [Render thread/INFO] (Minecraft) [STDOUT]: [SOUND DEBUG] Attempting to play: mre:module.enable at 5.0x volume.
+[14:26:48] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x25) .022925 /gl 217
+[14:26:48] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x26) .012514 /gl 218
+[14:26:49] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x3) 
+[14:26:50] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed RotationBreak* (x3) post-flying, action=START_DIGGING
+[14:26:50] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x4) 
+[14:26:50] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x5) 
+[14:26:50] [Render thread/INFO] (Minecraft) [STDOUT]: [SOUND DEBUG] Attempting to play: mre:module.disable at 5.0x volume.
+[14:26:50] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x27) .065560 /gl 219
+[14:26:50] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x28) .060271 /gl 220
+[14:26:50] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x29) .053519 /gl 221
+[14:26:50] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x30) .057121 /gl 222
+[14:26:50] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x31) .145777 /gl 223
+[14:26:51] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x32) .201436 /gl 224
+[14:26:57] [Render thread/INFO] (Minecraft) [STDOUT]: [SOUND DEBUG] Attempting to play: mre:module.enable at 5.0x volume.
+[14:26:58] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x6) 
+[14:26:58] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x7) 
+[14:26:58] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x8) 
+[14:26:58] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x9) 
+[14:26:58] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x10) 
+[14:26:58] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x11) 
+[14:26:58] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x12) 
+[14:26:58] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x13) 
+[14:26:58] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x14) 
+[14:26:58] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x15) 
+[14:26:58] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x16) 
+[14:26:58] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x17) 
+[14:26:58] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x18) 
+[14:26:58] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x19) 
+[14:26:58] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x20) 
+[14:26:58] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x21) 
+[14:26:58] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x22) 
+[14:26:59] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x23) 
+[14:26:59] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x24) 
+[14:26:59] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x25) 
+[14:26:59] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x26) 
+[14:26:59] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x27) 
+[14:26:59] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x28) 
+[14:26:59] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x29) 
+[14:26:59] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x30) 
+[14:26:59] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x31) 
+[14:26:59] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x32) 
+[14:26:59] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x33) 
+[14:26:59] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x34) 
+[14:26:59] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x35) 
+[14:26:59] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x36) 
+[14:26:59] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x37) 
+[14:26:59] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x38) 
+[14:26:59] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x39) 
+[14:26:59] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x40) 
+[14:26:59] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x41) 
+[14:26:59] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x42) 
+[14:27:00] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x43) 
+[14:27:00] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x44) 
+[14:27:00] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x45) 
+[14:27:00] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x46) 
+[14:27:00] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x47) 
+[14:27:00] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x48) 
+[14:27:00] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x49) 
+[14:27:00] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x50) 
+[14:27:00] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x51) 
+[14:27:00] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x52) 
+[14:27:00] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x53) 
+[14:27:00] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x54) 
+[14:27:00] [Render thread/INFO] (Minecraft) [System] [CHAT] Player30 присоединился к игре
+[14:27:00] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x55) 
+[14:27:00] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x56) 
+[14:27:00] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x57) 
+[14:27:00] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x58) 
+[14:27:00] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x59) 
+[14:27:00] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x60) 
+[14:27:00] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x61) 
+[14:27:00] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x62) 
+[14:27:01] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x63) 
+[14:27:01] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x64) 
+[14:27:01] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x65) 
+[14:27:01] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x66) 
+[14:27:01] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x67) 
+[14:27:01] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x68) 
+[14:27:01] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x69) 
+[14:27:01] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x70) 
+[14:27:01] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x71) 
+[14:27:01] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x72) 
+[14:27:01] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x73) 
+[14:27:01] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x74) 
+[14:27:01] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x75) 
+[14:27:01] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x76) 
+[14:27:01] [Render thread/INFO] (Minecraft) [STDOUT]: [SOUND DEBUG] Attempting to play: mre:module.disable at 5.0x volume.
+[14:27:01] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x77) 
+[14:27:01] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x78) 
+[14:27:01] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x79) 
+[14:27:01] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x33) .025133 /gl 225
+[14:27:01] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x34) .038856 /gl 226
+[14:27:04] [Render thread/INFO] (Minecraft) [STDOUT]: [SOUND DEBUG] Attempting to play: mre:module.enable at 5.0x volume.
+[14:27:05] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Hitboxes (x1) type=player
+[14:27:06] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Hitboxes (x2) type=player
+[14:27:06] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x80) 
+[14:27:08] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x81) 
+[14:27:09] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed RotationBreak* (x4) pre-flying, action=START_DIGGING
+[14:27:09] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x82) 
+[14:27:09] [Render thread/INFO] (Minecraft) [System] [CHAT] VoidBlaze395 присоединился к игре
+[14:27:11] [Render thread/INFO] (Minecraft) [System] [CHAT] Player934 присоединился к игре
+[14:27:11] [Render thread/INFO] (Minecraft) [STDOUT]: [SOUND DEBUG] Attempting to play: mre:module.disable at 5.0x volume.
+[14:27:11] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Player934 failed Timer (x1) 
+[14:27:11] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Player934 failed Timer (x2) 
+[14:27:16] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed RotationBreak* (x5) pre-flying, action=START_DIGGING
+[14:27:27] [Render thread/INFO] (Minecraft) [System] [CHAT] Player934 покинул игру
+[14:27:28] [Render thread/INFO] (Minecraft) [STDOUT]: [SOUND DEBUG] Attempting to play: mre:module.enable at 5.0x volume.
+[14:27:28] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x83) 
+[14:27:29] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x84) 
+[14:27:29] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x85) 
+[14:27:29] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Hitboxes (x3) type=zombie
+[14:27:29] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x86) 
+[14:27:29] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x87) 
+[14:27:29] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x88) 
+[14:27:29] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x89) 
+[14:27:29] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x90) 
+[14:27:29] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x91) 
+[14:27:29] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x92) 
+[14:27:29] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x93) 
+[14:27:29] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x94) 
+[14:27:29] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x95) 
+[14:27:29] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x96) 
+[14:27:29] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x97) 
+[14:27:29] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x98) 
+[14:27:29] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x99) 
+[14:27:29] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x100) 
+[14:27:29] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x101) 
+[14:27:29] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x102) 
+[14:27:29] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x103) 
+[14:27:30] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x104) 
+[14:27:30] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x105) 
+[14:27:30] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x106) 
+[14:27:30] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x107) 
+[14:27:30] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x108) 
+[14:27:30] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x109) 
+[14:27:30] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x110) 
+[14:27:30] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x111) 
+[14:27:30] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x112) 
+[14:27:30] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x113) 
+[14:27:30] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x114) 
+[14:27:30] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x115) 
+[14:27:30] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x116) 
+[14:27:30] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x117) 
+[14:27:30] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x118) 
+[14:27:30] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x119) 
+[14:27:30] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x120) 
+[14:27:30] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x121) 
+[14:27:30] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x122) 
+[14:27:30] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x123) 
+[14:27:31] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x124) 
+[14:27:31] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x125) 
+[14:27:31] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x126) 
+[14:27:31] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x127) 
+[14:27:31] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x128) 
+[14:27:31] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x129) 
+[14:27:31] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x130) 
+[14:27:31] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x131) 
+[14:27:31] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x132) 
+[14:27:31] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x133) 
+[14:27:31] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x134) 
+[14:27:31] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x135) 
+[14:27:31] [Render thread/INFO] (Minecraft) [System] [CHAT] Redeaage присоединился к игре
+[14:27:31] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x136) 
+[14:27:31] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x136) 
+[14:27:31] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x137) 
+[14:27:31] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x138) 
+[14:27:31] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x139) 
+[14:27:31] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x140) 
+[14:27:31] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x141) 
+[14:27:31] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x142) 
+[14:27:32] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x143) 
+[14:27:32] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x144) 
+[14:27:32] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x145) 
+[14:27:32] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x146) 
+[14:27:32] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x147) 
+[14:27:32] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x148) 
+[14:27:32] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x149) 
+[14:27:32] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x150) 
+[14:27:32] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x151) 
+[14:27:32] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x152) 
+[14:27:32] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x153) 
+[14:27:32] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x154) 
+[14:27:32] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x155) 
+[14:27:32] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x156) 
+[14:27:32] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x157) 
+[14:27:32] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x158) 
+[14:27:32] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x159) 
+[14:27:32] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x160) 
+[14:27:32] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x161) 
+[14:27:32] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x162) 
+[14:27:33] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x163) 
+[14:27:33] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x164) 
+[14:27:33] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x165) 
+[14:27:33] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x166) 
+[14:27:33] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x167) 
+[14:27:33] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x168) 
+[14:27:33] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x169) 
+[14:27:33] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x170) 
+[14:27:33] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x171) 
+[14:27:33] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x172) 
+[14:27:33] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x173) 
+[14:27:33] [Render thread/INFO] (Minecraft) [STDOUT]: [SOUND DEBUG] Attempting to play: mre:module.disable at 5.0x volume.
+[14:27:33] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x174) 
+[14:27:33] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x175) 
+[14:27:33] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x35) .023517 /gl 227
+[14:27:33] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x36) .044898 /gl 228
+[14:27:33] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x37) .064358 /gl 229
+[14:27:33] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x38) .082068 /gl 230
+[14:27:33] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x39) .098184 /gl 231
+[14:27:33] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x40) .089344 /gl 232
+[14:27:33] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x41) .081303 /gl 233
+[14:27:34] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed Simulation (x42) .073986 /gl 234
+[14:27:40] [Render thread/INFO] (Minecraft) [System] [CHAT] mega_paster_gpt выпал из мира
+[14:27:43] [Render thread/INFO] (Minecraft) [STDOUT]: [SOUND DEBUG] Attempting to play: mre:module.enable at 5.0x volume.
+[14:27:43] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x176) 
+[14:27:43] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x177) 
+[14:27:43] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x178) 
+[14:27:43] [Render thread/INFO] (Minecraft) [System] [CHAT] Player30 покинул игру
+[14:27:43] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x179) 
+[14:27:43] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x180) 
+[14:27:43] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x181) 
+[14:27:43] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x182) 
+[14:27:43] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x183) 
+[14:27:43] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x184) 
+[14:27:43] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x185) 
+[14:27:43] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x186) 
+[14:27:44] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x187) 
+[14:27:44] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x188) 
+[14:27:44] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x189) 
+[14:27:44] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x190) 
+[14:27:44] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x191) 
+[14:27:44] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x192) 
+[14:27:44] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x193) 
+[14:27:44] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x194) 
+[14:27:44] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x195) 
+[14:27:44] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x196) 
+[14:27:44] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x197) 
+[14:27:44] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x198) 
+[14:27:44] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x199) 
+[14:27:44] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x200) 
+[14:27:44] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x201) 
+[14:27:44] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x202) 
+[14:27:44] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x203) 
+[14:27:44] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x204) 
+[14:27:44] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x205) 
+[14:27:44] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x206) 
+[14:27:45] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x207) 
+[14:27:45] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x208) 
+[14:27:45] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x209) 
+[14:27:45] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x210) 
+[14:27:45] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x211) 
+[14:27:45] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x212) 
+[14:27:45] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x213) 
+[14:27:45] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x214) 
+[14:27:45] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x215) 
+[14:27:45] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x216) 
+[14:27:45] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x217) 
+[14:27:45] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x218) 
+[14:27:45] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x219) 
+[14:27:45] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x220) 
+[14:27:45] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x221) 
+[14:27:45] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x222) 
+[14:27:45] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x223) 
+[14:27:45] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x224) 
+[14:27:45] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x225) 
+[14:27:45] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x226) 
+[14:27:46] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x227) 
+[14:27:46] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x228) 
+[14:27:46] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x229) 
+[14:27:46] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x230) 
+[14:27:46] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x231) 
+[14:27:46] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x232) 
+[14:27:46] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x233) 
+[14:27:46] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x234) 
+[14:27:46] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x235) 
+[14:27:46] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x236) 
+[14:27:46] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x237) 
+[14:27:46] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x238) 
+[14:27:46] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x239) 
+[14:27:46] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x240) 
+[14:27:46] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x241) 
+[14:27:46] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x242) 
+[14:27:46] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x243) 
+[14:27:46] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x244) 
+[14:27:46] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x245) 
+[14:27:46] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x246) 
+[14:27:46] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x247) 
+[14:27:47] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x248) 
+[14:27:47] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x249) 
+[14:27:47] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x250) 
+[14:27:47] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x251) 
+[14:27:47] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x252) 
+[14:27:47] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x253) 
+[14:27:47] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x254) 
+[14:27:47] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x255) 
+[14:27:47] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x256) 
+[14:27:47] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x257) 
+[14:27:47] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x258) 
+[14:27:47] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x259) 
+[14:27:47] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x260) 
+[14:27:47] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x261) 
+[14:27:47] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x262) 
+[14:27:47] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x263) 
+[14:27:47] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x264) 
+[14:27:47] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x265) 
+[14:27:47] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x266) 
+[14:27:47] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x267) 
+[14:27:48] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x268) 
+[14:27:48] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x269) 
+[14:27:48] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x270) 
+[14:27:48] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x271) 
+[14:27:48] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x272) 
+[14:27:48] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x273) 
+[14:27:48] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x274) 
+[14:27:48] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x275) 
+[14:27:48] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x276) 
+[14:27:48] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x277) 
+[14:27:48] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x278) 
+[14:27:48] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x279) 
+[14:27:48] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x280) 
+[14:27:48] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x281) 
+[14:27:48] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x282) 
+[14:27:48] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x283) 
+[14:27:48] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x284) 
+[14:27:48] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x285) 
+[14:27:48] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x286) 
+[14:27:48] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x287) 
+[14:27:49] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x288) 
+[14:27:49] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x289) 
+[14:27:49] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x290) 
+[14:27:49] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x291) 
+[14:27:49] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x292) 
+[14:27:49] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x293) 
+[14:27:49] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x294) 
+[14:27:49] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x295) 
+[14:27:49] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x296) 
+[14:27:49] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x297) 
+[14:27:49] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x298) 
+[14:27:49] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x299) 
+[14:27:49] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x300) 
+[14:27:49] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x301) 
+[14:27:49] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x302) 
+[14:27:49] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x303) 
+[14:27:49] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x304) 
+[14:27:49] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x305) 
+[14:27:49] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x306) 
+[14:27:49] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x307) 
+[14:27:50] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x308) 
+[14:27:50] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x309) 
+[14:27:50] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x310) 
+[14:27:50] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x311) 
+[14:27:50] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x312) 
+[14:27:50] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x313) 
+[14:27:50] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x314) 
+[14:27:50] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x315) 
+[14:27:50] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x316) 
+[14:27:50] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x317) 
+[14:27:50] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x318) 
+[14:27:50] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x319) 
+[14:27:50] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x320) 
+[14:27:50] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x321) 
+[14:27:50] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x322) 
+[14:27:50] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x323) 
+[14:27:50] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x324) 
+[14:27:50] [Render thread/INFO] (Minecraft) [System] [CHAT] frusk0ver присоединился к игре
+[14:27:50] [Render thread/INFO] (Minecraft) [System] [CHAT] The scaffold area is going to be cleared in 60 seconds
+[14:27:50] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x325) 
+[14:27:50] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x326) 
+[14:27:50] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x327) 
+[14:27:51] [Render thread/INFO] (Minecraft) [STDOUT]: [SOUND DEBUG] Attempting to play: mre:module.disable at 5.0x volume.
+[14:27:51] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x328) 
+[14:27:51] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed AimDuplicateLook (x329) 
+[14:27:53] [Render thread/INFO] (Minecraft) [System] [CHAT] Player834 присоединился к игре
+[14:27:54] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Player834 failed Timer (x1) 
+[14:28:00] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » frusk0ver failed Hitboxes (x1) type=end_crystal
+[14:28:05] [Render thread/INFO] (Minecraft) [System] [CHAT] Player834 покинул игру
+[14:28:14] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed RotationBreak* (x6) pre-flying, action=START_DIGGING
+[14:28:14] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed RotationBreak* (x7) pre-flying, action=START_DIGGING
+[14:28:14] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » mega_paster_gpt failed RotationBreak* (x8) pre-flying, action=START_DIGGING
+[14:28:17] [Render thread/INFO] (Minecraft) [System] [CHAT] Player756 присоединился к игре
+[14:28:20] [Render thread/INFO] (Minecraft) [System] [CHAT] The scaffold area is going to be cleared in 30 seconds
+[14:28:22] [Render thread/INFO] (Minecraft) [System] [CHAT] Redeaage покинул игру
+[14:28:32] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » frusk0ver failed SprintE* (x1) 
+[14:28:34] [Render thread/INFO] (Minecraft) [System] [CHAT] VoidBlaze395 покинул игру
+[14:28:34] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » frusk0ver failed Post (x1) entity action v1.17
+[14:28:34] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » frusk0ver failed PacketOrderE* (x1) attacking=false, rightClicking=true, openingInventory=false, releasing=false, sneaking=false, sprinting=false, bed=false, sprinting=false, gliding=false, mountJumping=false
+[14:28:35] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » frusk0ver failed PacketOrderE* (x2) attacking=false, rightClicking=true, openingInventory=false, releasing=false, sneaking=false, sprinting=false, bed=false, sprinting=false, gliding=false, mountJumping=false
+[14:28:35] [Render thread/INFO] (Minecraft) [STDOUT]: [SOUND DEBUG] Attempting to play: mre:module.enable at 5.0x volume.
+[14:28:40] [Render thread/INFO] (Minecraft) [STDOUT]: [SOUND DEBUG] Attempting to play: mre:module.enable at 5.0x volume.
+[14:28:40] [Render thread/INFO] (Minecraft) [System] [CHAT] The scaffold area is going to be cleared in 10 seconds
+[14:28:44] [Render thread/INFO] (Minecraft) [STDOUT]: [SOUND DEBUG] Attempting to play: mre:module.disable at 5.0x volume.
+[14:28:49] [Render thread/INFO] (Minecraft) [System] [CHAT] Player983 присоединился к игре
+[14:28:50] [Render thread/INFO] (Minecraft) [System] [CHAT] The scaffold area has been cleared
+[14:28:55] [Render thread/INFO] (Minecraft) [System] [CHAT] Player648 присоединился к игре
+[14:28:55] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » frusk0ver failed Simulation (x1) .289822 /gl 235
+[14:28:55] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » frusk0ver failed Simulation (x2) .330412 /gl 236
+[14:29:03] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Tasikukoj failed Simulation (x1) .196000 /gl 237
+[14:29:03] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Tasikukoj failed GroundSpoof (x1) claimed true
+[14:29:03] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Tasikukoj failed Simulation (x2) .158448 /gl 238
+[14:29:03] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Tasikukoj failed Simulation (x3) .382381 /gl 239
+[14:29:03] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Tasikukoj failed Simulation (x4) .316185 /gl 240
+[14:29:13] [Render thread/INFO] (Minecraft) [System] [CHAT] Player648 покинул игру
+[14:29:18] [Render thread/INFO] (Minecraft) [System] [CHAT] Fylhetq228 присоединился к игре
+[14:29:19] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » frusk0ver failed AimModulo360 (x1) 
+[14:29:27] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » frusk0ver failed AimModulo360 (x2) 
+[14:29:28] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Fylhetq228 failed BadPacketsJ (x1) 
+[14:29:29] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Fylhetq228 failed Simulation (x1) .234028 /gl 241
+[14:29:29] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Fylhetq228 failed Simulation (x2) .290640 /gl 242
+[14:29:37] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Tasikukoj failed Simulation (x5) .003291 /gl 243
+[14:29:37] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Tasikukoj failed Simulation (x6) .003094 /gl 244
+[14:29:38] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Tasikukoj failed Simulation (x7) .003271 /gl 245
+[14:29:38] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Tasikukoj failed Simulation (x8) .003300 /gl 246
+[14:29:39] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Tasikukoj failed Simulation (x9) .002501 /gl 247
+[14:29:39] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Tasikukoj failed Simulation (x10) .002939 /gl 248
+[14:29:40] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Tasikukoj failed Simulation (x11) .003300 /gl 249
+[14:29:40] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Tasikukoj failed Simulation (x12) .001451 /gl 250
+[14:29:42] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Tasikukoj failed Simulation (x13) .003019 /gl 251
+[14:29:43] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Tasikukoj failed Simulation (x14) .003281 /gl 252
+[14:29:47] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Tasikukoj failed Simulation (x15) .002887 /gl 253
+[14:29:47] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » frusk0ver failed Post (x2) held item change v1.17
+[14:29:47] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » frusk0ver failed PacketOrderE* (x3) attacking=false, rightClicking=true, openingInventory=false, releasing=false, sneaking=false, sprinting=false, bed=false, sprinting=false, gliding=false, mountJumping=false
+[14:29:48] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » frusk0ver failed Post (x3) held item change v1.17
+[14:29:48] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » frusk0ver failed PacketOrderE* (x4) attacking=false, rightClicking=true, openingInventory=false, releasing=false, sneaking=false, sprinting=false, bed=false, sprinting=false, gliding=false, mountJumping=false
+[14:29:48] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Tasikukoj failed Simulation (x16) .003039 /gl 254
+[14:29:48] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Tasikukoj failed Simulation (x17) .001300 /gl 255
+[14:29:49] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Tasikukoj failed Simulation (x18) .001729 /gl 256
+[14:29:49] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Tasikukoj failed Simulation (x19) .003229 /gl 1
+[14:29:49] [Render thread/INFO] (Minecraft) [System] [CHAT] Fylhetq228 покинул игру
+[14:29:51] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Tasikukoj failed Simulation (x20) .001828 /gl 2
+[14:29:52] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Tasikukoj failed Simulation (x21) .002020 /gl 3
+[14:29:52] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Tasikukoj failed Simulation (x22) .001926 /gl 4
+[14:29:52] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Tasikukoj failed Simulation (x23) .003185 /gl 5
+[14:29:55] [Render thread/INFO] (Minecraft) [System] [CHAT] VoidBlaze395 присоединился к игре
+[14:29:57] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » frusk0ver failed Post (x4) held item change v1.17
+[14:29:57] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » frusk0ver failed PacketOrderE* (x5) attacking=false, rightClicking=true, openingInventory=false, releasing=false, sneaking=false, sprinting=false, bed=false, sprinting=false, gliding=false, mountJumping=false
+[14:29:58] [Render thread/INFO] (Minecraft) [System] [CHAT] Player635 покинул игру
+[14:30:00] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Tasikukoj failed Simulation (x24) .077420 /gl 6
+[14:30:00] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Tasikukoj failed Simulation (x25) .147664 /gl 7
+[14:30:00] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Tasikukoj failed Simulation (x26) .111763 /gl 8
+[14:30:01] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Tasikukoj failed Simulation (x27) .003155 /gl 9
+[14:30:04] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Tasikukoj failed Simulation (x28) .043284 /gl 10
+[14:30:04] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Tasikukoj failed Simulation (x29) .060961 /gl 11
+[14:30:05] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Tasikukoj failed Simulation (x30) .039723 /gl 12
+[14:30:05] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Tasikukoj failed Simulation (x31) .056486 /gl 13
+[14:30:05] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Tasikukoj failed Simulation (x32) .060247 /gl 14
+[14:30:05] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Tasikukoj failed Simulation (x33) .041864 /gl 15
+[14:30:06] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » frusk0ver failed Post (x5) held item change v1.17
+[14:30:07] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » frusk0ver failed PacketOrderE* (x6) attacking=false, rightClicking=true, openingInventory=false, releasing=false, sneaking=false, sprinting=false, bed=false, sprinting=false, gliding=false, mountJumping=false
+[14:30:09] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Tasikukoj failed Hitboxes (x1) type=player
+[14:30:11] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » frusk0ver failed Simulation (x3) .557796 /gl 16
+[14:30:11] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » frusk0ver failed PacketOrderE* (x7) attacking=false, rightClicking=true, openingInventory=false, releasing=false, sneaking=false, sprinting=false, bed=false, sprinting=false, gliding=false, mountJumping=false
+[14:30:20] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Tasikukoj failed Simulation (x34) .064660 /gl 17
+[14:30:29] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » frusk0ver failed Post (x6) held item change v1.17
+[14:30:29] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » frusk0ver failed PacketOrderE* (x8) attacking=false, rightClicking=true, openingInventory=false, releasing=false, sneaking=false, sprinting=false, bed=false, sprinting=false, gliding=false, mountJumping=false
+[14:30:30] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » frusk0ver failed PacketOrderE* (x9) attacking=false, rightClicking=true, openingInventory=false, releasing=false, sneaking=false, sprinting=false, bed=false, sprinting=false, gliding=false, mountJumping=false
+[14:30:32] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Tasikukoj failed Simulation (x35) .024507 /gl 18
+[14:30:33] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » VoidBlaze395 failed Hitboxes (x1) type=player
+[14:30:33] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » frusk0ver failed BadPacketsF (x1) state=false
+[14:30:33] [Render thread/INFO] (Minecraft) [System] [CHAT] Player983 покинул игру
+[14:30:35] [Render thread/INFO] (Minecraft) [System] [CHAT] Tasikukoj был убит frusk0ver
+[14:30:36] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Tasikukoj failed Simulation (x36) .030364 /gl 19
+[14:30:38] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Tasikukoj failed Simulation (x37) .197959 /gl 20
+[14:30:38] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Tasikukoj failed Simulation (x38) .195966 /gl 21
+[14:30:38] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Tasikukoj failed Simulation (x39) .193996 /gl 22
+[14:30:38] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Tasikukoj failed Simulation (x40) .162502 /gl 23
+[14:30:38] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Tasikukoj failed Simulation (x41) .160636 /gl 24
+[14:30:38] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Tasikukoj failed Simulation (x42) .162506 /gl 25
+[14:30:39] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Tasikukoj failed Simulation (x43) .160628 /gl 26
+[14:30:39] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Tasikukoj failed Simulation (x44) .158819 /gl 27
+[14:30:39] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Tasikukoj failed Simulation (x45) .164055 /gl 28
+[14:30:39] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Tasikukoj failed Simulation (x46) .088552 /gl 29
+[14:30:39] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Tasikukoj failed Simulation (x47) .087565 /gl 30
+[14:30:39] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Tasikukoj failed Simulation (x48) .164055 /gl 31
+[14:30:39] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Tasikukoj failed Simulation (x49) .088556 /gl 32
+[14:30:41] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » frusk0ver failed BadPacketsF (x2) state=false
+[14:30:41] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Tasikukoj failed ElytraC* (x1) 
+[14:30:44] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » frusk0ver failed PacketOrderE* (x10) attacking=false, rightClicking=true, openingInventory=false, releasing=false, sneaking=false, sprinting=false, bed=false, sprinting=false, gliding=false, mountJumping=false
+[14:30:45] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » frusk0ver failed Simulation (x4) 1.044851 /gl 33
+[14:30:46] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » frusk0ver failed Simulation (x5) .866048 /gl 34
+[14:30:47] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » frusk0ver failed PacketOrderE* (x11) attacking=false, rightClicking=true, openingInventory=false, releasing=false, sneaking=false, sprinting=false, bed=false, sprinting=false, gliding=false, mountJumping=false
+[14:30:50] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » frusk0ver failed PacketOrderE* (x12) attacking=false, rightClicking=true, openingInventory=false, releasing=false, sneaking=false, sprinting=false, bed=false, sprinting=false, gliding=false, mountJumping=false
+[14:30:53] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » frusk0ver failed PacketOrderE* (x13) attacking=false, rightClicking=true, openingInventory=false, releasing=false, sneaking=false, sprinting=false, bed=false, sprinting=false, gliding=false, mountJumping=false
+[14:30:58] [Render thread/INFO] (Minecraft) [System] [CHAT] Player216 присоединился к игре
+[14:30:58] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » frusk0ver failed BadPacketsF (x3) state=false
+[14:31:06] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » frusk0ver failed PacketOrderE* (x14) attacking=false, rightClicking=true, openingInventory=false, releasing=false, sneaking=false, sprinting=false, bed=false, sprinting=false, gliding=false, mountJumping=false
+[14:31:06] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Tasikukoj failed Simulation (x50) .077420 /gl 35
+[14:31:06] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Tasikukoj failed Simulation (x51) .044973 /gl 36
+[14:31:06] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Tasikukoj failed Simulation (x52) .124222 /gl 37
+[14:31:06] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Tasikukoj failed Simulation (x53) .047418 /gl 38
+[14:31:06] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Tasikukoj failed Simulation (x54) .010494 /gl 39
+[14:31:07] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » frusk0ver failed PacketOrderE* (x15) attacking=false, rightClicking=true, openingInventory=false, releasing=false, sneaking=false, sprinting=false, bed=false, sprinting=false, gliding=false, mountJumping=false
+[14:31:15] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » frusk0ver failed PacketOrderE* (x16) attacking=false, rightClicking=true, openingInventory=false, releasing=false, sneaking=false, sprinting=false, bed=false, sprinting=false, gliding=false, mountJumping=false
+[14:31:17] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » frusk0ver failed PacketOrderE* (x17) attacking=false, rightClicking=true, openingInventory=false, releasing=false, sneaking=false, sprinting=false, bed=false, sprinting=false, gliding=false, mountJumping=false
+[14:31:18] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » frusk0ver failed PacketOrderE* (x18) attacking=false, rightClicking=true, openingInventory=false, releasing=false, sneaking=false, sprinting=false, bed=false, sprinting=false, gliding=false, mountJumping=false
+[14:31:21] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » frusk0ver failed Post (x7) held item change v1.17
+[14:31:21] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » frusk0ver failed PacketOrderE* (x19) attacking=false, rightClicking=true, openingInventory=false, releasing=false, sneaking=false, sprinting=false, bed=false, sprinting=false, gliding=false, mountJumping=false
+[14:31:25] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Tasikukoj failed Simulation (x55) .023180 /gl 40
+[14:31:26] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » frusk0ver failed Post (x8) held item change v1.17
+[14:31:26] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » frusk0ver failed PacketOrderE* (x20) attacking=false, rightClicking=true, openingInventory=false, releasing=false, sneaking=false, sprinting=false, bed=false, sprinting=false, gliding=false, mountJumping=false
+[14:31:28] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » frusk0ver failed BadPacketsF (x4) state=false
+[14:31:29] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » frusk0ver failed BadPacketsF (x5) state=false
+[14:31:29] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » frusk0ver failed Post (x9) entity action v1.17
+[14:31:29] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » frusk0ver failed BadPacketsX* (x1) 
+[14:31:32] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » frusk0ver failed SprintE* (x2) 
+[14:31:32] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » frusk0ver failed Post (x10) held item change v1.17
+[14:31:32] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » frusk0ver failed PacketOrderE* (x21) attacking=false, rightClicking=true, openingInventory=false, releasing=false, sneaking=false, sprinting=false, bed=false, sprinting=false, gliding=false, mountJumping=false
+[14:31:35] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » frusk0ver failed Simulation (x6) .048903 /gl 41
+[14:31:39] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » frusk0ver failed Post (x11) held item change v1.17
+[14:31:39] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » frusk0ver failed PacketOrderE* (x22) attacking=false, rightClicking=true, openingInventory=false, releasing=false, sneaking=false, sprinting=false, bed=false, sprinting=false, gliding=false, mountJumping=false
+[14:31:40] [Render thread/INFO] (Minecraft) [System] [CHAT] Snoky1337 присоединился к игре
+[14:31:41] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » frusk0ver failed PacketOrderE* (x23) attacking=false, rightClicking=true, openingInventory=false, releasing=false, sneaking=false, sprinting=false, bed=false, sprinting=false, gliding=false, mountJumping=false
+[14:31:43] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Tasikukoj failed Simulation (x56) .066792 /gl 42
+[14:31:43] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » frusk0ver failed Post (x12) held item change v1.17
+[14:31:43] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » frusk0ver failed PacketOrderE* (x24) attacking=false, rightClicking=true, openingInventory=false, releasing=false, sneaking=false, sprinting=false, bed=false, sprinting=false, gliding=false, mountJumping=false
+[14:31:43] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Tasikukoj failed Simulation (x57) .014513 /gl 43
+[14:31:43] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Tasikukoj failed Simulation (x58) .021820 /gl 44
+[14:31:43] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Tasikukoj failed Simulation (x59) .065100 /gl 45
+[14:31:43] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Tasikukoj failed Simulation (x60) .062505 /gl 46
+[14:31:44] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Tasikukoj failed Simulation (x61) .008220 /gl 47
+[14:31:44] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Tasikukoj failed Simulation (x62) .005142 /gl 48
+[14:31:44] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Tasikukoj failed Simulation (x63) .011782 /gl 49
+[14:31:44] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Tasikukoj failed Simulation (x64) .011623 /gl 50
+[14:31:45] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Tasikukoj failed Simulation (x65) .014413 /gl 51
+[14:31:45] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Tasikukoj failed Simulation (x66) .024741 /gl 52
+[14:31:45] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Tasikukoj failed Simulation (x67) .033608 /gl 53
+[14:31:45] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Tasikukoj failed Simulation (x68) .008229 /gl 54
+[14:31:45] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Tasikukoj failed Simulation (x69) .008118 /gl 55
+[14:31:45] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Tasikukoj failed Simulation (x70) .019909 /gl 56
+[14:31:45] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Tasikukoj failed Simulation (x71) .029721 /gl 57
+[14:31:45] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Tasikukoj failed Simulation (x72) .008311 /gl 58
+[14:31:45] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Tasikukoj failed Simulation (x73) .016168 /gl 59
+[14:31:45] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Tasikukoj failed Simulation (x74) .024093 /gl 60
+[14:31:45] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Tasikukoj failed Simulation (x75) .032149 /gl 61
+[14:31:45] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Tasikukoj failed Simulation (x76) .040281 /gl 62
+[14:31:46] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Tasikukoj failed Simulation (x77) .048423 /gl 63
+[14:31:46] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Tasikukoj failed Simulation (x78) .007806 /gl 64
+[14:31:46] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Tasikukoj failed Simulation (x79) .007700 /gl 65
+[14:31:46] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » Tasikukoj failed Simulation (x80) .007598 /gl 66
+[14:31:46] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » frusk0ver failed BadPacketsF (x6) state=true
+[14:31:46] [Render thread/INFO] (Minecraft) [System] [CHAT] Grim » frusk0ver failed PacketOrderE* (x25) attacking=false, rightClicking=true, openingInventory=false, releasing=false, sneaking=false, sprinting=false, bed=false, sprinting=false, gliding=false, mountJumping=false

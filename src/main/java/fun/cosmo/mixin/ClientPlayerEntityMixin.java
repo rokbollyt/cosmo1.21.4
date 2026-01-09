@@ -4,11 +4,15 @@ import fun.cosmo.Mytheria;
 import fun.cosmo.main.module.combat.AttackAura;
 import fun.cosmo.main.module.combat.aura.angle.Angle;
 import fun.cosmo.main.module.combat.aura.rotation.RotationController;
+import net.minecraft.client.input.Input;
 import net.minecraft.client.network.ClientPlayerEntity;
+import net.minecraft.util.math.MathHelper;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
+import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.ModifyArgs;
 import org.spongepowered.asm.mixin.injection.Redirect;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.invoke.arg.Args;
 
 @Mixin(ClientPlayerEntity.class)
@@ -22,91 +26,52 @@ public abstract class ClientPlayerEntityMixin {
         return RotationController.INSTANCE.getServerAngle();
     }
 
-    // --- 1. Full packet ---
-    @ModifyArgs(
-            method = "sendMovementPackets()V",
-            at = @At(
-                    value = "INVOKE",
-                    target = "Lnet/minecraft/network/packet/c2s/play/PlayerMoveC2SPacket$Full;<init>(DDDFFZZ)V"
-            )
-    )
-    private void modifyFullPacketAngles(Args args) {
-        AttackAura aura = getAura();
-        Angle serverAngle = getServerAngle();
-        if (aura == null || !aura.isEnabled() || serverAngle == null) return;
-
-        args.set(3, serverAngle.getYaw());
-        args.set(4, serverAngle.getPitch());
+    // === Ротации в пакетах ===
+    @ModifyArgs(method = "sendMovementPackets()V", at = @At(value = "INVOKE", target = "Lnet/minecraft/network/packet/c2s/play/PlayerMoveC2SPacket$Full;<init>(DDDFFZZ)V"))
+    private void modifyFull(Args args) {
+        applyRotations(args, 3, 4);
     }
 
-    // --- 2. Look packet ---
-    @ModifyArgs(
-            method = "sendMovementPackets()V",
-            at = @At(
-                    value = "INVOKE",
-                    target = "Lnet/minecraft/network/packet/c2s/play/PlayerMoveC2SPacket$LookAndOnGround;<init>(FFZZ)V"
-            )
-    )
-    private void modifyLookAndOnGroundPacketAngles(Args args) {
-        AttackAura aura = getAura();
-        Angle serverAngle = getServerAngle();
-        if (aura == null || !aura.isEnabled() || serverAngle == null) return;
-
-        args.set(0, serverAngle.getYaw());
-        args.set(1, serverAngle.getPitch());
+    @ModifyArgs(method = "sendMovementPackets()V", at = @At(value = "INVOKE", target = "Lnet/minecraft/network/packet/c2s/play/PlayerMoveC2SPacket$LookAndOnGround;<init>(FFZZ)V"))
+    private void modifyLook(Args args) {
+        applyRotations(args, 0, 1);
     }
 
-    // --- 3. First yaw for difference ---
-    @Redirect(
-            method = "sendMovementPackets()V",
-            at = @At(
-                    value = "INVOKE",
-                    target = "Lnet/minecraft/client/network/ClientPlayerEntity;getYaw()F",
-                    ordinal = 0
-            )
-    )
-    private float redirectFirstYawForDifference(ClientPlayerEntity instance) {
-        AttackAura aura = getAura();
-        Angle serverAngle = getServerAngle();
-        if (aura == null || !aura.isEnabled() || serverAngle == null) {
-            return instance.getYaw();
-        }
-        return serverAngle.getYaw();
+    @ModifyArgs(method = "tick", at = @At(value = "INVOKE", target = "Lnet/minecraft/network/packet/c2s/play/PlayerMoveC2SPacket$LookAndOnGround;<init>(FFZZ)V"))
+    private void modifyVehicle(Args args) {
+        applyRotations(args, 0, 1);
     }
 
-    // --- 4. Update lastYaw ---
-    @Redirect(
-            method = "sendMovementPackets()V",
-            at = @At(
-                    value = "INVOKE",
-                    target = "Lnet/minecraft/client/network/ClientPlayerEntity;getYaw()F",
-                    ordinal = 1
-            )
-    )
-    private float redirectLastYawUpdate(ClientPlayerEntity instance) {
-        AttackAura aura = getAura();
-        Angle serverAngle = getServerAngle();
-        if (aura == null || !aura.isEnabled() || serverAngle == null) {
-            return instance.getYaw();
-        }
-        return serverAngle.getYaw();
+    @Redirect(method = "sendMovementPackets()V", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/network/ClientPlayerEntity;getYaw()F", ordinal = 0))
+    private float redirectYaw0(ClientPlayerEntity instance) {
+        return getRotatedYaw(instance.getYaw());
     }
 
-    // --- 5. Update lastPitch ---
-    @Redirect(
-            method = "sendMovementPackets()V",
-            at = @At(
-                    value = "INVOKE",
-                    target = "Lnet/minecraft/client/network/ClientPlayerEntity;getPitch()F",
-                    ordinal = 1
-            )
-    )
-    private float redirectLastPitchUpdate(ClientPlayerEntity instance) {
+    @Redirect(method = "sendMovementPackets()V", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/network/ClientPlayerEntity;getYaw()F", ordinal = 1))
+    private float redirectYaw1(ClientPlayerEntity instance) {
+        return getRotatedYaw(instance.getYaw());
+    }
+
+    @Redirect(method = "sendMovementPackets()V", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/network/ClientPlayerEntity;getPitch()F", ordinal = 1))
+    private float redirectPitch(ClientPlayerEntity instance) {
+        Angle angle = getServerAngle();
         AttackAura aura = getAura();
-        Angle serverAngle = getServerAngle();
-        if (aura == null || !aura.isEnabled() || serverAngle == null) {
-            return instance.getPitch();
-        }
-        return serverAngle.getPitch();
+        if (aura == null || !aura.isEnabled() || angle == null) return instance.getPitch();
+        return angle.getPitch();
+    }
+
+    private float getRotatedYaw(float original) {
+        AttackAura aura = getAura();
+        Angle angle = getServerAngle();
+        if (aura == null || !aura.isEnabled() || angle == null) return original;
+        return angle.getYaw();
+    }
+
+    private void applyRotations(Args args, int yawIdx, int pitchIdx) {
+        AttackAura aura = getAura();
+        Angle angle = getServerAngle();
+        if (aura == null || !aura.isEnabled() || angle == null) return;
+        args.set(yawIdx, angle.getYaw());
+        args.set(pitchIdx, angle.getPitch());
     }
 }

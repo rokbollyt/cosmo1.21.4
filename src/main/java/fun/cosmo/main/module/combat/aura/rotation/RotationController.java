@@ -1,6 +1,7 @@
 package fun.cosmo.main.module.combat.aura.rotation;
 
 import lombok.AccessLevel;
+import fun.cosmo.main.module.combat.aura.angle.implementation.FuntimeAngle;
 import lombok.Getter;
 import lombok.experimental.FieldDefaults;
 import net.minecraft.entity.Entity;
@@ -17,7 +18,7 @@ import fun.cosmo.main.module.combat.aura.angle.implementation.LinearSmoothAngle;
 public class RotationController implements QuickImport {
 
     public static RotationController INSTANCE =
-            new RotationController(new LinearSmoothAngle(), true, true, true);
+            new RotationController(new FuntimeAngle(), true, true, true);
 
 
     public RotationController() {
